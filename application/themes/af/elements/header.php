@@ -1,63 +1,47 @@
-<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="<?php echo Localization::activeLanguage()?>" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html class="no-js">
 <head>
+    <?=Loader::element('header_required')?>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Facebook Open Graph 
+<meta property="og:title" content="AnchorFree"/>
+<meta property="og:url" content="http://anchorfree.com"/>
+<meta property="og:image" content=""/>
+<meta property="og:site_name" content="AnchorFree"/>
+<meta property="og:description" content="Hotspot Shield VPN secures your browsing session, detects and blocks malware, hides ip address and allows you to access blocked websites."/>
+<meta property="og:type" content=""/>
+-->
 
-<?php Loader::element('header_required'); ?>
-	
-<!-- Site Header Content //-->
-<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('main.css')?>" />
-<link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('typography.css')?>" />
-
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
 </head>
 <body>
+    <div class="<?php echo $c->getPageWrapperClass()?>">
+        <header class="head-body header">
+        <!-- Fixed navbar -->
+        <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
+                </div><!--.navbar-header -->
 
-<div id="page">
-	<div id="headerSpacer"></div>
-	<div id="header">
-		
-		<?php if ($c->isEditMode()) { ?>
-		<div style="min-height: 80px">
-		<?php } ?>
-		
-		<div id="headerNav">
-			<?php
-			$a = new Area('Header Nav');
-			$a->display($c);
-			?>
-		</div>
-		
-		<h1 id="logo"><!--
-			--><a href="<?php  echo DIR_REL?>/"><?php  
-				$block = Block::getByName('My_Site_Name');  
-				if( $block && $block->bID ) $block->display();   
-				else echo h(SITE);
-			?></a><!--
-		--></h1>
-
-		<?php
-		// we use the "is edit mode" check because, in edit mode, the bottom of the area overlaps the item below it, because
-		// we're using absolute positioning. So in edit mode we add a bit of space so everything looks nice.
-		?>
-
-		<div class="spacer"></div>
-
-		<?php if ($c->isEditMode()) { ?>
-		</div>
-		<?php } ?>
-		
-		<div id="header-area">
-			<div class="divider"></div>
-			<div id="header-area-inside">
-			<?php			
-			$ah = new Area('Header');
-			$ah->display($c);			
-			?>	
-			</div>	
-			
-			<?php if ($ah->getTotalBlocksInArea() > 0) { ?>
-				<div class="divider"></div>
-			<?php } ?>
-		</div>
-	</div>			
+                <div class="navbar-collapse collapse" style="height: 1px;">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://www.hotspotshield.com">Products</a></li>
+                        <li class="active"><a href="/advertise.php">Advertise</a></li>
+                        <li><a title="Carrier" href="/carriers.php">Carriers</a></li>
+                        <li><a href="/news.php">Press</a></li>
+                        <li><a href="/about.php">About</a></li>
+                        <li><a href="https://hsselite.zendesk.com/home">Careers</a></li>
+                    </ul>
+                </div><!--.nav-collapse -->
+            </div><!--.container -->
+        </div>
+        </header>
