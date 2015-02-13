@@ -71,7 +71,11 @@
     </div>
     </header>
   
-
+<div class="<?php echo $c->getPageWrapperClass()?>">
+    <?php
+        $a = new Area('Area Name');
+        $a->display($c);
+    ?>
 <footer class="footer">
     <div class="container">
         <div class="row">
