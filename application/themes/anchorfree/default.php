@@ -1,119 +1,387 @@
-<?php Loader::element('header_required'); ?>     
-      </div>
-    <div class="box-as-seen-in"><h2><a href="/news.php">The Most Trusted VPN Service With More than 300 Million Downloads</a></h2>
-    	<div class="vpn-download-news"></div>
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Hotspot Shield Advertising: A Secure Consumer VPN Platform - AnchorFree</title>
+  <meta name="description" content="Advertise on Hotspot Shield - A secure consumer VPN platform provides security, privacy and access to customers everywhere. It's used by 10 million users around the world on a monthly basis." />
+  <meta name="keywords" content="hotspot shield ads, hotspot ads, hotspot users, anchorfree media network, hotspot vpn for business, hotspot shield advertising, advertise on hotspot shield, hotspot shield ads security, hotspot shield ads privacy, advertise on hotspot shield vpn, vpn platform, anchorfree, anchorfree inc" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Description / Keywords -->
+<meta name="description" content="Hotspot Shield VPN secures your browsing session, detects and blocks malware, hides ip address and allows you to access blocked websites.">
+<meta name="keywords" content="vpn, virtual private network, free vpn, vpn client, vpn service, vpn service provider, vpn connection, private browsing, hide ip address, unblock sites, access blocked sites, download vpn, free vpn software, anonymous browsing, anonymous surfing, surf anonymously, anchorfree, hotspot shield">
+
+<!-- Facebook Open Graph -->
+<meta property="og:title" content="AnchorFree"/>
+<meta property="og:url" content="http://anchorfree.com"/>
+<meta property="og:image" content=""/>
+<meta property="og:site_name" content="AnchorFree"/>
+<meta property="og:description" content="Hotspot Shield VPN secures your browsing session, detects and blocks malware, hides ip address and allows you to access blocked websites."/>
+<meta property="og:type" content=""/>
+
+<!-- Favicon & Touch Icons -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+<link rel="apple-touch-icon-precomposed" href="">
+<link rel="shortcut icon" href="source/v.SOURCE_VERSION/images/favicon.png">
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
+
+<!-- CSS -->
+<link href="source/v.SOURCE_VERSION/css/styles_v2.min.css" rel="stylesheet">
+
+<link href="source/v.1.0/css/carriers.css" rel="stylesheet">
+<?php Loader::element('header_required')?>
+</head>
+<body class="af-body">
+<div class="af-container">
+<header class="head-body header">
+    <!-- Fixed navbar -->
+    <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
+            </div><!--.navbar-header -->
+
+            <div class="navbar-collapse collapse" style="height: 1px;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.hotspotshield.com">Hotspot Shield VPN</a></li>
+                    <li class="active"><a href="/advertise.php">Advertise</a></li>
+                    <li><a title="Carrier" href="/carriers.php">Carriers</a></li>
+                    <li><a href="/news.php">News</a></li>
+                    <li><a href="/about.php">About</a></li>
+                    <li><a href="https://hsselite.zendesk.com/home">Support</a></li>
+                    <li><a href="/contact.php">Contact</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div><!--.container -->
     </div>
-  </div><!-- end .head-wrapper -->
-    <div class="af-container">
-      <div class="artic">
-<!-- page -->
-      <div class="af-intro-box af-gray">
-      	<div class="af-wrapper">
-	        <h2>Benefits and Advantages of Hotspot Shield VPN Service</h2>
-	        <a class="right" href="javascript:void(0);" onclick="video_play();"><img src="/source/v.1.0/images/callout-video.png" alt="" height="246" width="436" align="right" /></a>
-	        <p>Every time you surf the Web, you expose yourself and your devices to multiple online threats & risks; Hackers could steal your passwords & financial information and the sites you visit may contain malware.</p>
-	        <p>Hotspot Shield VPN software uses advanced encryption technology to secure your browsing session, detect and blocks malware, and enables you to access your favorite content from anywhere. You can even bypass geo-restrictions to <a href="http://www.hotspotshield.com/unblock-facebook">unblock Facebook</a>, <a href="http://www.hotspotshield.com/unblock-youtube">unblock Youtube</a>, or <a href="http://www.hotspotshield.com/unblock-sites">unblock any website</a> in countries that censor content.</p>
-	        <p>Our Hotspot Shield VPN service  also <a href="http://www.hotspotshield.com/hide-ip-address">protects your IP address</a>, enabling you to surf the Web anonymously and privately.</p>
-	        <p><a href="http://www.hotspotshield.com/benefits-of-vpn">Learn more about the benefits of Hotspot Shield VPN</a></p>
-	        <div id="popup_view"></div>
-        </div>
-      </div>
-      <div class="af-intro-box af-white">
-      	<div class="af-wrapper" style="height: 460px;">
-	        <h2>Available on Windows, Mac, iPhone/iPad & Android</h2>
-	        <img src="/source/v.1.0/images/callout-mobile.jpg" alt="" height="402" width="381" align="left" style="margin-right:30px" />
-	        <br /><br />
-	        <p>Hotspot Shield VPN works on Windows PC, Mac, iPhone, iPad, iPod Touch, and Android devices.</p>
-	        <p>All the great features of the desktop product, including <a href="http://www.hotspotshield.com/wifi-security">WiFi security</a> , <a href="http://www.hotspotshield.com/anonymous-web-surfing">anonymous surfing</a>, and <a href="http://www.hotspotshield.com/malware-protection">malware protection</a> are available for your mobile device as well.</p>
-	        <p>An added bonus for mobile users is the data compression feature, which helps you to save bandwidth and $$$ on your phone bill.</p>
-	        <br />
-	        <a target="_blank" href="https://play.google.com/store/apps/details?id=hotspotshield.android.vpn&feature=nav_result#?t=W251bGwsMSwxLDMsImhvdHNwb3RzaGllbGQuYW5kcm9pZC52cG4iXQ.."><img src="/source/v.1.0/images/btn_go_to_google_play@2x.png" border="0" width="130" height="44" /></a>
-	        &nbsp;&nbsp;
-	        <a target="_blank" href="https://itunes.apple.com/app/id443369807?&referrer=click%3D3842cd54-b48a-45e5-b443-5339973be7b1"><img src="/source/v.1.0/images/btn_go_to_app_store@2x.png" border="0" height="44" width="125" /></a>
-        </div>
-      </div>
-      <div class="af-intro-box af-gray">
-      	<div class="af-wrapper">
-	        <h2>Try the Elite Version and Get Enhanced Performance & Support</h2>
-	        <img src="/source/v.1.0/images/callout-elite@2x.png" alt="Upgrade to Hotspot Shield Elite" height="272" width="467" align="right" style="margin-left:35px" />
-	        <div class="align_right">
-	          <p>The standard Hotspot Shield version is a free, ad-supported VPN software. However, upgrading to Hotspot Shield Elite brings enhanced performance and support. The Hotspot Shield Elite <b>Virtual Private Network</b> comes with:</p>
-	          <ul>
-	          <li class="first">Faster Access</li>
-	          <li>24/7 Customer Support</li>
-	          <li><a href="http://www.hotspotshield.com/malware-protection">Advanced Malware Protection</a></li>
-	          <li class="last">No Ads!</li>
-	          </ul>
-	          <a class="btn-green" onclick="_gaq.push(['_trackEvent', 'Homepage', 'Findoutmore']);" href="https://www.hsselite.com/pricing??utm_medium=AFinternal&utm_source=AFcom&utm_campaign=HomepageBtm">Find Out More</a>
-	        </div>
-    	</div>
-      </div>
-
-    </div><!-- end .artic -->
-
-<!-- end:page -->
-<footer class="footer">
-        <div class="footer-wrapper">
-            <div class="dev_links">
-                <a href="https://play.google.com/store/apps/details?id=hotspotshield.android.vpn">Android<span style="background-position: -336px 0;"></span></a>
-                <a href="https://itunes.apple.com/us/app/hotspot-shield-vpn-for-iphone/id443369807">iPhone<span></span></a>
-                <a id="macVersion" href="http://download.cnet.com/Hotspot-Shield/3000-2092_4-10638005.html">Mac<span style="background-position: -381px 0;"></span></a>
-                <a href="http://download.cnet.com/hotspot-shield/">Windows<span style="background-position: -426px 0;"></span></a>
-            </div>
-            <div class="footer-nav">
-              <ul>
-                <li><a href="/jobs/" title="Jobs">We're Hiring!</a></li>
-                <li><a href="/privacy.php" title="Privacy">Privacy</a></li>
-                <li><a href="/terms-of-service.php" title="Terms of Service">Terms</a></li>
-                <li><a href="/support.php" title="Hotspot Shield Help">Help</a></li>
-                <li><a href="http://rpt.anchorfree.net/afrpt.php?afcid=1952&affr=click_link&tag=UNREGISTERED&cnl=empty&afhss=UNDEFINED&sip=1249051728&rdr=http%3A%2F%2Fanchorfree.us">Visit Us</a></li>
-              </ul>
-              <p class="copyright">Copyright &copy; 2015 AnchorFree, Inc. All Rights Reserved</p>
-          </div>
-      </div>
-      <div class="af-footer-bottom">
-        <div class="af-footer-column af-footer-red"></div>
-        <div class="af-footer-column af-footer-blue"></div>
-        <div class="af-footer-column af-footer-column-last af-footer-green"></div>
-      </div>
-</footer>
+    </header>
     
-    </div>\n<!-- Google Code for Homepage Visitors Remarketing List -->
-<script type="text/javascript">
-  /* <![CDATA[ */
-  var google_conversion_id = 1067709949;
-  var google_conversion_language = "en";
-  var google_conversion_format = "3";
-  var google_conversion_color = "666666";
-  var google_conversion_label = "WbFECLuykQIQ_euP_QM";
-  var google_conversion_value = 0;
-  /* ]]> */
-</script>
-<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js"></script>
-<noscript>
-  <div style="display:inline;">
-    <img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1067709949/?label=WbFECLuykQIQ_euP_QM&amp;guid=ON&amp;script=0"/>
-  </div>
-</noscript>
-<iframe src='http://pixel.fetchback.com/serve/fb/pdj?cat=&name=landing&sid=4559' scrolling='no'	width='1' height='1' marginheight='0' marginwidth='0' frameborder='0'></iframe>
-<script type="text/javascript" language="javascript">llactid=22127</script>
-<script type="text/javascript">
-// display different download link for Mac button in footer based on Mac version 
-function OSVersion() {
-  if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1) { // firefox
-    var v = (navigator.userAgent).match(/OS X (\d+).(\d+).?(\d+)?/);
-    return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-  }
-  else { // other browsers
-    var v = (navigator.userAgent).match(/OS X (\d+)_(\d+)_?(\d+)?/);
-    return [parseInt(v[1], 10), parseInt(v[2], 10), parseInt(v[3] || 0, 10)];
-  }
-}
-var ver = OSVersion();
-var macVersionID = document.getElementById('macVersion');
-if(ver[1] >=7) {
-    macVersionID.setAttribute('href', 'https://itunes.apple.com/us/app/hotspot-shield-vpn-best-vpn/id771076721');
-}
-</script>
+<!-- STICKY CONTACT US -->
+<section class="section section-contact-sticky bg--green hidden-xs">
+        <div class="container relative">
+            <div class="row">
+                <div class="col-md-12">
+                    <a href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com">For more information about advertising, <span class="strong">contact us.</span></a>
+                    <a href="#" class="close-sticky"><span class="glyphicon glyphicon-remove"></span></a>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+</section> <!-- .section-featured -->
+
+<section class="section section-featured bg-gradient--blue">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <h1 class="text-white">Reach <span class="strong">25 million</span> active and engaged unique users from around the world</h1>
+                </div>
+                <div class="col-sm-12 col-md-6 col-md-offset-3">
+                    <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>
+                </div>
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+                    <img src="/imgs/v2/composition@2x.png" class="full-width section-featured-img">
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-featured -->
+
+<section class="section section-target">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>User Affinity</h4>
+                </div>
+
+                <div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4 relative">
+                    <div class="target">
+                        <ul class="target-list">
+                            <li class="target target--travelers">
+                                Travelers
+                            </li>
+                            <li class="target target--world">
+                                World Citizens
+                            </li>
+                            <li class="target target--privacy">
+                                Privacy-minded individuals
+                            </li>
+                            <li class="target target--content">
+                                Content Enthusiasts
+                            </li>
+                        </ul>
+                        <img src="/imgs/v2/bg_who@2x.png" alt="" class="full-width">
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-8 col-md-offset-2">
+
+                </div>
+
+                <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <p class="text-center">The AnchorFree Platform can put your brand in front of 25 million active monthly users on the Web and mobile devices. Almost every person with a computer or a mobile phone uses a Wi-Fi network. Hotspot Shield, the most popular privacy app in the world, reaches virtually every demographic segment of a technically savvy/content hungry population.</p>
+                    <p class="text-center">Whether you are trying to reach expats or travelers, The AnchorFree Platform is your ideal destination.</p>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-who -->
+
+<section class="section section-counter bg-gradient--grey">
+    <div class="wrapper wrapper-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 relative">
+                    <h2>What do our users have in common?</h2>
+
+                    <div class="global-usage">
+                        <span class="global-usage-title">Global Usage in over</span>
+                        <span class="global-usage-number">190 countries</span>
+                    </div>
+                    <div class="wrapper-counters">
+                        <ul class="counters">
+                            <li id="counter1" class="counter">
+                                <span class="counter-title">Unique active users</span>
+                                <span class="counter-number"><span id="counter-data1"></span><span class="counter-unit">M</span></span>
+                                <span class="counter-subtitle">Per month</span>
+                            </li>
+                            <li id="counter2" class="counter">
+                                <span class="counter-title">User sessions</span>
+                                <span class="counter-number"><span id="counter-data2"></span><span class="counter-unit">M</span></span>
+                                <span class="counter-subtitle">Per month</span>
+                            </li>
+                            <li id="counter3" class="counter">
+                                <span class="counter-title">Page views/ad views</span>
+                                <span class="counter-number"><span id="counter-data3"></span><span class="counter-unit">B</span></span>
+                                <span class="counter-subtitle">Per month</span>
+                            </li>
+                            <li id="counter4" class="counter">
+                                <span class="counter-title">New downloads</span>
+                                <span class="counter-number"><span id="counter-data4"></span><span class="counter-unit">M</span></span>
+                                <span class="counter-subtitle">Per month</span>
+                            </li>
+                            <li id="counter5" class="counter">
+                                <span class="counter-title">Video views</span>
+                                <span class="counter-number"><span id="counter-data5"></span><span class="counter-unit">M</span></span>
+                                <span class="counter-subtitle">Per month</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-counter -->
+
+<section class="section section-howitworks">
+    <div class="wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-10 col-md-offset-1">
+                    <h2>How it works</h2>
+                    <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>
+                </div>
+                <div class="col-md-4 product">
+                    <h5 class="product-type product-type--landing">User is directed to a landing page</h5>
+                    <img id="img-product1" src="/imgs/v2/browser_single_page.png" class="full-width">
+                </div>
+                <div class="col-md-4 product">
+                    <h5 class="product-type product-type--content">Your content appears above all domains</h5>
+                    <img id="img-product2" src="/imgs/v2/browser_content_frame.png" class="full-width">
+                </div>
+                <div class="col-md-4 product">
+                    <h5 class="product-type product-type--adv">Your adv appears above all domains</h5>
+                    <img id="img-product3" src="/imgs/v2/browser_adv_frame.png" class="full-width">
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-howitworks -->
+
+<section class="section section-mobile bg-gradient--blue">
+    <div class="wrapper relative">
+
+        <div class="circles">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+            <div class="circle circle-3"></div>
+            <div class="circle circle-4"></div>
+            <div class="circle circle-5"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="text-white">Mobile Advertising * <br/> Wi-Fi security and online privacy at the tip of your fingers.</h2>
+                    <h3 class="text-white">Reach <span class="italic strong">7.2 million</span> monthly active users at first touch in app!</h3>
+
+                    <div class="androids">
+                        <div class="android android-center">
+                            <img src="/imgs/v2/android_center@2x.png" class="full-width">
+                        </div>
+                        <div class="android android-blur android-blur--left">
+                            <img src="/imgs/v2/android_blur@2x.png" class="full-width">
+                        </div>
+                        <div class="android android-blur android-blur--right">
+                            <img src="/imgs/v2/android_blur@2x.png" class="full-width">
+                        </div>
+                        <span class="android-only italic">* Android only</span>
+                    </div>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-mobile -->
+
+<section class="section section-chart bg-gradient--lightgrey">
+    <div class="wrapper wrapper-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2>Security and privacy-minded World Citizens. Content Enthusiasts.</h2>
+                </div>
+
+                <div class="col-md-12">
+                    <a href="#" class="link-comscore pull-right">
+                        <img src="/imgs/v2/logo_comscore@2x.png" alt="ComScore" class="full-width">
+                    </a>
+                    <div class="chart">
+                        <div class="label-axis-y">Strengh: Comscore index</div>
+                        <ul class="chart-lines">
+                            <li><span>180.0</span></li>
+                            <li><span>160.0</span></li>
+                            <li><span>140.0</span></li>
+                            <li><span>120.0</span></li>
+                            <li><span>100.0</span></li>
+                            <li><span>80.0</span></li>
+                            <li><span>60.0</span></li>
+                            <li><span>40.0</span></li>
+                            <li><span>20.0</span></li>
+                            <li><span>0.0</span></li>
+                        </ul>
+                        <ul class="chart-bars">
+                            <li class="chart-bar-autos">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Autos</span>
+                            </li>
+
+                            <li class="chart-bar-retail">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Retail</span>
+                            </li>
+
+                            <li class="chart-bar-entertainment">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Entertainment</span>
+                            </li>
+
+                            <li class="chart-bar-business">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Business &amp; Finance</span>
+                            </li>
+
+                            <li class="chart-bar-travel">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Travel &amp; information</span>
+                            </li>
+
+                            <li class="chart-bar-sports">
+                                <div class="wrapper-bar">
+                                    <span class="chart-bar-anchorfree"></span>
+                                    <span class="chart-bar-comscore"></span>
+                                </div>
+                                <span class="chart-bar-label">Sports</span>
+                            </li>
+                        </ul>
+                        <ul class="chart-legend">
+                            <li class="legend-label legend-label--anchorfree">AncorFree Index</li>
+                            <li class="legend-label legend-label--comscore">ComScore base</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <p class="text-center">
+                        According to ComScore, AnchorFree users have a much higher propensity to visit travel, retail, business and finance websites than the average Internet user. AnchorFree’s rapidly growing network of U.S. Hotspot Shield users living, traveling, and working abroad puts advertisers in touch with an audience that is practically unreachable by any other means.
+                    </p>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-chart -->
+
+<!-- CONTACT US -->
+<section class="section section-contact-us bg-gradient--blue">
+    <div class="wrapper wrapper--small">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-md-offset-2 relative">
+                    <h2 class="text-white" style="padding: 20px 0;">For more information about the service</h2>
+                    <a class="btn btn-lg btn--green" href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com" style='top: 40px;'>Contact us</a>
+                </div>
+            </div> <!-- .row -->
+        </div> <!-- .container -->
+    </div> <!-- .wrapper -->
+</section> <!-- .section-contactus -->
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="nav nav-justified footer-nav">
+                    <li><a title="Privacy" href="/privacy.php">Privacy</a></li>
+                    <li><a title="Terms" href="/terms-of-service.php">Terms</a></li>
+                    <li><a title="We’are hiring!" href="/jobs/">We’re hiring!</a></li>
+                    <li><a title="Help" href="/support.php">Help</a></li>
+                    <li><a title="Visit us" href="/contact.php">Visit us</a></li>
+                </ul>
+                <div class="separator saperator-gradient"></div>
+                <p class="footer-copyright">
+                    Copyright &copy; 2015 AnchorFree, Inc. All Rights Reserved                </p>
+            </div>
+        </div> <!-- .row -->
+    </div> <!-- .container -->
+</footer>
+</div><!-- end .head-wrapper -->
+
+<!-- JavaScript -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js"></script>
+<script type="text/javascript" src="/js/v2/imageLens.min.js"></script>
+<script type="text/javascript" src="/js/v2/main-ck.js"></script>
+<?php Loader::element('footer_required')?>
 </body>
 </html>

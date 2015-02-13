@@ -1,47 +1,63 @@
-<!DOCTYPE html>
-<html lang="<?php echo Localization::activeLanguage()?>">
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="<?php echo Localization::activeLanguage()?>" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta charset="utf-8" />
-  <title>VPN Service: Download Hotspot Shield Free & Elite VPN Client</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="/source/v.1.0/css/styles.min.css" />
-<!--[if lt IE 9]>
-<script src="/js/html5shiv.js"></script>
-<![endif]-->
+
+<?php Loader::element('header_required'); ?>
 	
 <!-- Site Header Content //-->
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('main.css')?>" />
 <link rel="stylesheet" media="screen" type="text/css" href="<?php echo $this->getStyleSheet('typography.css')?>" />
 
 </head>
-<body class="af-body">
-    <div class="af-container">
-      <div class="head-image">
-<header class="head-body">
-      <a href="/" title="AnchorFree Hotspot Shield VPN"><img src="<?php echo $view->getThemePath()?>/images/logo_anchorfree.png" alt="anchorfree logo" class="logo"></a>
-      <ul class="menu nav">
-        <li><a href="http://www.hotspotshield.com">HOTSPOT SHIELD VPN</a></li>
-        <li><a href="advertise.php"   title="Advertise">Advertise</a></li>
-        <li><a href="carriers.php"   title="">Carriers</a></li>
-        <li><a href="news.php"   title="Hotspot Shield News">News</a></li>
-        <li><a href="about.php"   title="About Hotspot Shield">About</a></li>
-        <li><a href="https://hsselite.zendesk.com/home" title="Hotspot Shield Support">Support</a></li>
-        <li><a href="contact.php"   title="Contact Hotspot Shield">Contact</a></li>
-      </ul>
-		<script type="text/javascript">
-		    var redirectURLValue = '';
-		    function redirectURL(href) {
-		        redirectURLValue = href;
-		        setTimeout('window.location=redirectURLValue', 300);
-		    }
-		</script>
-      <h1>Unleash the Power of Hotspot Shield VPN<br>
-          <span>Protect Your Privacy. Secure Your Data. Unblock Websites.</span>
-      </h1>
-      <div class="available-platform">Available on <span></span></div>
-      <div class="af-btn-box">
-	      	      	      	      <a class="btn_download" href="macappstore://itunes.apple.com/app/id771076721?mt=12" onclick="_gaq.push(['_trackEvent', 'Homepage', 'freedownload_mac']); redirectURL(this.href); return false" title="AnchorFree Hotspot Shield VPN For MAC">Free Download</a>
-      </div>
-      <a class="btn_download_elite" href="http://www.hsselite.com/buy?af_source=hs_hss1_home" onclick="_gaq.push(['_trackEvent', 'hss1', 'buy now']); redirectURL(this.href); return false">Buy The Elite Version</a>
-</header><!-- end .header -->
-    
+<body>
+
+<div id="page">
+	<div id="headerSpacer"></div>
+	<div id="header">
+		
+		<?php if ($c->isEditMode()) { ?>
+		<div style="min-height: 80px">
+		<?php } ?>
+		
+		<div id="headerNav">
+			<?php
+			$a = new Area('Header Nav');
+			$a->display($c);
+			?>
+		</div>
+		
+		<h1 id="logo"><!--
+			--><a href="<?php  echo DIR_REL?>/"><?php  
+				$block = Block::getByName('My_Site_Name');  
+				if( $block && $block->bID ) $block->display();   
+				else echo h(SITE);
+			?></a><!--
+		--></h1>
+
+		<?php
+		// we use the "is edit mode" check because, in edit mode, the bottom of the area overlaps the item below it, because
+		// we're using absolute positioning. So in edit mode we add a bit of space so everything looks nice.
+		?>
+
+		<div class="spacer"></div>
+
+		<?php if ($c->isEditMode()) { ?>
+		</div>
+		<?php } ?>
+		
+		<div id="header-area">
+			<div class="divider"></div>
+			<div id="header-area-inside">
+			<?php			
+			$ah = new Area('Header');
+			$ah->display($c);			
+			?>	
+			</div>	
+			
+			<?php if ($ah->getTotalBlocksInArea() > 0) { ?>
+				<div class="divider"></div>
+			<?php } ?>
+		</div>
+	</div>			
