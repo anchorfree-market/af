@@ -12,15 +12,9 @@
 <meta property="og:type" content=""/>
 -->
 
-<!-- Bootstrap core CSS 
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
--->
-<!-- CSS 
-<link href="source/v.SOURCE_VERSION/css/styles_v2.min.css" rel="stylesheet">
-
-<link href="source/v.1.0/css/carriers.css" rel="stylesheet">-->
-<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
 </head>
 <body>
     <div class="<?php echo $c->getPageWrapperClass()?>">
