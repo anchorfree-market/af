@@ -46,7 +46,10 @@
         </div>
         </header>    
         
-        
+        <?
+            $a = new Area('Sticky Contact Us');
+            $a->display($c);
+        ?>
 
         <footer class="footer">
             <div class="container">
