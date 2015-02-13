@@ -29,14 +29,14 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
+                    <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
                 </div><!--.navbar-header -->
                 <div class="navbar-collapse collapse" style="height: 1px;">
                     
                     
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="http://www.hotspotshield.com">Products</a></li>
-                        <li class="active"><a href="/~anchorj6/af/advertise">Advertise</a></li>
+                        <li><a href="/~anchorj6/af/advertise">Advertise</a></li>
                         <li><a title="Carrier" href="/~anchorj6/af/carriers">Carriers</a></li>
                         <li><a href="/~anchorj6/af/press">Press</a></li>
                         <li><a href="/~anchorj6/af/about">About</a></li>
