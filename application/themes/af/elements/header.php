@@ -13,6 +13,7 @@
 -->
 
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap.override.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
 </head>
@@ -31,6 +32,12 @@
                     </button>
                     <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
                 </div><!--.navbar-header -->
+                <!--
+                <?
+                    $a = new GlobalArea('Header Nav');
+                    $a->display($c);
+                ?>
+                -->
                 <div class="navbar-collapse collapse" style="height: 1px;">
                     
                     
@@ -46,4 +53,5 @@
             </div><!--.container -->
             
         </div>
+        
         </header>

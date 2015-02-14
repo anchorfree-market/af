@@ -1,9 +1,4 @@
 <?php $view->inc('elements/header.php');  ?>
-        <?
-            $a = new Area('Sticky Contact Us');
-            $a->display($c);
-        ?>
-
 <section class="section section-contact-sticky bg--green hidden-xs">
         <div class="container relative">
             <div class="row">
@@ -300,3 +295,7 @@
 </section> <!-- .section-contactus -->
 
  <?php $view->inc('elements/footer.php'); ?>
+        <?
+            $a = new Area('Sticky Contact Us');
+            $a->display($c);
+        ?>
