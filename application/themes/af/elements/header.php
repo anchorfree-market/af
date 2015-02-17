@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap.override.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
+    
+    <style id="fit-vids-style">.fluid-width-video-wrapper{width:100%;position:relative;padding:0;}.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object,.fluid-width-video-wrapper embed {position:absolute;top:0;left:0;width:100%;height:100%;}</style>
 </head>
 <body>
     <div class="<?php echo $c->getPageWrapperClass()?>">

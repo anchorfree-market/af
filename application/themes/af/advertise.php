@@ -311,3 +311,4 @@
 </section> <!-- .section-contactus -->
 
  <?php $view->inc('elements/footer.php'); ?>
+<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/main-ck.js"></script>

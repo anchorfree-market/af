@@ -24,7 +24,6 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js"></script>
 <script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/imageLens.min.js"></script>
-<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/main-ck.js"></script>
     </div>
     <? Loader::element('footer_required')?>
 </body>
