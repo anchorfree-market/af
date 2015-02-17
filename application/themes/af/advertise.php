@@ -1,40 +1,28 @@
 <?php $view->inc('elements/header.php');  ?>
-<section class="section section-contact-sticky bg--green hidden-xs">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com">For more information about advertising, <span class="strong">contact us.</span></a>
-                    <a href="#" class="close-sticky"><span class="glyphicon glyphicon-remove"></span></a>
-                </div>
-            </div> <!-- .row -->
-        </div> <!-- .container -->
-</section> <!-- .section-featured -->
-
-<!-- STICKY CONTACT US -->
-<section class="section section-contact-sticky bg--green hidden-xs">
-        <div class="container relative">
-            <div class="row">
-                <div class="col-md-12">
-                    <a href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com">For more information about advertising, <span class="strong">contact us.</span></a>
-                    <a href="#" class="close-sticky"><span class="glyphicon glyphicon-remove"></span></a>
-                </div>
-            </div> <!-- .row -->
-        </div> <!-- .container -->
-</section> <!-- .section-featured -->
+<?php $view->inc('elements/fixed-contact-us.php'); ?>
 
 <section class="section section-featured bg-gradient--blue">
     <div class="wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <h1 class="text-white">Reach <span class="strong">25 million</span> active and engaged unique users from around the world</h1>
+                    <?
+                        $a = new Area('Featured Text h1');
+                        $a->display($c);
+                    ?>
+                    <!-- <h1 class="text-white">Reach <span class="strong">25 million</span> active and engaged unique users from around the world</h1>-->
                 </div>
                 <div class="col-sm-12 col-md-6 col-md-offset-3">
-                    <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>
+                    <?
+                        $a = new Area('Featured Text h3');
+                        $a->display($c);
+                    ?>
+                    <!-- <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>-->
                 </div>
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
                     <img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">
                 </div>
+                
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
@@ -74,8 +62,13 @@
                 </div>
 
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <?
+                        $a = new Area('Target Text');
+                        $a->display($c);
+                    ?>
+                    <!--
                     <p class="text-center">The AnchorFree Platform can put your brand in front of 25 million active monthly users on the Web and mobile devices. Almost every person with a computer or a mobile phone uses a Wi-Fi network. Hotspot Shield, the most popular privacy app in the world, reaches virtually every demographic segment of a technically savvy/content hungry population.</p>
-                    <p class="text-center">Whether you are trying to reach expats or travelers, The AnchorFree Platform is your ideal destination.</p>
+                    <p class="text-center">Whether you are trying to reach expats or travelers, The AnchorFree Platform is your ideal destination.</p>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
@@ -134,7 +127,11 @@
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
                     <h2>How it works</h2>
-                    <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>
+                    <?
+                        $a = new Area('How it Works Text');
+                        $a->display($c);
+                    ?>
+                    <!--<p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
                 </div>
                 <div class="col-md-4 product">
                     <h5 class="product-type product-type--landing">User is directed to a landing page</h5>
@@ -167,8 +164,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h2 class="text-white">Mobile Advertising * <br/> Wi-Fi security and online privacy at the tip of your fingers.</h2>
-                    <h3 class="text-white">Reach <span class="italic strong">7.2 million</span> monthly active users at first touch in app!</h3>
+                    <?
+                        $a = new Area('Mobile Advertising h2');
+                        $a->display($c);
+                    ?>
+                    <!--<h2 class="text-white">Mobile Advertising * <br/> Wi-Fi security and online privacy at the tip of your fingers.</h2>-->
+                    <?
+                        $a = new Area('Mobile Advertising h3');
+                        $a->display($c);
+                    ?>
+                    <!--<h3 class="text-white">Reach <span class="italic strong">7.2 million</span> monthly active users at first touch in app!</h3>-->
 
                     <div class="androids">
                         <div class="android android-center">
@@ -271,9 +276,14 @@
                 </div>
 
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
+                    <?
+                        $a = new Area('comScore');
+                        $a->display($c);
+                    ?>
+                    <!--
                     <p class="text-center">
                         According to ComScore, AnchorFree users have a much higher propensity to visit travel, retail, business and finance websites than the average Internet user. AnchorFree’s rapidly growing network of U.S. Hotspot Shield users living, traveling, and working abroad puts advertisers in touch with an audience that is practically unreachable by any other means.
-                    </p>
+                    </p>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
@@ -286,7 +296,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-md-offset-2 relative">
-                    <h2 class="text-white" style="padding: 20px 0;">For more information about the service</h2>
+                    <h2 class="text-white" style="padding: 20px 0;">
+                        <?
+                            $a = new Area('Contact Us Text');
+                            $a->display($c);
+                        ?>
+                    </h2>
+                    <!--<h2 class="text-white" style="padding: 20px 0;">For more information about the service</h2>-->
                     <a class="btn btn-lg btn--green" href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com" style='top: 40px;'>Contact us</a>
                 </div>
             </div> <!-- .row -->
@@ -295,7 +311,3 @@
 </section> <!-- .section-contactus -->
 
  <?php $view->inc('elements/footer.php'); ?>
-        <?
-            $a = new Area('Sticky Contact Us');
-            $a->display($c);
-        ?>
