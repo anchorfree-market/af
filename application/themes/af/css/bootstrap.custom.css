@@ -4506,3 +4506,13 @@ th.visible-print, td.visible-print {
     display: none!important;
 }
 }
+
+/* bootstrap overrides */
+.navbar-brand {
+    position: relative;
+    z-index: 5;
+}
+.navbar-nav {
+    position: relative;
+    z-index: 1;
+}
