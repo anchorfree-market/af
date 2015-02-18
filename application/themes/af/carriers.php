@@ -12,7 +12,11 @@
                             $a->display($c);
                         ?>
                     </h1>
-                    <a class="btn btn-lg btn--green js-scroll-to howitw" href="#" data-scroll="#howitworks-carrier" title="How it works">How it works</a>
+                    <?
+                        $a = new Area('How it Works Button');
+                        $a->display($c);
+                    ?>
+                    <!--<a class="btn btn-lg btn--green js-scroll-to howitw" href="#" data-scroll="#howitworks-carrier" title="How it works">How it works</a>-->
                     <!--<h1 class="text-white align-left">Our <span class="strong">Wi-Fi Security</span> product provides security to your customers when using public Wi-Fi.</h1>-->
                     <p class="available-on">Available on</p>
                 </div>
@@ -48,8 +52,7 @@
             <ul class="attacks-list row">
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--sniffers"></span>
-                        <h4>Sniffers</h4>
+                        <!--<span class="attack-icon attack-icon--sniffers"></span>-->
                         <?
                             $a = new Area('Carrier Sniffers');
                             $a->display($c);
@@ -59,8 +62,8 @@
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--sidejacking"></span>
-                        <h4>Sidejacking</h4>
+                        <!--<span class="attack-icon attack-icon--sidejacking"></span>
+                        <h4>Sidejacking</h4>-->
                         <?
                             $a = new Area('Carrier Sidejacking');
                             $a->display($c);
@@ -70,8 +73,8 @@
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--tools"></span>
-                        <h4>Hacking tools</h4>
+                        <!--<span class="attack-icon attack-icon--tools"></span>
+                        <h4>Hacking tools</h4>-->
                         <?
                             $a = new Area('Carrier Hacking Tools');
                             $a->display($c);
@@ -81,8 +84,8 @@
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--networks"></span>
-                        <h4>Rogue Networks</h4>
+                        <!--<span class="attack-icon attack-icon--networks"></span>
+                        <h4>Rogue Networks</h4>-->
                         <?
                             $a = new Area('Carrier Rogue Networks');
                             $a->display($c);
@@ -92,8 +95,8 @@
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--manmiddle"></span>
-                        <h4>Man-in-the-middle Attacks</h4>
+                        <!--<span class="attack-icon attack-icon--manmiddle"></span>
+                        <h4>Man-in-the-middle Attacks</h4>-->
                         <?
                             $a = new Area('Carrier Man in the Middle Attacks');
                             $a->display($c);
@@ -103,8 +106,8 @@
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <span class="attack-icon attack-icon--honeypot"></span>
-                        <h4>Honeypot Attacks</h4>
+                        <!--<span class="attack-icon attack-icon--honeypot"></span>
+                        <h4>Honeypot Attacks</h4>-->
                         <?
                             $a = new Area('Carrier Honeypot Attacks');
                             $a->display($c);
@@ -123,11 +126,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <div class="video-container">
+                    <?
+                        $a = new Area('Carrier Video Container');
+                        $a->display($c);
+                    ?>
+                    <!--<div class="video-container">
                         <div id="video-content" class="pretty-embed play">
                             <div class="fluid-width-video-wrapper" style="padding-top: 56.2162%;"><iframe src="//www.youtube.com/embed/UoZWa62nzaM?autoplay=0&amp;rel=1" width="100%" height="100%" style="border:none;" allowfullscreen="" id="fitvid118984"></iframe></div>                    
                             </div>
-                    </div><!--/.video-container-->
+                    </div>--><!--/.video-container-->
                     <!--<p class="copyright-video">© <span class="italic">Men in Grey</span></p>-->
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
@@ -290,34 +297,56 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="h2-carrier">Wi-Fi Security for mobile carriers</h2>
+                    <?
+                        $a = new Area('Carrier Wi-Fi Security');
+                        $a->display($c);
+                    ?>
+                    <!--<h2 class="h2-carrier">Wi-Fi Security for mobile carriers</h2>-->
                 </div>
             </div> <!-- .row -->
 
             <ul class="features-list row">
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
+                    <?
+                        $a = new Area('Carrier Security List 1');
+                        $a->display($c);
+                    ?>
+                    <!--
                     <div class="feature-list-wrapper">
                         <span class="feature-icon feature-icon--wifi"></span>
                         <p>AnchorFree’s Wi-Fi Security product provides carrier/OEM’s customers with security when using public Wi-Fi.</p>
                     </div>
+                    -->
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <div class="feature-list-wrapper">
+                    <?
+                        $a = new Area('Carrier Security List 2');
+                        $a->display($c);
+                    ?>
+                    <!--<div class="feature-list-wrapper">
                         <span class="feature-icon feature-icon--custom"></span>
                         <p>Wi-Fi Security allows carriers to have a control element when its customers leave the licensed-spectrum.</p>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <div class="feature-list-wrapper">
+                    <?
+                        $a = new Area('Carrier Security List 3');
+                        $a->display($c);
+                    ?>
+                    <!--<div class="feature-list-wrapper">
                         <span class="feature-icon feature-icon--global"></span>
                         <p>Wi-Fi Security can utilize a few different business models based on the needs of the carrier/OEM.</p>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <div class="feature-list-wrapper">
+                    <?
+                        $a = new Area('Carrier Security List 4');
+                        $a->display($c);
+                    ?>
+                    <!--<div class="feature-list-wrapper">
                         <span class="feature-icon feature-icon--multidevice"></span>
                         <p>Multi-device accounts even when your customer utilizes Wi-Fi on their PC or MAC</p>
-                    </div>
+                    </div>-->
                 </li>
             </ul>
         </div> <!-- .container -->
@@ -333,8 +362,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1 align-center">
+                    <?
+                        $a = new Area('Carrier Contact Us');
+                        $a->display($c);
+                    ?>
+                    <!--
                     <h2 class="text-white h2-carrier">Work with AnchorFree, the pioneer and most trusted Wi-Fi security provider with <span class="strong">over 300 million downloads worldwide</span>.</h2>
-                    <a class="btn btn-lg btn--green" href="mailto:bizdev@anchorfree.com" title="bizdev@anchorfree.com">contact us for more information</a>
+                    <a class="btn btn-lg btn--green" href="mailto:bizdev@anchorfree.com" title="bizdev@anchorfree.com">contact us for more information</a>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->

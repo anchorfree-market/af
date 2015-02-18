@@ -60,7 +60,10 @@
                                 <? $a = new Area('User Affinity Txt Down Right');$a->display($c); ?><!-- Content Enthusiasts -->
                             </li>
                         </ul>
-                        <img src="<?php echo $view->getThemePath()?>/images/bg_who@2x.png" alt="" class="full-width">
+                        <?
+                            $a = new Area('advertise Who');
+                            $a->display($c);
+                        ?>
                     </div>
 
                 </div>
@@ -101,6 +104,11 @@
                         <span class="global-usage-number"><? $a = new Area('Number of countries');$a->display($c); ?><!--190 countries--></span>
                     </div>
                     <div class="wrapper-counters">
+                        <?
+                            $a = new Area('Advertise Counters');
+                            $a->display($c);
+                        ?>
+                        <!--
                         <ul class="counters">
                             <li id="counter1" class="counter">
                                 <span class="counter-title">Unique active users</span>
@@ -127,7 +135,7 @@
                                 <span class="counter-number"><span id="counter-data5"></span><span class="counter-unit">M</span></span>
                                 <span class="counter-subtitle">Per month</span>
                             </li>
-                        </ul>
+                        </ul>-->
                     </div>
                 </div>
             </div> <!-- .row -->
@@ -225,6 +233,12 @@
                     <a href="#" class="link-comscore pull-right">
                         <img src="<?php echo $view->getThemePath()?>/images/logo_comscore@2x.png" alt="ComScore" class="full-width">
                     </a>
+                    <h2>
+                        <?
+                            $a = new Area('comScore Chart');
+                            $a->display($c);
+                        ?>
+                        <!--
                     <div class="chart">
                         <div class="label-axis-y">Strengh: Comscore index</div>
                         <ul class="chart-lines">
@@ -292,7 +306,7 @@
                             <li class="legend-label legend-label--anchorfree">AncorFree Index</li>
                             <li class="legend-label legend-label--comscore">ComScore base</li>
                         </ul>
-                    </div>
+                    </div>-->
                 </div>
 
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">

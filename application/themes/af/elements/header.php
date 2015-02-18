@@ -11,12 +11,13 @@
 <meta property="og:description" content="Hotspot Shield VPN secures your browsing session, detects and blocks malware, hides ip address and allows you to access blocked websites."/>
 <meta property="og:type" content=""/>
 -->
-
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
     <script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/modernizr.custom.js"></script>
-    
+    <!--[if lt IE 9]>
+        <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/ie.css"/>
+    <![endif]-->
 </head>
 <body>
     <div class="<?php echo $c->getPageWrapperClass()?>">
