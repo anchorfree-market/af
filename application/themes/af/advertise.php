@@ -19,8 +19,12 @@
                     ?>
                     <!-- <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>-->
                 </div>
-                <div class="col-sm-12 col-md-8 col-md-offset-2">
-                    <img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">
+                <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
+                    <?
+                        $a = new Area('Advertise Featured Image');
+                        $a->display($c);
+                    ?>
+                    <!--<img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">-->
                 </div>
                 
             </div> <!-- .row -->
@@ -33,23 +37,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h4>User Affinity</h4>
+                    <?
+                        $a = new Area('Advertise User Affinity');
+                        $a->display($c);
+                    ?>
+                    <!--<h4>User Affinity</h4>-->
                 </div>
 
                 <div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4 relative">
                     <div class="target">
                         <ul class="target-list">
                             <li class="target target--travelers">
-                                Travelers
+                                <? $a = new Area('User Affinity Txt Up Left');$a->display($c); ?><!--Travelers-->
                             </li>
                             <li class="target target--world">
-                                World Citizens
+                                <? $a = new Area('User Affinity Txt Up Right');$a->display($c); ?><!--World Citizens -->
                             </li>
                             <li class="target target--privacy">
-                                Privacy-minded individuals
+                                <? $a = new Area('User Affinity Txt Down Left');$a->display($c); ?><!--Privacy-minded individuals-->
                             </li>
                             <li class="target target--content">
-                                Content Enthusiasts
+                                <? $a = new Area('User Affinity Txt Down Right');$a->display($c); ?><!-- Content Enthusiasts -->
                             </li>
                         </ul>
                         <img src="<?php echo $view->getThemePath()?>/images/bg_who@2x.png" alt="" class="full-width">
@@ -80,11 +88,17 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 relative">
-                    <h2>What do our users have in common?</h2>
+                    <h2>
+                        <?
+                            $a = new Area('Advertise Users in Common Title');
+                            $a->display($c);
+                        ?>
+                    </h2>
+                    <!--<h2>What do our users have in common?</h2>-->
 
                     <div class="global-usage">
-                        <span class="global-usage-title">Global Usage in over</span>
-                        <span class="global-usage-number">190 countries</span>
+                        <span class="global-usage-title"><? $a = new Area('Global Usage');$a->display($c); ?><!-- Global Usage in over--></span>
+                        <span class="global-usage-number"><? $a = new Area('Number of countries');$a->display($c); ?><!--190 countries--></span>
                     </div>
                     <div class="wrapper-counters">
                         <ul class="counters">
@@ -126,23 +140,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <h2>How it works</h2>
                     <?
                         $a = new Area('How it Works Text');
                         $a->display($c);
                     ?>
-                    <!--<p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
+                    <!--<h2>How it works</h2>
+                    <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--landing">User is directed to a landing page</h5>
+                    <h5 class="product-type product-type--landing"><? $a = new Area('how works 1');$a->display($c); ?><!--User is directed to a landing page--></h5>
                     <img id="img-product1" src="<?php echo $view->getThemePath()?>/images/browser_single_page.png" class="full-width">
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--content">Your content appears above all domains</h5>
+                    <h5 class="product-type product-type--content"><? $a = new Area('how works 2');$a->display($c); ?><!--Your content appears above all domains--></h5>
                     <img id="img-product2" src="<?php echo $view->getThemePath()?>/images/browser_content_frame.png" class="full-width">
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--adv">Your adv appears above all domains</h5>
+                    <h5 class="product-type product-type--adv"><? $a = new Area('how works 3');$a->display($c); ?><!--Your adv appears above all domains--></h5>
                     <img id="img-product3" src="<?php echo $view->getThemePath()?>/images/browser_adv_frame.png" class="full-width">
                 </div>
             </div> <!-- .row -->
@@ -198,7 +212,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <h2>Security and privacy-minded World Citizens. Content Enthusiasts.</h2>
+                    <h2>
+                        <?
+                            $a = new Area('comScore Title');
+                            $a->display($c);
+                        ?>
+                    </h2>
+                    <!--<h2>Security and privacy-minded World Citizens. Content Enthusiasts.</h2>-->
                 </div>
 
                 <div class="col-md-12">
@@ -302,8 +322,12 @@
                             $a->display($c);
                         ?>
                     </h2>
+                    <?
+                        $a = new Area('Contact Us Button');
+                        $a->display($c);
+                    ?>
                     <!--<h2 class="text-white" style="padding: 20px 0;">For more information about the service</h2>-->
-                    <a class="btn btn-lg btn--green" href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com" style='top: 40px;'>Contact us</a>
+                    <!--<a class="btn btn-lg btn--green" href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com" style='top: 40px;'>Contact us</a>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->

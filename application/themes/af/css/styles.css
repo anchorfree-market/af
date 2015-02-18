@@ -427,11 +427,11 @@ p {
   padding-bottom: 0; }
 
 /* Featured */
-.section-featured-img {
+.section-featured-img img {
   margin-left: 30px;
   margin-top: 40px; }
   @media only screen and (max-width: 768px) {
-    .section-featured-img {
+    .section-featured-img img {
       margin-left: 0; } }
 
 .section-featured h3 {
