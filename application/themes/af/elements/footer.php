@@ -15,11 +15,31 @@
                 </div> <!-- .row -->
             </div> <!-- .container -->
         </footer>
-
-<!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-<script type="text/javascript" src="//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js"></script>
-<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/imageLens.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- only show bootstrap.min.js if isEditMode -->
+    <?php $c = Page::getCurrentPage();
+        if($c->isEditMode()) {} 
+        else {
+            echo "<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>";
+        }
+    ?>
+        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js"></script>
+    <?php 
+        $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); 
+        $themePath = $view->getThemePath();
+        if(preg_match("/carriers/", $URL)) { // display script on carriers page
+            echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
+            echo "<script type='text/javascript' src='".$themePath."/js/carriers.js'></script>";
+        }
+        else if(preg_match("/advertise/", $URL)) { // display script on advertise page
+            echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
+            echo "<script type='text/javascript' src='".$themePath."/js/main-ck.js'></script>";
+        }
+        else {}
+    ?>
     </div>
     <? Loader::element('footer_required')?>
 </body>

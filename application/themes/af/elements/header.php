@@ -35,15 +35,9 @@
                     </button>
                     <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
                 </div><!--.navbar-header -->
-                <!--
-                <?
-                    $a = new GlobalArea('Header Nav');
-                    $a->display($c);
-                ?>
-                -->
+                <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
+               <!--
                 <div class="navbar-collapse collapse" style="height: 1px;">
-                    
-                    
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="http://www.hotspotshield.com">Products</a></li>
                         <li><a href="/~anchorj6/af/advertise">Advertise</a></li>
@@ -52,9 +46,7 @@
                         <li><a href="/~anchorj6/af/about">About</a></li>
                         <li><a href="/~anchorj6/af/careers">Careers</a></li>
                     </ul>
-                </div><!--.nav-collapse -->
-            </div><!--.container -->
-            
+                </div>--><!--.nav-collapse -->
+            </div><!--.container -->  
         </div>
-        
         </header>

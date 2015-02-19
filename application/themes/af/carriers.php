@@ -353,9 +353,6 @@
     </div> <!-- .wrapper -->
 </section> <!-- .section-features-list -->
 
-
-
-
 <!-- CONTACT US -->
 <section class="section section-contact-us-carrier bg-gradient--blue">
     <div class="wrapper wrapper--small">
@@ -374,10 +371,7 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-contactus -->
-
  <?php $view->inc('elements/footer.php'); ?>
-<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/jquery.backstretch.min-ck.js"></script>
-<script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/carriers.js"></script>
 <script type="text/javascript">
     $('.section-featured-carrier').backstretch('<?php echo $view->getThemePath()?>/images/bg_hero_carrier@2x.jpg');
     $('.section-video').backstretch('<?php echo $view->getThemePath()?>/images/bg_video_section.png');
