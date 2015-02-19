@@ -1,4 +1,6 @@
-<?php $view->inc('elements/header.php');  ?>
+<?php 
+defined('C5_EXECUTE') or die("Access Denied.");
+$view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
 
 <section class="section section-featured bg-gradient--blue">
