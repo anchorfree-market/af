@@ -20,10 +20,9 @@
     <?php $c = Page::getCurrentPage();
         if($c->isEditMode()) {} 
         else {
-            echo "<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>";
+            echo "<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>"; 
         }
     ?>
-        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
     <?php 
@@ -38,9 +37,7 @@
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/main-ck.js'></script>";
         }
-        else {
-            
-        }
+        else {}
     ?>
     </div>
     <? Loader::element('footer_required')?>

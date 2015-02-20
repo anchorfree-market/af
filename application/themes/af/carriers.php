@@ -39,7 +39,6 @@
                     </h2>
                     <!--<h2 class="h2-carrier">Public Wi-Fi is not safe</h2>-->
                 </div>
-
                 <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
                         <?
                             $a = new Area('Carrier Wifi not Safe Text');
@@ -48,7 +47,6 @@
                     <!--<p class="text-center">According to a product manager at a Brazilian carrier, 40% of all subscribers have suffered a form of identity theft from hacking.<span class="divider-blue"></span>According to a Director at Chinese carrier, 10-20% of their 750M subscribers have experienced Apps being hijacked by hackers.</p>-->  
                 </div>
             </div> <!-- .row -->
-
             <ul class="attacks-list row">
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
@@ -165,8 +163,7 @@
                     <!--
                     <h2 class="h2-carrier">Protect your customers' identity and assets</h2> 
                     <p class="text-center">Discover how AnchorFree's Wi-Fi Security works by simply changing the status of the security control below.</p>-->
-                </div>
-                
+                </div>         
                 <div class="col-md-12 relative">
                     <div id="switch-js" class="switch switch--off">
                         <span class="switch-title">Wi-Fi SECURITY</span>
@@ -176,56 +173,44 @@
                         <span class="switch-text switch-text--on">On</span>
                     </div>
                 </div>
-
                 <div class="wrapper-diagram">
                     <div id="security-off" class="col-md-12 relative diagram">
                         <div class="hidden-sm hidden-xs">
                             <div class="diagram-hacker diagram-hacker--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_hacker@2x.png" />
                             </div>
-
                             <div class="diagram-user diagram-user--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_user_bug@2x.png" />
                             </div>
-
                             <div class="circles-user">
                                 <div class="circle-user circle-user-1"></div>
                                 <div class="circle-user circle-user-2"></div>
                                 <div class="circle-user circle-user-3"></div>
                             </div>
-
                             <div class="diagram-router diagram-router--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_router@2x.png" />
                                 <span class="diagram-description diagram-description--router">Wi-Fi hotspot</span>
                             </div>
-
                             <div class="diagram-internet diagram-internet--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_internet_bug@2x.png" />
                                 <span class="diagram-description diagram-description--internet">Internet</span>
-                            </div>
-                            
+                            </div>                       
                             <div class="icn-ip-password">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_ip_password@2x.png" />
                                 <span class="diagram-description diagram-description--ip">Visible IP and Passwords</span>
                             </div>
-
                             <!-- Description alone -->
                             <span class="diagram-description diagram-description--holes">A lot of security holes</span>
-
                             <!-- Connections -->
                             <div class="connection connection-top-sx connection--hor-inverse connection--hacker"></div>
                             <div class="connection connection-top connection--ver connection--hacker"></div>
                             <div class="connection connection-sx connection--hor connection--disable"></div>
                             <div class="connection connection-dx connection--hor connection--disable"></div>
                             </div><!-- .hidden-sm -->
-
                         <!-- Tooltips -->
                         <a href="#" tabindex="0" class="popover-custom popover-custom--user" data-toggle="popover" data-placement="top" data-trigger="focus" title="CUSTOMERS" data-content="Their privacy and data are at risk.">+</a>
-
                         <a href="#" tabindex="0" class="popover-custom popover-custom--hackers" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="HACKERS" data-content="Your customers’ sensitive data can easily be stolen.">+</a>
-
                         <a href="#" tabindex="0" class="popover-custom popover-custom--connections" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="CONNECTIONS" data-content="IP address and browsing data are exposed.">+</a>
-
                         <div class="placeholder-image visible-sm visible-xs">
                             <img src="<?php echo $view->getThemePath()?>/images/placeholder_wifi_off@2x.png" width="100%" alt="" />
                         </div>
@@ -236,51 +221,38 @@
                             <div class="diagram-hacker diagram-hacker--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_hacker@2x.png" />
                             </div>
-
                             <div class="diagram-user diagram-user--off">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_user_check@2x.png" />
                             </div>
-
                             <div class="shields-user">
                                 <div class="shield-user shield-user-1"></div>
                                 <div class="shield-user shield-user-2"></div>
                                 <div class="shield-user shield-user-3"></div>
                             </div>
-
                             <div class="diagram-router diagram-router--on">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_router@2x.png" />
                                 <span class="diagram-description diagram-description--router">Wi-Fi hotspot</span>
                             </div>
-
                             <div class="diagram-internet diagram-internet--on">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_internet_secure@2x.png" />
                                 <span class="diagram-description diagram-description--internet">Secure Internet</span>
                             </div>
-
                             <div class="diagram-shield diagram-shield--on">
                                 <img src="<?php echo $view->getThemePath()?>/images/icn_server_shield@2x.png" />
                             </div>
-                            
                             <!-- Description alone -->
                             <span class="diagram-description diagram-description--holes">Private and secure tunnel</span>
-                            
                             <div class="shield-red"></div><!-- /.shield-red -->
-
                             <!-- Connections -->
                             <div class="connection connection-top connection--ver connection--ver--short connection--hacker"></div>
                             <div class="connection connection-sx connection--hor connection--enable"></div>
                             <div class="connection connection-dx-left connection--hor connection--enable"></div>
-
                             <div class="connection connection-dx-right connection--hor connection--enable"></div>
                         </div><!-- .hidden-sm -->
-
                         <!-- Tooltips -->
                         <a href="#" tabindex="0" class="popover-custom popover-custom--user" data-toggle="popover" data-placement="top" data-trigger="focus" title="CUSTOMERS" data-content="Protected by end-to-end secure connection.">+</a>
-
                         <a href="#" tabindex="0" class="popover-custom popover-custom--hackers" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="HACKERS" data-content="Can NOT see the data as it’s encrypted.">+</a>
-
                         <a href="#" tabindex="0" class="popover-custom popover-custom--connections" data-toggle="popover" data-placement="bottom" data-trigger="focus" title="CONNECTIONS" data-content="Highly secure encryption and malware protection to block bad attempts.">+</a>
-
                         <div class="placeholder-image visible-sm visible-xs">
                             <img src="<?php echo $view->getThemePath()?>/images/placeholder_wifi_on@2x.png" width="100%" alt="" />
                         </div>
@@ -304,7 +276,6 @@
                     <!--<h2 class="h2-carrier">Wi-Fi Security for mobile carriers</h2>-->
                 </div>
             </div> <!-- .row -->
-
             <ul class="features-list row">
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
                     <?

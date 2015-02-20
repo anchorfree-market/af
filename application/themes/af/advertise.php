@@ -7,24 +7,15 @@ $view->inc('elements/header.php');  ?>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <?
-                        $a = new Area('Featured Text h1');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Featured Text h1');$a->display($c); ?>
                     <!-- <h1 class="text-white">Reach <span class="strong">25 million</span> active and engaged unique users from around the world</h1>-->
                 </div>
                 <div class="col-sm-12 col-md-6 col-md-offset-3">
-                    <?
-                        $a = new Area('Featured Text h3');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Featured Text h3');$a->display($c); ?>
                     <!-- <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>-->
                 </div>
                 <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
-                    <?
-                        $a = new Area('Advertise Featured Image');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Advertise Featured Image');$a->display($c); ?>
                     <!--<img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">-->
                 </div>
                 
@@ -38,13 +29,9 @@ $view->inc('elements/header.php');  ?>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <?
-                        $a = new Area('Advertise User Affinity');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Advertise User Affinity');$a->display($c); ?>
                     <!--<h4>User Affinity</h4>-->
                 </div>
-
                 <div class="col-sm-4 col-md-4 col-md-offset-4 col-sm-offset-4 relative">
                     <div class="target">
                         <ul class="target-list">
@@ -61,23 +48,13 @@ $view->inc('elements/header.php');  ?>
                                 <? $a = new Area('User Affinity Txt Down Right');$a->display($c); ?><!-- Content Enthusiasts -->
                             </li>
                         </ul>
-                        <?
-                            $a = new Area('advertise Who');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('advertise Who');$a->display($c); ?>
                     </div>
-
                 </div>
-
                 <div class="col-sm-12 col-md-8 col-md-offset-2">
-
                 </div>
-
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <?
-                        $a = new Area('Target Text');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Target Text');$a->display($c); ?>
                     <!--
                     <p class="text-center">The AnchorFree Platform can put your brand in front of 25 million active monthly users on the Web and mobile devices. Almost every person with a computer or a mobile phone uses a Wi-Fi network. Hotspot Shield, the most popular privacy app in the world, reaches virtually every demographic segment of a technically savvy/content hungry population.</p>
                     <p class="text-center">Whether you are trying to reach expats or travelers, The AnchorFree Platform is your ideal destination.</p>-->
@@ -93,22 +70,15 @@ $view->inc('elements/header.php');  ?>
             <div class="row">
                 <div class="col-md-12 relative">
                     <h2>
-                        <?
-                            $a = new Area('Advertise Users in Common Title');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('Advertise Users in Common Title');$a->display($c); ?>
                     </h2>
                     <!--<h2>What do our users have in common?</h2>-->
-
                     <div class="global-usage">
                         <span class="global-usage-title"><? $a = new Area('Global Usage');$a->display($c); ?><!-- Global Usage in over--></span>
                         <span class="global-usage-number"><? $a = new Area('Number of countries');$a->display($c); ?><!--190 countries--></span>
                     </div>
                     <div class="wrapper-counters">
-                        <?
-                            $a = new Area('Advertise Counters');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('Advertise Counters');$a->display($c); ?>
                         <!--
                         <ul class="counters">
                             <li id="counter1" class="counter">
@@ -149,10 +119,7 @@ $view->inc('elements/header.php');  ?>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <?
-                        $a = new Area('How it Works Text');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('How it Works Text');$a->display($c); ?>
                     <!--<h2>How it works</h2>
                     <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
                 </div>
@@ -183,30 +150,26 @@ $view->inc('elements/header.php');  ?>
             <div class="circle circle-4"></div>
             <div class="circle circle-5"></div>
         </div>
-
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <?
-                        $a = new Area('Mobile Advertising h2');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Mobile Advertising h2');$a->display($c); ?>
                     <!--<h2 class="text-white">Mobile Advertising * <br/> Wi-Fi security and online privacy at the tip of your fingers.</h2>-->
-                    <?
-                        $a = new Area('Mobile Advertising h3');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('Mobile Advertising h3');$a->display($c); ?>
                     <!--<h3 class="text-white">Reach <span class="italic strong">7.2 million</span> monthly active users at first touch in app!</h3>-->
 
                     <div class="androids">
                         <div class="android android-center">
-                            <img src="<?php echo $view->getThemePath()?>/images/android_center@2x.png" class="full-width">
+                            <? $a = new Area('Advertise Android Center');$a->display($c); ?>
+
                         </div>
                         <div class="android android-blur android-blur--left">
-                            <img src="<?php echo $view->getThemePath()?>/images/android_blur@2x.png" class="full-width">
+                            <? $a = new Area('Advertise Android blur');$a->display($c); ?>
+
                         </div>
                         <div class="android android-blur android-blur--right">
-                            <img src="<?php echo $view->getThemePath()?>/images/android_blur@2x.png" class="full-width">
+                            <? $a = new Area('Advertise Android blur');$a->display($c); ?>
+
                         </div>
                         <span class="android-only italic">* Android only</span>
                     </div>
@@ -222,23 +185,16 @@ $view->inc('elements/header.php');  ?>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <h2>
-                        <?
-                            $a = new Area('comScore Title');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('comScore Title');$a->display($c); ?>
                     </h2>
                     <!--<h2>Security and privacy-minded World Citizens. Content Enthusiasts.</h2>-->
                 </div>
-
                 <div class="col-md-12">
                     <a href="#" class="link-comscore pull-right">
                         <img src="<?php echo $view->getThemePath()?>/images/logo_comscore@2x.png" alt="ComScore" class="full-width">
                     </a>
                     <h2>
-                        <?
-                            $a = new Area('comScore Chart');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('comScore Chart');$a->display($c); ?>
                         <!--
                     <div class="chart">
                         <div class="label-axis-y">Strengh: Comscore index</div>
@@ -309,12 +265,8 @@ $view->inc('elements/header.php');  ?>
                         </ul>
                     </div>-->
                 </div>
-
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
-                    <?
-                        $a = new Area('comScore');
-                        $a->display($c);
-                    ?>
+                    <? $a = new Area('comScore');$a->display($c); ?>
                     <!--
                     <p class="text-center">
                         According to ComScore, AnchorFree users have a much higher propensity to visit travel, retail, business and finance websites than the average Internet user. AnchorFree’s rapidly growing network of U.S. Hotspot Shield users living, traveling, and working abroad puts advertisers in touch with an audience that is practically unreachable by any other means.
@@ -348,5 +300,4 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-contactus -->
-
  <?php $view->inc('elements/footer.php'); ?>
