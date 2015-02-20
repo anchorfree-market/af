@@ -26,7 +26,6 @@
         <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js"></script>
     <?php 
         $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); 
         $themePath = $view->getThemePath();
@@ -35,10 +34,13 @@
             echo "<script type='text/javascript' src='".$themePath."/js/carriers.js'></script>";
         }
         else if(preg_match("/advertise/", $URL)) { // display script on advertise page
+            echo "<script type='text/javascript' src='//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/main-ck.js'></script>";
         }
-        else {}
+        else {
+            
+        }
     ?>
     </div>
     <? Loader::element('footer_required')?>

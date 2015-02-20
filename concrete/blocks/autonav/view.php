@@ -56,7 +56,7 @@ foreach ($navItems as $ni) {
 
 	if ($ni->isCurrent) {
 		//class for the page currently being viewed
-		$classes[] = 'nav-selected';
+		$classes[] = 'active';
 	}
 
 	if ($ni->inPath) {
@@ -112,6 +112,7 @@ foreach ($navItems as $ni) {
 //*** Step 2 of 2: Output menu HTML ***/
 
 if (count($navItems) > 0) {
+    echo '<div class="navbar-collapse collapse" style="height: 1px;">';
     echo '<ul class="nav navbar-nav navbar-right">'; //opens the top-level menu
 
     foreach ($navItems as $ni) {
@@ -127,7 +128,8 @@ if (count($navItems) > 0) {
         }
     }
 
-    echo '</ul>'; //closes the top-level menu
+    echo '</ul></div>'; //closes the top-level menu
+    
 } else if (is_object($c) && $c->isEditMode()) { ?>
     <div class="ccm-edit-mode-disabled-item"><?php echo t('Empty Auto-Nav Block.')?></div>
 <?php }

@@ -1,5 +1,4 @@
 <?php 
-defined('C5_EXECUTE') or die("Access Denied.");
 $view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
 
