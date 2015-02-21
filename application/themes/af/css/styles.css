@@ -464,7 +464,7 @@ p {
     line-height: 4rem;
     height: 40px;
     overflow: hidden;
-    background: url("../images/icn_target_sprite.png") no-repeat center top;
+    background: url("../images/sprite.png") no-repeat 0 0;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all 0.4s ease-in-out 0s;
@@ -479,11 +479,13 @@ p {
         position: static;
         margin-bottom: 20px; } }
     .target-list .target--travelers {
-      background-position: right top;
+      background-position: 81px -212px;
       text-align: right;
-      padding-right: 60px;
+      padding-right: 115px;
       right: 335px;
       top: 35px;
+      height: 35px;
+      width: 127px;
       -webkit-transform: translatex(25px);
       -moz-transform: translatex(25px);
       -ms-transform: translatex(25px);
@@ -502,13 +504,14 @@ p {
           text-align: left;
           padding-right: 0;
           padding-left: 60px;
-          background-position: left top; } }
+          background-position: 5px -212px; } }
     .target-list .target--world {
-      background-position: left -80px;
+      background-position: -1px -290px;
       text-align: left;
-      padding-left: 60px;
-      left: 335px;
+      padding-left: 57px;
+      left: 330px;
       top: 35px;
+      width: 227px;
       -webkit-transform: translatex(-25px);
       -moz-transform: translatex(-25px);
       -ms-transform: translatex(-25px);
@@ -516,18 +519,19 @@ p {
       transform: translatex(-25px); }
       @media only screen and (max-width: 1200px) {
         .target-list .target--world {
-          left: 278px;
+          left: 274px;
           top: 28px; } }
       @media only screen and (max-width: 992px) {
         .target-list .target--world {
           left: 210px;
           top: 18px; } }
     .target-list .target--privacy {
-      background-position: right -40px;
+      background-position: 230px -249px;
       text-align: right;
-      padding-right: 60px;
-      right: 390px;
+      padding-right: 100px;
+      right: 354px;
       top: 125px;
+      width: 320px;
       -webkit-transform: translatex(50px);
       -moz-transform: translatex(50px);
       -ms-transform: translatex(50px);
@@ -535,24 +539,25 @@ p {
       transform: translatex(50px); }
       @media only screen and (max-width: 1200px) {
         .target-list .target--privacy {
-          right: 325px;
+          right: 278px;
           top: 100px; } }
       @media only screen and (max-width: 992px) {
         .target-list .target--privacy {
-          right: 245px;
+          right: 202px;
           top: 70px; } }
       @media only screen and (max-width: 767px) {
         .target-list .target--privacy {
           text-align: left;
           padding-right: 0;
           padding-left: 60px;
-          background-position: left -40px; } }
+          background-position: left -249px; } }
     .target-list .target--content {
-      background-position: left -120px;
+      background-position: -1px -329px;
       text-align: left;
       padding-left: 60px;
       left: 390px;
       top: 125px;
+      width: 218px;
       -webkit-transform: translatex(-50px);
       -moz-transform: translatex(-50px);
       -ms-transform: translatex(-50px);
@@ -2251,10 +2256,11 @@ p {
       #security-on .popover-custom--connections {
         top: 23%; } }
   #security-on .diagram-user {
-    background: url("../images/icn_shield_blue.png") no-repeat center center;
+    background: url("../images/sprite.png") no-repeat 0 0;
     border: none;
     border-radius: 0;
-    height: 206px; }
+    height: 206px;
+    width: 175px;}
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       #security-on .diagram-user {
         background-image: url("../images/icn_shield_blue@2x.png");
