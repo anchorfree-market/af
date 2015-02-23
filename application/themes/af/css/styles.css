@@ -464,7 +464,7 @@ p {
     line-height: 4rem;
     height: 40px;
     overflow: hidden;
-    background: url("../images/sprite.png") no-repeat 0 0;
+    background: url("../images/sprite_icon.png") no-repeat 0 0;
     opacity: 0;
     filter: alpha(opacity=0);
     -webkit-transition: all 0.4s ease-in-out 0s;
@@ -479,7 +479,7 @@ p {
         position: static;
         margin-bottom: 20px; } }
     .target-list .target--travelers {
-      background-position: 81px -212px;
+      background-position: 81px 0px;
       text-align: right;
       padding-right: 115px;
       right: 335px;
@@ -504,9 +504,9 @@ p {
           text-align: left;
           padding-right: 0;
           padding-left: 60px;
-          background-position: 5px -212px; } }
+          background-position: 5px 0px; } }
     .target-list .target--world {
-      background-position: -1px -290px;
+      background-position: -1px -78px;
       text-align: left;
       padding-left: 57px;
       left: 330px;
@@ -526,7 +526,7 @@ p {
           left: 210px;
           top: 18px; } }
     .target-list .target--privacy {
-      background-position: 230px -249px;
+      background-position: 230px -37px;
       text-align: right;
       padding-right: 100px;
       right: 354px;
@@ -550,9 +550,9 @@ p {
           text-align: left;
           padding-right: 0;
           padding-left: 60px;
-          background-position: left -249px; } }
+          background-position: left -37px; } }
     .target-list .target--content {
-      background-position: -1px -329px;
+      background-position: -1px -117px;
       text-align: left;
       padding-left: 60px;
       left: 390px;
@@ -1400,17 +1400,17 @@ p {
     position: absolute;
     left: 55px;
     top: 40px;
-    background: url("../images/sprite_attacks.png") no-repeat left top; }
+    background: url("../images/sprite_icon.png") no-repeat -2px -157px; }
     .attack-list-type .attack-icon--sidejacking {
-      background-position: left -50px; }
+      background-position: -2px -207px; }
     .attack-list-type .attack-icon--tools {
-      background-position: left -100px; }
+      background-position: -2px -257px; }
     .attack-list-type .attack-icon--networks {
-      background-position: left -150px; }
+      background-position: -2px -307px; }
     .attack-list-type .attack-icon--manmiddle {
-      background-position: left -250px; }
+      background-position: -2px -407px; }
     .attack-list-type .attack-icon--honeypot {
-      background-position: left -200px; }
+      background-position: -2px -357px; }
     @media only screen and (max-width: 767px) {
       .attack-list-type .attack-icon {
         right: 30px;
