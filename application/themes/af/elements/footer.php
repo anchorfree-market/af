@@ -35,7 +35,6 @@
         else if(preg_match("/advertise/", $URL)) { // display script on advertise page
             echo "<script type='text/javascript' src='//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
-            echo "<script type='text/javascript' src='".$themePath."/js/main-ck.js'></script>";
         }
         else {}
     ?>
