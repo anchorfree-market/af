@@ -2384,15 +2384,17 @@ p {
     position: absolute;
     left: 45px;
     top: 40px;
-    background: url("../images/sprite_features.png") no-repeat left top; }
+    background: url("../images/sprite_icon.png") no-repeat left top; }
     .feature-type .feature-icon--monitoring {
       background-position: left -50px; }
     .feature-type .feature-icon--custom {
-      background-position: left -100px; }
+      background-position: -2px -560px; }
     .feature-type .feature-icon--global {
-      background-position: left -150px; }
+      background-position: -2px -610px; }
     .feature-type .feature-icon--wifi {
-      background-position: left -200px; }
+      background-position: -2px -660px; }
+    .feature-type .feature-icon--multidevice {
+      background-position: -2px -460px; }
     @media only screen and (max-width: 767px) {
       .feature-type .feature-icon {
         right: 15px;
