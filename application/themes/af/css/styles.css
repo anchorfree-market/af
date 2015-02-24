@@ -803,13 +803,7 @@ p {
     line-height: 42px;
     line-height: 4.2rem;
     background-repeat: no-repeat;
-    background-image: url("../images/icn_browsers_sprite.png"); }
-    .product .product-type--landing {
-      background-position: left top; }
-    .product .product-type--content {
-      background-position: left center; }
-    .product .product-type--adv {
-      background-position: left bottom; }
+    /*background-image: url("../images/icn_browsers_sprite.png");*/ }
     @media only screen and (max-width: 1200px) {
       .product .product-type {
         line-height: 20px;
@@ -826,6 +820,17 @@ p {
       .product .product-type {
         background-image: url("../images/icn_browsers_sprite@2x.png");
         background-size: 62px 130px; } }
+    .product-page-thumb {
+        background-image: url("../images/sprite.png");
+        display: inline-block;
+        float: left;
+        height: 42px;
+        width: 62px;
+        margin: -4px 10px 0 -44px;
+    }
+    .product-landing {background-position: -2px -207px;}
+    .product-content {background-position: -2px -251px;}
+    .product-adv {background-position: -2px -295px;}
   .product img {
     display: block;
     opacity: 0;

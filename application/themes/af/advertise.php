@@ -124,15 +124,15 @@ $view->inc('elements/header.php');  ?>
                     <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--landing"><? $a = new Area('how works 1');$a->display($c); ?><!--User is directed to a landing page--></h5>
+                    <h5 class="product-type product-type--landing"><span class="product-page-thumb product-landing"></span><? $a = new Area('how works 1');$a->display($c); ?><!--User is directed to a landing page--></h5>
                     <img id="img-product1" src="<?php echo $view->getThemePath()?>/images/browser_single_page.png" class="full-width">
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--content"><? $a = new Area('how works 2');$a->display($c); ?><!--Your content appears above all domains--></h5>
+                    <h5 class="product-type product-type--content"><span class="product-page-thumb product-content"></span><? $a = new Area('how works 2');$a->display($c); ?><!--Your content appears above all domains--></h5>
                     <img id="img-product2" src="<?php echo $view->getThemePath()?>/images/browser_content_frame.png" class="full-width">
                 </div>
                 <div class="col-md-4 product">
-                    <h5 class="product-type product-type--adv"><? $a = new Area('how works 3');$a->display($c); ?><!--Your adv appears above all domains--></h5>
+                    <h5 class="product-type product-type--adv"><span class="product-page-thumb product-adv"></span><? $a = new Area('how works 3');$a->display($c); ?><!--Your adv appears above all domains--></h5>
                     <img id="img-product3" src="<?php echo $view->getThemePath()?>/images/browser_adv_frame.png" class="full-width">
                 </div>
             </div> <!-- .row -->
