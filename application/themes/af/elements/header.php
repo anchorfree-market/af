@@ -12,6 +12,7 @@
 <meta property="og:type" content=""/>
 -->
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/typography.css"/>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700|Open+Sans:300,600,700"/>
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
     <link href="//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
