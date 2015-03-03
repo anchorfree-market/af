@@ -518,13 +518,11 @@ p {
       -o-transform: translatex(-25px);
       transform: translatex(-25px); }
       @media only screen and (max-width: 1200px) {
-        .target-list .target--world {
-          left: 274px;
-          top: 28px; } }
+        .target-list .target--world {left: 274px;top: 28px; } 
+      }
       @media only screen and (max-width: 992px) {
-        .target-list .target--world {
-          left: 210px;
-          top: 18px; } }
+        .target-list .target--world {left: 210px;top: 18px; }
+      }
     .target-list .target--privacy {
       background-position: 230px -37px;
       text-align: right;
@@ -538,13 +536,11 @@ p {
       -o-transform: translatex(50px);
       transform: translatex(50px); }
       @media only screen and (max-width: 1200px) {
-        .target-list .target--privacy {
-          right: 278px;
-          top: 100px; } }
+        .target-list .target--privacy {right: 278px;top: 100px; } 
+      }
       @media only screen and (max-width: 992px) {
-        .target-list .target--privacy {
-          right: 202px;
-          top: 70px; } }
+        .target-list .target--privacy {right: 202px;top: 70px; } 
+      }
       @media only screen and (max-width: 767px) {
         .target-list .target--privacy {
           text-align: left;
@@ -564,17 +560,17 @@ p {
       -o-transform: translatex(-50px);
       transform: translatex(-50px); }
       @media only screen and (max-width: 1200px) {
-        .target-list .target--content {
-          left: 325px;
-          top: 100px; } }
+        .target-list .target--content {left: 325px;top: 100px; } 
+      }
       @media only screen and (max-width: 992px) {
-        .target-list .target--content {
-          left: 245px;
-          top: 70px; } }
+        .target-list .target--content {left: 245px;top: 70px; } 
+      }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       .target-list .target {
-        background-image: url("../images/icn_target_sprite@2x.png");
-        background-size: 40px 160px; } }
+        background-image: url("../images/sprite_icon@2x.png");background-size: 50px 707px; } 
+      .target-list .target--world {background-position: left -78px;}
+      .target-list .target--content {background-position: left -117px;}
+    }
 
 .target.target--travelers.animate, .target.target--world.animate, .target.target--privacy.animate, .target.target--content.animate {
   opacity: 1;
@@ -592,16 +588,13 @@ p {
   top: 130px;
   width: 98%; }
   @media only screen and (max-width: 1200px) {
-    .global-usage {
-      top: 120px; } }
+    .global-usage {top: 120px; } 
+  }
   @media only screen and (max-width: 992px) {
-    .global-usage {
-      position: relative;
-      top: 0;
-      margin: 30px 0 -20px; } }
-  @media only screen and (max-width: 768px) {
-    .global-usage {
-      margin: 30px 0; } }
+    .global-usage {position: relative;top: 0;margin: 30px 0 -20px; } 
+  }
+  @media only screen and (max-width: 768px) {.global-usage {margin: 30px 0; } 
+  }
   .global-usage-title {
     display: block;
     color: #838994;
@@ -1423,8 +1416,11 @@ p {
         left: auto; } }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       .attack-list-type .attack-icon {
-        background-image: url("../images/sprite_attacks@2x.png");
-        background-size: 50px 300px; } }
+        background-image: url("../images/sprite_icon@2x.png");
+        background-size: 50px 705px;} 
+      .attack-list-type .attack-icon--honeypot {background-position: left -357px;}
+      .attack-list-type .attack-icon--tools {background-position: left -257px;}
+    }
   .attack-list-type h4 {
     font-size: 30px;
     font-size: 3rem;
@@ -2390,16 +2386,11 @@ p {
     left: 45px;
     top: 40px;
     background: url("../images/sprite_icon.png") no-repeat left top; }
-    .feature-type .feature-icon--monitoring {
-      background-position: left -50px; }
-    .feature-type .feature-icon--custom {
-      background-position: -2px -560px; }
-    .feature-type .feature-icon--global {
-      background-position: -2px -610px; }
-    .feature-type .feature-icon--wifi {
-      background-position: -2px -660px; }
-    .feature-type .feature-icon--multidevice {
-      background-position: -2px -460px; }
+    .feature-type .feature-icon--monitoring {background-position: left -50px; }
+    .feature-type .feature-icon--custom {background-position: -2px -560px; }
+    .feature-type .feature-icon--global {background-position: -2px -610px; }
+    .feature-type .feature-icon--wifi {background-position: -2px -660px; }
+    .feature-type .feature-icon--multidevice {background-position: -2px -460px; }
     @media only screen and (max-width: 767px) {
       .feature-type .feature-icon {
         right: 15px;
@@ -2407,8 +2398,14 @@ p {
         left: auto; } }
     @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
       .feature-type .feature-icon {
-        background-image: url("../images/sprite_features@2x.png");
-        background-size: 50px 240px; } }
+        background-image: url("../images/sprite_icon@2x.png");
+        background-size: 50px 763px; } 
+      .feature-type .feature-icon--monitoring {background-position: left -50px; }
+      .feature-type .feature-icon--custom {background-position: left -606px; }
+      .feature-type .feature-icon--global {background-position: left -660px; }
+      .feature-type .feature-icon--wifi {background-position: left -713px;}
+      .feature-type .feature-icon--multidevice {background-position: left -497px; }
+    }
   .feature-type h4 {
     font-size: 30px;
     font-size: 3rem;
