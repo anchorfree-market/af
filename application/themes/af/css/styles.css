@@ -278,7 +278,7 @@ p {
 
 /* --- Footer --- */
 .footer-nav {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   margin-top: 40px; }
 
 .footer-nav a {
@@ -293,15 +293,29 @@ p {
   .footer-nav a:hover, .footer-nav a:focus {
     color: #343434;
     background-color: transparent !important; }
+.recent-news {
+    margin-top: 36px;
+    font-size: 14px;
+    font-size: 1.4rem; }
+    .recent-news h5 {
+        color: #1b87da;
+        text-align: left; }
+    .recent-news ul {
+        list-style: none; }
+    .recent-news a {
+        font-weight: 700; }
 
 .footer-copyright {
-  text-align: center;
+  text-align: left;
   height: 100px;
   font-size: 12px;
   font-size: 1.2rem;
   line-height: 100px;
   line-height: 10rem;
-  font-weight: 600; }
+  font-weight: 600; 
+  padding-left:15px;
+  clear: both;
+}
   @media only screen and (max-width: 767px) {
     .footer-copyright {
       line-height: 15px;

@@ -2,13 +2,31 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <ul class="nav nav-justified footer-nav">
-                            <li><a title="Privacy" href="/~anchorj6/af/privacy">Privacy</a></li>
-                            <li><a title="Terms" href="/~anchorj6/af/terms-of-service.php">Terms</a></li>
-                            <li><a title="We’are hiring!" href="/~anchorj6/af/jobs/">We’re hiring!</a></li>
-                            <li><a title="Help" href="/support.php">Help</a></li>
-                            <li><a title="Visit us" href="/~anchorj6/af/contact">Visit us</a></li>
+                        <!--
+                        <ul class="nav footer-nav col-md-3">
+                            <li><a title="Privacy" href="/~anchorj6/af/privacy">Product</a></li>
+                            <li><a title="Terms" href="/~anchorj6/af/terms-of-service.php">Advertise</a></li>
+                            <li><a title="We’are hiring!" href="/~anchorj6/af/jobs/">Carriers</a></li>
+                            <li><a title="Help" href="/support.php">Press</a></li>
                         </ul>
+                        <ul class="nav footer-nav col-md-3">
+                            <li><a title="Privacy" href="/~anchorj6/af/privacy">About</a></li>
+                            <li><a title="Terms" href="/~anchorj6/af/terms-of-service.php">We're Hiring</a></li>
+                            <li><a title="We’are hiring!" href="/~anchorj6/af/jobs/">Learn More</a></li>
+                            <li><a title="Help" href="/support.php">Contact Us</a></li>
+                        </ul>
+                        <div class="recent-news col-md-6">
+                            <h5>Recent News</h5>
+                            <ul>
+                                <li>Nov 18, 2013<a href="#">Four in Five Travelers Fear Mobile Use of Unsecured Public Wi-Fi Exposes Their Personal Data to Cyberthreats, AnchorFree Survey Finds</a></li>
+                                <li>Oct 29, 2013</li>
+                            </ul>
+                        </div>
+                        -->  
+                        <? $a = new GlobalArea('Footer Navigation');$a->display($c); ?>
+                        <div class="recent-news col-md-6">
+                            <? $a = new GlobalArea('Footer News');$a->display($c); ?>
+                        </div>
                         <div class="separator saperator-gradient"></div>
                         <p class="footer-copyright">Copyright &copy; 2015 AnchorFree, Inc. All Rights Reserved</p>
                     </div>
