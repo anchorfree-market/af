@@ -2496,3 +2496,10 @@ p {
     height: 234px;
 }
 }
+/* Press releases individual page */
+.mid {
+    padding-top: 85px;
+}
+.press .main-title {
+    background: url("../images/blue-gradient-bg.jpg") no-repeat 0 0;
+}
