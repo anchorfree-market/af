@@ -44,3 +44,7 @@ div.ccm-block-page-list-page-entry-text div.ccm-block-page-list-title {
 div.ccm-block-page-list-page-entry-read-more {
     margin-top: 20px;
 }
+div.ccm-block-page-list-date {
+    float: left;
+    margin-right: 3px;
+}

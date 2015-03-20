@@ -99,6 +99,10 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
         <?php if ($includeEntryText): ?>
             <div class="ccm-block-page-list-page-entry-text">
 
+                <?php if ($includeDate): ?>
+                    <div class="ccm-block-page-list-date"><?php echo date_format(new DateTime($date), 'M d, Y')?></div>
+                <?php endif; ?>
+                
                 <?php if ($includeName): ?>
                 <div class="ccm-block-page-list-title">
                     <?php if ($useButtonForLink) { ?>
@@ -107,10 +111,6 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                         <a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
                     <?php } ?>
                 </div>
-                <?php endif; ?>
-
-                <?php if ($includeDate): ?>
-                    <div class="ccm-block-page-list-date"><?php echo $date?></div>
                 <?php endif; ?>
 
                 <?php if ($includeDescription): ?>
