@@ -100,7 +100,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
             <div class="ccm-block-page-list-page-entry-text">
 
                 <?php if ($includeDate): ?>
-                    <div class="ccm-block-page-list-date"><?php echo date_format(new DateTime($date), 'M d, Y')?></div>
+                    <div class="ccm-block-page-list-date"><?php echo date_format(new DateTime($date), 'M d, Y')?> - </div>
                 <?php endif; ?>
                 
                 <?php if ($includeName): ?>

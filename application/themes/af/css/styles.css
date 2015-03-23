@@ -2496,10 +2496,59 @@ p {
     height: 234px;
 }
 }
-/* Press releases individual page */
-.mid {
-    padding-top: 85px;
+/* Press releases */
+.section-press {
+    padding-top: 75px;
 }
-.press .main-title {
-    background: url("../images/blue-gradient-bg.jpg") no-repeat 0 0;
+.section-press .main-title {
+    background: #1b7ace url("../images/blue-gradient-bg.jpg") repeat-y 0 0;
+    height: 85px;
+    color: #fff;
+    padding: 25px 0 0 55px;
+}
+.release {
+    background: #1b7ace url("../images/blue-gradient-bg.jpg") repeat-y 0 0;
+}
+.release > div {
+    padding-top: 50px;
+}
+.release h1, .release p {
+    color: #fff;
+    padding: 0 25px;
+}
+.release h1 {
+    font-size: 38px;
+}
+.release p {
+    font-size: 20px;
+    text-align: center;
+}
+.release .press-image {
+    padding-right: 0;
+}
+.release .img-responsive {
+    width: 100%;
+}
+.release button {
+    width: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.main-title {
+    text-align: left;
+}
+.ccm-block-page-list-page-entry-text {
+    font-size: 14px;
+}
+.press h3 {
+    font-size: 30px;
+    text-align: left;
+    line-height: 36px;
+}
+.press-feature {
+    font-size: 16px;
+    font-weight: 600;
+}
+.press img {
+    padding: 12px 0;
 }
