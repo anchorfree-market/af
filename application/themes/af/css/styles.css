@@ -2498,7 +2498,7 @@ p {
 }
 /* Press releases */
 .section-press {
-    padding-top: 75px;
+    padding-top: 95px;
 }
 .section-press .main-title {
     background: #1b7ace url("../images/blue-gradient-bg.jpg") repeat-y 0 0;
@@ -2510,7 +2510,7 @@ p {
     background: #1b7ace url("../images/blue-gradient-bg.jpg") repeat-y 0 0;
 }
 .release > div {
-    padding-top: 50px;
+    padding: 40px 0;
 }
 .release h1, .release p {
     color: #fff;
@@ -2518,6 +2518,7 @@ p {
 }
 .release h1 {
     font-size: 38px;
+    margin-top: 0;
 }
 .release p {
     font-size: 20px;
@@ -2527,7 +2528,9 @@ p {
     padding-right: 0;
 }
 .release .img-responsive {
-    width: 100%;
+    width: auto;
+    max-height: 550px;
+    float: right;
 }
 .release button {
     width: 250px;
@@ -2540,15 +2543,31 @@ p {
 .ccm-block-page-list-page-entry-text {
     font-size: 14px;
 }
+.press h2, .press h3 {
+    text-align: left;
+}
 .press h3 {
     font-size: 30px;
-    text-align: left;
     line-height: 36px;
 }
 .press-feature {
     font-size: 16px;
     font-weight: 600;
 }
+.press-feature a {
+    display: block;
+    margin-bottom: 50px;
+}
 .press img {
     padding: 12px 0;
+}
+@media all and (max-width: 991px) {
+    .release .clearfix {
+        padding: 0;
+    }
+}
+@media (max-width: 768px) {
+    .section-press {
+        padding-top: 52px;
+    }
 }
