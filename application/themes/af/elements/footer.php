@@ -50,7 +50,7 @@
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/carriers.js'></script>";
         }
-        else if(preg_match("/press/", $URL)) { // display script on advertise page
+        else if(preg_match("/press/", $URL)) { // display script on press page
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
         }
         else if(preg_match("/advertise/", $URL)) { // display script on advertise page

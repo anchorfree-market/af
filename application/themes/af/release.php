@@ -7,7 +7,7 @@ $view->inc('elements/header.php');  ?>
                 <? $a = new Area('Press Top Text');$a->display($c); ?>
             </div>
             <div class="col-md-5 press-image">
-                <? $a = new Area('Press Top Image');$a->display($c); ?> 
+                <? $a = new Area('Press Latest Text');$a->display($c); ?> 
             </div>
             <div class="clearfix"></div>
         </div>
