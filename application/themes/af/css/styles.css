@@ -1539,28 +1539,28 @@ p {
     background-color: #68bb23; }
   .connection--hacker {
     background-color: #dc2727; }
-  .connection-dx {
+  .connection.connection-dx {
     right: 205px;
     top: 233px;
     width: 100px; }
-  .connection-sx {
+  .connection.connection-sx {
     left: 205px;
     top: 233px;
     width: 530px; }
-  .connection-top {
+  .connection.connection-top {
     left: 580px;
     top: 107px;
     z-index: 10; }
-  .connection-top-sx {
+  .connection.connection-top-sx {
     left: 205px;
     top: 233px;
     width: 382px;
     z-index: 12; }
-  .connection-dx-left {
+  .connection.connection-dx-left {
     right: 432px;
     top: 233px;
     width: 100px; }
-  .connection-dx-right {
+  .connection.connection-dx-right {
     right: 205px;
     top: 233px;
     width: 100px; }
@@ -1599,7 +1599,7 @@ p {
   -moz-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.connection--ver {
+.connection.connection--ver {
   width: 8px;
   height: 134px;
   background-image: url("../images/bg_connection_ver.png");
@@ -1951,10 +1951,10 @@ p {
   .popover-custom--user {
     left: 105px;
     top: 90px; }
-  .popover-custom--hackers {
+  a.popover-custom--hackers {
     left: 485px;
     top: 35px; }
-  .popover-custom--connections {
+  a.popover-custom--connections {
     left: 566px;
     top: 218px; }
   .popover-custom:hover {
@@ -2240,13 +2240,13 @@ p {
      position: static;
      margin-top: 20px auto; 
     }
-    .diagram-router {right: 270px; }
+    /*.diagram-router {right: 270px; }*/
     .diagram-description--holes {left: 325px; }
     .connection {width: 215px; }
     .connection-sx {width: 380px; }
     .connection-dx {width: 55px; }
     .connection-top {left: 480px; }
-    .connection-top-sx {width: 282px; }
+    /*.connection-top-sx {width: 282px; }*/
     .connection-dx-left {right: 380px;width: 55px; }
     .connection-dx-right {right: 203px;width: 55px; }
     .popover-custom--hackers {
@@ -2257,18 +2257,24 @@ p {
         height: 234px;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .connection {width: 215px; }
+    .connection.connection-sx {width: 380px; }
+    .connection.connection-dx {width: 55px; }
+    .connection.connection-top {left: 480px; }
+    .connection.connection-top-sx {width: 282px; }
+    .connection.connection-dx-left {right: 380px;width: 55px; }
+    .connection.connection-dx-right {right: 203px;width: 55px; }
+    .diagram-router {right: 270px; }
+    a.popover-custom--hackers {left: 385px; }
+    a.popover-custom--connections {left: 465px; }
+}
 @media only screen and (max-width: 1024px) {
     .attacks-list {margin: 60px 0 0; }
     .section-video h2 {margin-top: 50px; }
     .diagram-router {right: 270px; }
     .diagram-description--holes {left: 325px; }
-    .connection {width: 215px; }
-    .connection-sx {width: 380px; }
-    .connection-dx {width: 55px; }
-    .connection-top {left: 480px; }
-    .connection-top-sx {width: 282px; }
-    .connection-dx-left {right: 380px;width: 55px; }
-    .connection-dx-right {right: 203px;width: 55px; }
+    
   .popover-custom--hackers {
     left: 385px; }
   .popover-custom--connections {
@@ -2289,10 +2295,10 @@ p {
     .popover-custom--user {
       left: 83px;
       top: 15%; }
-    .popover-custom--hackers {
+    a.popover-custom--hackers {
       left: 37%;
       top: 2%; }
-    .popover-custom--connections {
+    a.popover-custom--connections {
       left: 50%;
       top: 37%;
       margin-left: -18px; 
@@ -2332,8 +2338,8 @@ p {
     }
     .switch {margin-top: 140px; }
     .popover-custom--user {left: 83px;top: 15%;}
-    .popover-custom--hackers {left: 37%;top: 2%;}
-    .popover-custom--connections {left: 50%;top: 37%;margin-left: -18px; }
+    a.popover-custom--hackers {left: 37%;top: 2%;}
+    a.popover-custom--connections {left: 50%;top: 37%;margin-left: -18px; }
     .wrapper-diagram {
      margin-top: 20px;
      height: 300px; 
@@ -2427,8 +2433,8 @@ p {
     .video-container {margin-top: 0; }
     .switch {margin-top: 40px; }
     .popover-custom--user {left: 32px;top: 23%;}
-    .popover-custom--hackers {left: 35%;top: 1%;}
-    .popover-custom--connections {top: 23%;}
+    a.popover-custom--hackers {left: 35%;top: 1%;}
+    a.popover-custom--connections {top: 23%;}
     .wrapper-diagram {
       margin-top: 20px;
       height: 250px; 
