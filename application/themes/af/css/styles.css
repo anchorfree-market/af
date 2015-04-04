@@ -2217,6 +2217,10 @@ p {
 .press img {
     padding: 12px 0;
 }
+/* About Page */
+.about-form {
+    background: linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat;
+}
 
 /* media queries */
 @media (min-width: 1200px) {

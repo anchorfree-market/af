@@ -3,7 +3,7 @@ $view->inc('elements/header.php');  ?>
 <section class="section section-about-us about-us">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>
-<div class="wrapper mid press">
+<div class="wrapper mid about">
     <div class="container">
         <div class="col-md-12">
             <h2 class="main-title">
@@ -21,7 +21,14 @@ $view->inc('elements/header.php');  ?>
         <div class="col-md-6">
             <h4>Swiss Location</h4>
         </div>
-
+    </div>
+</div>
+<section class="map">
+    <? $a = new Area('Map');$a->display($c);?>
+</section>
+<div class="wrapper about-form">
+    <div class="container">
+        <? $a = new Area('Form');$a->display($c);?>
     </div>
 </div>
 <section class="section section-join-team join-team">
