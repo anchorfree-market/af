@@ -72,7 +72,7 @@ $surveyBlockInfo = $miniSurvey->getMiniSurveyBlockInfoByQuestionId($qsID, $bID);
 $captcha = $surveyBlockInfo['displayCaptcha'] ? Loader::helper('validation/captcha') : false;
 
 //Localized labels
-$translatedSubmitLabel = t('Submit');
+$translatedSubmitLabel = t('SEND MESSAGE');
 
 /******************************************************************************
 * DESIGNERS: CUSTOMIZE THE FORM HTML STARTING HERE...
@@ -101,13 +101,23 @@ $translatedSubmitLabel = t('Submit');
 		
 		<?php  foreach ($questions as $question): ?>
 			<div class="form-group field field-<?php  echo $question['type']; ?>">
+                               <!--
 				<label class="control-label" <?php  echo $question['labelFor']; ?>>
 					<?php  echo $question['question']; ?>
                     <?php if ($question['required']): ?>
                         <span class="text-muted small" style="font-weight: normal"><?php echo t("Required")?></span>
                     <?php  endif; ?>
 				</label>
-				<?php  echo $question['input']; ?>
+                               
+				<?php  echo $question['input']; ?>-->
+                        <?php
+                            if($question['type'] != 'textarea') {
+                                 echo '<input id="Question'. $question['msqID'] .'" class="form-control" type="' . $question['type'] . '" value="" name="Question'. $question['msqID'] .'" placeholder="' . $question['question'] . '" />'; 
+                            }
+                            else {
+                                echo '<textarea id="Question'. $question['msqID'] .'" class="form-control" type="' . $question['type'] . '" value="" name="Question'. $question['msqID'] .'" placeholder="' . $question['question'] . '"></textarea>'; 
+                            }
+                        ?>
 			</div>
 		<?php  endforeach; ?>
 		
@@ -123,8 +133,8 @@ $translatedSubmitLabel = t('Submit');
 				<?php
 			}
 			?>
-			<div><?php  $captcha->display(); ?></div>
 			<div><?php  $captcha->showInput(); ?></div>
+                        <div><?php  $captcha->display(); ?></div>
 		</div>
 	<?php  endif; ?>
 

@@ -1,5 +1,15 @@
+.form-stacked {
+    position: relative;
+}
+div.ccm-block-type-form .fields {
+    position: relative;
+}
 div.ccm-block-type-form div.form-group {
     margin-bottom: 10px;
+    width: 40%;
+}
+input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input {
+    padding: 6px 12px;
 }
 
 div.ccm-block-type-form span.text-muted {
@@ -10,3 +20,16 @@ div.ccm-block-type-form div.form-group label.control-label {
     font-weight: bold;
     display: block;
 }
+.fields .field-url, .fields .field-textarea {
+    position: absolute;
+    right: 175px;  
+}
+.fields .field-url {top: 0;}
+.fields .field-textarea {top: 44px;}
+.fields .field-textarea textarea {height: 110px;}
+.form-group.captcha {
+    position: absolute;
+    top: 170px;
+    left: 510px;
+}
+.form-group.captcha > div {display: inline-block; width: 48%;}
