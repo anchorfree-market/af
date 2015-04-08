@@ -1,6 +1,7 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<section class="section section-about-us about-us">
+<!--<img src="<?php echo $view->getThemePath()?>/images/blue-gradients-transparent-bg-rt.png">-->
+<section class="section section-about-us about-us top-section">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>
 <div class="wrapper mid about">

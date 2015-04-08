@@ -2218,8 +2218,43 @@ p {
     padding: 12px 0;
 }
 /* About Page */
+.top-section {
+    margin-top: 97px;
+}
 .about-form {
     background: linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat;
+}
+/* text and image template */
+.backstretch-contain {
+    background-size: cover !important;
+}
+.backstretch-contain .container {
+    padding: 100px 0;
+}
+.txt-right {
+    background: url('../images/blue-gradients-transparent-bg-rt.png') no-repeat;
+    background-position: right top; 
+}
+.txt-left {
+    background: url('../images/blue-gradients-transparent-bg-lt.png') no-repeat;
+    background-size: cover !important;
+    background-position: left top;
+}
+.backstretch-contain h1, .backstretch-contain p, .backstretch-contain .btn a {
+    color: #ffffff;
+}
+.txt-right h1, .txt-right p {
+    text-align: right;
+}
+.txt-left p {
+    text-align: center;
+}
+.txt-left .btn {
+    display: block;
+    margin: 0 auto;
+}
+.txt-right .btn {
+    float: right;
 }
 
 /* media queries */
@@ -2351,6 +2386,8 @@ p {
     #security-on .popover-custom--connections {
       top: 38%; 
     } 
+    .top-section {margin-top: 51px;}
+    .about-us .container {padding: 40px 0;}
 }
 @media only screen and (max-width: 767px) {
     .androids {
