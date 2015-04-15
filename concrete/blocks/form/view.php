@@ -125,21 +125,21 @@ $translatedSubmitLabel = t('SEND MESSAGE');
 	
 	<?php  if ($captcha): ?>
 		<div class="form-group captcha">
-			<?php
-			$captchaLabel = $captcha->label();
-			if (!empty($captchaLabel)) {
-				?>
-				<label class="control-label"><?php echo $captchaLabel; ?></label>
-				<?php
-			}
-			?>
-			<div><?php  $captcha->showInput(); ?></div>
-                        <div><?php  $captcha->display(); ?></div>
+                    <div><?php  $captcha->display(); ?></div>
+                    <?php
+                    $captchaLabel = $captcha->label();
+                    if (!empty($captchaLabel)) {
+                            ?>
+                            <label class="control-label"><?php echo $captchaLabel; ?></label>
+                            <?php
+                    }
+                    ?>
+                    <div><?php  $captcha->showInput(); ?></div>
 		</div>
 	<?php  endif; ?>
 
 	<div class="form-actions">
-		<input type="submit" name="Submit" class="btn btn-primary" value="<?php  echo $translatedSubmitLabel; ?>" />
+		<input type="submit" name="Submit" class="btn btn-success" value="<?php  echo $translatedSubmitLabel; ?>" />
 	</div>
 
 	<input name="qsID" type="hidden" value="<?php  echo $qsID; ?>" />

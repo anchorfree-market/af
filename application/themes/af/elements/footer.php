@@ -24,7 +24,7 @@
                         </div>
                         -->  
                         <? $a = new GlobalArea('Footer Navigation');$a->display($c); ?>
-                        <div class="recent-news col-md-6">
+                        <div class="recent-news col-md-6 col-sm-6">
                             <? $a = new GlobalArea('Footer News');$a->display($c); ?>
                         </div>
                         <div class="separator saperator-gradient"></div>

@@ -6,7 +6,7 @@ div.ccm-block-type-form .fields {
 }
 div.ccm-block-type-form div.form-group {
     margin-bottom: 10px;
-    width: 40%;
+    width: 48%;
 }
 input[type="text"], input[type="email"], input[type="tel"], input[type="search"], input[type="url"], input[type="password"], .ui-autocomplete-input, textarea, .uneditable-input {
     padding: 6px 12px;
@@ -22,14 +22,57 @@ div.ccm-block-type-form div.form-group label.control-label {
 }
 .fields .field-url, .fields .field-textarea {
     position: absolute;
-    right: 175px;  
+    right: 0;  
 }
 .fields .field-url {top: 0;}
 .fields .field-textarea {top: 44px;}
 .fields .field-textarea textarea {height: 110px;}
 .form-group.captcha {
     position: absolute;
-    top: 170px;
-    left: 510px;
+    top: 163px;
+    right: 0;
 }
-.form-group.captcha > div {display: inline-block; width: 48%;}
+.form-group.captcha .control-label {
+    color: #ffffff;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+.form-group.captcha > div {
+    display: inline-block;
+    width: 46%;
+}
+.captcha-input {
+    position: absolute;
+    top: 28px;
+    right: 133px;
+}
+.form-actions {
+    position: absolute;
+    bottom: 0;
+    right: 324px;
+}
+@media (max-width: 1200px) {
+    img.ccm-captcha-image {
+        height: 62px;
+        width: 155px;
+    }
+    .form-actions {right: 290px;}
+}
+@media only screen and (max-width: 992px) {
+    img.ccm-captcha-image {
+        height: auto;
+        width: 147px;
+    }
+    .form-group.captcha .control-label {display: none !important;}
+    .captcha-input {right: 0; top: 13px;}
+    .form-actions {right: 0;}
+}
+@media only screen and (max-width: 768px) {
+    div.ccm-block-type-form div.form-group {width: 100%;}
+    .fields .field-url, .fields .field-textarea {position: relative;}
+    .form-group.captcha,.captcha-input, .form-actions {position: relative;} 
+    .form-group.captcha {top: 15px;}
+    .form-actions {margin-top: 28px;}
+    .fields .field-textarea {top: 0;}
+}

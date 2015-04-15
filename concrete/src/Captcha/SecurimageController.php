@@ -35,7 +35,7 @@ class SecurimageController extends Controller
     {
         $ci = Loader::helper('concrete/urls');
         echo '<div><img src="' . $ci->getToolsURL('captcha') . '?nocache=' .time(). '" alt="' .t('Captcha Code'). '" onclick="this.src = \'' . $ci->getToolsURL('captcha') . '?nocache=\'+(new Date().getTime())" class="ccm-captcha-image" /></div>';
-        echo '<br/><div>' . t('Click the image to see another captcha.') . '</div>';
+        /*echo '<br/><div>' . t('Click the image to see another captcha.') . '</div>';*/
     }
 
     public function label()
@@ -64,7 +64,7 @@ class SecurimageController extends Controller
                 $attribs .= $key . '="' . $value . '" ';
             }
         }
-        echo '<div><input type="text" name="ccmCaptchaCode" class="ccm-input-captcha" required="required" ' . $attribs . ' placeholder="Type captcha" /></div><br/>';
+        echo '<div class="captcha-input"><input type="text" name="ccmCaptchaCode" class="ccm-input-captcha" required="required" ' . $attribs . ' placeholder="Type captcha" /></div><br/>';
     }
 
     /**
