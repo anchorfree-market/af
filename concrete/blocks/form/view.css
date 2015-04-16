@@ -35,7 +35,7 @@ div.ccm-block-type-form div.form-group label.control-label {
 .form-group.captcha .control-label {
     color: #ffffff;
     position: absolute;
-    right: 0;
+    left: 210px;
     top: 2px;
 }
 .form-group.captcha > div {
@@ -45,19 +45,20 @@ div.ccm-block-type-form div.form-group label.control-label {
 .captcha-input {
     position: absolute;
     top: 28px;
-    right: 133px;
+    left:210px;
 }
 .form-actions {
     position: absolute;
     bottom: 0;
-    right: 324px;
+    left: 592px;
 }
 @media (max-width: 1200px) {
     img.ccm-captcha-image {
         height: 62px;
         width: 155px;
     }
-    .form-actions {right: 290px;}
+    .form-group.captcha .control-label, .form-actions, .captcha-input {left: 162px;}
+    .form-actions {left: 488px;}
 }
 @media only screen and (max-width: 992px) {
     img.ccm-captcha-image {
@@ -65,14 +66,18 @@ div.ccm-block-type-form div.form-group label.control-label {
         width: 147px;
     }
     .form-group.captcha .control-label {display: none !important;}
-    .captcha-input {right: 0; top: 13px;}
-    .form-actions {right: 0;}
+    .captcha-input {left: 160px; top: 13px;}
+    .form-actions {left: 374px;}
 }
 @media only screen and (max-width: 768px) {
     div.ccm-block-type-form div.form-group {width: 100%;}
     .fields .field-url, .fields .field-textarea {position: relative;}
-    .form-group.captcha,.captcha-input, .form-actions {position: relative;} 
+    .form-group.captcha, .form-actions {position: relative;} 
     .form-group.captcha {top: 15px;}
-    .form-actions {margin-top: 28px;}
+    .form-actions {margin-top: 28px;left:0;}
     .fields .field-textarea {top: 0;}
+}
+@media only screen and (max-width:480px) {
+    .captcha-input {left:0;top:56px;}
+    .form-actions {margin-top: 65px;}
 }

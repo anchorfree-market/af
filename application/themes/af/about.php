@@ -16,11 +16,13 @@ $view->inc('elements/header.php');  ?>
         <div class="col-md-12">
             <h2>Contact AnchorFree Inc.</h2>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 address">
             <h4>US. Headquarters</h4>
+            <? $a = new Area('US Headquarter Address');$a->display($c);?>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 address">
             <h4>Swiss Location</h4>
+            <? $a = new Area('Swiss Address');$a->display($c);?>
         </div>
     </div>
 </div>
@@ -36,16 +38,15 @@ $view->inc('elements/header.php');  ?>
 <div class="wrapper meet-visionaries">
     <div class="container">
         <h2>Meet the Visionaries</h2>
-        <div class="row">
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-1');$a->display($c);?><? $a = new Area('vision-desc-1');$a->display($c);?></div>
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-2');$a->display($c);?><? $a = new Area('vision-desc-2');$a->display($c);?></div>
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-3');$a->display($c);?><? $a = new Area('vision-desc-3');$a->display($c);?></div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-4');$a->display($c);?><? $a = new Area('vision-desc-4');$a->display($c);?></div>
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-5');$a->display($c);?><? $a = new Area('vision-desc-5');$a->display($c);?></div>
-            <div class="col-md-4 col-sm-4"><? $a = new Area('vision-image-6');$a->display($c);?><? $a = new Area('vision-desc-6');$a->display($c);?></div>
-        </div>
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-1');$a->display($c);?><? $a = new Area('vision-desc-1');$a->display($c);?></div>
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-2');$a->display($c);?><? $a = new Area('vision-desc-2');$a->display($c);?></div>
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-3');$a->display($c);?><? $a = new Area('vision-desc-3');$a->display($c);?></div>
+
+
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-4');$a->display($c);?><? $a = new Area('vision-desc-4');$a->display($c);?></div>
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-5');$a->display($c);?><? $a = new Area('vision-desc-5');$a->display($c);?></div>
+            <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-6');$a->display($c);?><? $a = new Area('vision-desc-6');$a->display($c);?></div>
+
     </div>
 </div>
 <div class="wrapper investors-board-advisors">

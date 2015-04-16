@@ -2222,6 +2222,16 @@ p {
 .top-section, .section-featured-carrier, .section-featured {
     margin-top: 97px;
 }
+#about-mission {font-size:1.4rem;}
+.about h4 {
+    float: left;
+    margin-top: -4px;
+}
+.address div {
+    display:inline-block;
+    margin-left:10px;
+    font-size: 1.3rem;
+}
 .about-form {
     background: linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat;
 }
@@ -2232,11 +2242,9 @@ p {
 .meet-visionaries .col-md-4 {
     padding: 0 20px;
 }
-.meet-visionaries img {
-    width: 100%;
-}
 .meet-visionaries img, .meet-visionaries .people {
-    margin: 0 auto;  
+    margin: 0 auto; 
+    width: 80%;
 }
 .meet-visionaries .name {
     font-size: 1.9em;
@@ -2245,8 +2253,8 @@ p {
     font-size: 1.4em;
     margin-top: -4px;
 }
-.meet-visionaries .row {
-    margin: 0 0 38px;
+.meet-visionaries .people {
+    margin: 0 0 38px 32px;
 }
 .wrapper.meet-visionaries {padding-bottom: 0;}
 .wrapper.investors-board-advisors {padding-top: 0;}
@@ -2378,6 +2386,8 @@ p {
       margin-top: 20px;
       height: 300px; 
     } 
+    .meet-visionaries img {width: 100%;}
+    .meet-visionaries .people {margin: 0 0 38px;}
     .meet-visionaries .name {
         font-size: 1.7em;
     }
@@ -2428,11 +2438,24 @@ p {
     .top-section {margin-top: 51px;}
     .about-us .container {padding: 40px 0;}
     .about-form .container {padding: 0 10%;}
+    .address {
+        margin-bottom: 15px;
+    }
+    .address h4 {
+        margin-top: -2px;
+        width: 140px;
+    }
     .meet-visionaries img, .meet-visionaries .people {width: 70%;}
     .meet-visionaries .col-sm-4 {
         margin-bottom: 20px;
     }
-    .meet-visionaries .row {margin: 0;}
+    .meet-visionaries .people {
+        margin: 0 auto;
+    }
+    .meet-visionaries .name {
+        line-height: 1.2em;
+    }
+    .meet-visionaries .title {margin-top: 0;}
 }
 @media only screen and (max-width: 767px) {
     .androids {
@@ -2573,6 +2596,12 @@ p {
     } 
     .section-press {
         padding-top: 52px;
+    }
+    .about-form .btn.btn-success {width: 100%;}
+}
+@media only screen and (max-width:520px) {
+    .meet-visionaries .container > div {
+        width: 100%;
     }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
