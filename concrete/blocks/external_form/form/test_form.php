@@ -16,7 +16,7 @@ if (isset($response)) { ?>
     </div>
 
     <div class="form-group">
-        <input type="submit" name="submit" value="submit" class="btn btn-default" />
+        <input type="submit" name="submit" value="SEND MESSAGE" class="btn btn-default" />
     </div>
 
 </form>
