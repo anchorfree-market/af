@@ -1,6 +1,8 @@
 <?php $view->inc('elements/header.php');  ?>
 <h1>Careers Page</h1>
-
+<section class="wrapper top-section">
+   <? $a = new Area('Top Video');$a->display($c); ?>
+</section>
 <?php
     function getURL($url) {
         $ch = curl_init();
@@ -57,4 +59,8 @@
       <h4>There are no open positions for now</h4>
     <?php endif;?>
 <?php endif;?>
+
+  
+<?php $view->inc('elements/footer.php'); ?>
+<? $a = new Area('javascript');$a->display($c); ?>
 

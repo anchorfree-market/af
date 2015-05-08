@@ -417,8 +417,49 @@ p {
       color: white;
       border-radius: 7px;
       outline: none; }
-
-/* --- Adverise Section --- */
+    .btn-txt-green {
+        color: #6bbc27;
+    }
+    .btn-white-blue-border {
+        border: 1px solid #1794d5;
+        background: #fff;
+        color: #106fb4;
+    }
+    .btn-white-orange-border {
+        border: 1px solid #fd8f25;
+        background: #fff;
+        color: #fd8f25;
+    }
+    .btn-sp-right {
+        margin-right: 10px;
+    }
+/* --- Home --- */
+.home h2 {
+    margin-top: 0;
+}
+.home h4 {
+    font-weight:300;
+}
+.home-product h1 {
+    color: #343434 !important;
+}
+.home-product a {
+    float: none !important;
+}
+.quote {
+    padding-left: 35px;
+}
+.quote h3 {
+    font-size: 2.5em;
+    line-height: 1.2em;
+}
+.quote h3, .quote span, .quote a {
+    text-align: left;
+}
+.quote a {
+    margin-top: 30px;
+}
+/* --- Advertise Section --- */
 /* Section BG */
 .section-featured .wrapper {
   padding-bottom: 0;
@@ -2147,9 +2188,6 @@ p {
     opacity: 0.7; }
   
 /* Press releases */
-.section-press {
-    padding-top: 95px;
-}
 .section-press .main-title {
     background: #1b7ace url("../images/blue-gradient-bg.jpg") repeat-y 0 0;
     height: 85px;

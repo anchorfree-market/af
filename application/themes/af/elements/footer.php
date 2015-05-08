@@ -2,27 +2,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <!--
-                        <ul class="nav footer-nav col-md-3">
-                            <li><a title="Privacy" href="/~anchorj6/af/privacy">Product</a></li>
-                            <li><a title="Terms" href="/~anchorj6/af/terms-of-service.php">Advertise</a></li>
-                            <li><a title="We’are hiring!" href="/~anchorj6/af/jobs/">Carriers</a></li>
-                            <li><a title="Help" href="/support.php">Press</a></li>
-                        </ul>
-                        <ul class="nav footer-nav col-md-3">
-                            <li><a title="Privacy" href="/~anchorj6/af/privacy">About</a></li>
-                            <li><a title="Terms" href="/~anchorj6/af/terms-of-service.php">We're Hiring</a></li>
-                            <li><a title="We’are hiring!" href="/~anchorj6/af/jobs/">Learn More</a></li>
-                            <li><a title="Help" href="/support.php">Contact Us</a></li>
-                        </ul>
-                        <div class="recent-news col-md-6">
-                            <h5>Recent News</h5>
-                            <ul>
-                                <li>Nov 18, 2013<a href="#">Four in Five Travelers Fear Mobile Use of Unsecured Public Wi-Fi Exposes Their Personal Data to Cyberthreats, AnchorFree Survey Finds</a></li>
-                                <li>Oct 29, 2013</li>
-                            </ul>
-                        </div>
-                        -->  
                         <? $a = new GlobalArea('Footer Navigation');$a->display($c); ?>
                         <div class="recent-news col-md-6 col-sm-6">
                             <? $a = new GlobalArea('Footer News');$a->display($c); ?>
@@ -50,17 +29,21 @@
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/carriers.js'></script>";
         }
-        else if(preg_match("/press/", $URL)) { // display script on press page
+        else if(preg_match("/press/", $URL) || preg_match("/about/", $URL)) { // display script on press page
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
         }
-        else if(preg_match("/about/", $URL)) { // display script on press page
+        /*
+        else if(preg_match("/about/", $URL)) { // display script on about page
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
         }
+         * */
         else if(preg_match("/advertise/", $URL)) { // display script on advertise page
             echo "<script type='text/javascript' src='//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
         }
-        else {}
+        else {
+            echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
+        }
     ?>
     </div>
     <? Loader::element('footer_required')?>
