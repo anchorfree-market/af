@@ -2335,6 +2335,38 @@ p {
     float: right;
 }
 
+/* Careers */
+#vi {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+#videoiframe {
+    width: 100%;
+    height: auto;
+}
+#videoiframe object {
+    width: 100%;
+    height: 720px;
+    background: red;
+}
+.careers-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-size: 100%;
+    background-repeat: repeat-y;
+}
+.careers-top h1 {
+    color: #fff;
+}
+.careers-openings {
+    margin-top:-4px;
+    z-index:2;
+    position: relative;
+    background: #fff;
+}
+
 /* media queries */
 @media (min-width: 1200px) {
     .counter .counter-subtitle {

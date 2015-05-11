@@ -1,8 +1,9 @@
 <?php $view->inc('elements/header.php');  ?>
-<h1>Careers Page</h1>
-<section class="wrapper top-section">
+<section class="careers-video top-section">
    <? $a = new Area('Top Video');$a->display($c); ?>
 </section>
+   <? $a = new Area('Open Position');$a->display($c); ?>
+   <? $a = new Area('Our Values');$a->display($c); ?>
 <?php
     function getURL($url) {
         $ch = curl_init();
@@ -60,7 +61,60 @@
     <?php endif;?>
 <?php endif;?>
 
-  
+
 <?php $view->inc('elements/footer.php'); ?>
+            <script>
+$(document).ready(function() {
+                /* cover video from the bottom */
+		var coverVideo = $('.careers-openings');
+		$(window).resize(function() {
+			var videoHeight = $('#videoiframe').innerHeight();
+			if(videoHeight >= 630) {
+				var minusVideoHeight = videoHeight - 630 + 4;
+				coverVideo.css('marginTop', '-'+minusVideoHeight+'px');
+				console.log(videoHeight + " and " + minusVideoHeight);
+			}
+			else {
+				coverVideo.css('marginTop', '-4px');
+			}
+			
+		});
+               
+               /* blue gradient background to be same height as video */
+               function resizeVideo() {
+                 setTimeout(function() {
+                        var videoEleHeight = $('#vi').innerHeight();
+                        $('.careers-top').css('height', videoEleHeight);
+                   }, 500);  
+               }
+               resizeVideo();
+               
+               $(window).resize(function() {
+                    resizeVideo();
+               });
+              
+                
+	}); // end of document ready
+        </script>
+        
+    /* ie8 only -- fix video full width and height */
+   <!--[if lt IE 9]>
+   <script>
+   $(document).ready(function() {
+        var videoRatio = 1.778;
+        var objectEleWidth = $('#videoObject').innerWidth();
+        var objectEleHeight = objectEleWidth / videoRatio;
+        $('#videoObject').css('height', objectEleHeight);
+
+         $(window).resize(function() {
+            objectEleWidth = $('#videoObject').innerWidth();
+             objectEleHeight = objectEleWidth / videoRatio;
+             $('#videoObject').css('height', objectEleHeight);
+         });
+   }); // end of document ready
+   </script>
+    <![endif]-->
+      
+      
 <? $a = new Area('javascript');$a->display($c); ?>
 
