@@ -4,6 +4,8 @@
 </section>
    <? $a = new Area('Open Position');$a->display($c); ?>
    <? $a = new Area('Our Values');$a->display($c); ?>
+   <? $a = new Area('More');$a->display($c); ?>
+   <? $a = new Area('Be Apart');$a->display($c); ?>
 <?php
     function getURL($url) {
         $ch = curl_init();
@@ -26,94 +28,108 @@
     }
 ?>
 
-
-<?php if (!empty($_REQUEST['gh_jid'])) :?>
-  <div id="grnhse_app"></div>
-	<script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
-
-<?php else:?>
-    <?php if (!empty($jobs)) :?>
-
-      <?php $department = $jobs['departments']; ?>
-      <div class="textBox_t1">
-            <h3><?php echo $department[2]['name']?></h3>
-            <?php foreach ($department[2]['jobs'] as $job): ?>
-                    <p><strong><?php echo $job['title']?></strong><br />
-                    <a href="<?php echo $job['absolute_url']?>">Full job description</a></p>
-            <?php endforeach;?>
-      </div>
-
-            <div class="textBox_t1" style="margin-left: 40px;">
-              <h3><?php echo $department[1]['name']?></h3>
-              <?php foreach ($department[1]['jobs'] as $job): ?>
-                      <p><strong><?php echo $job['title']?></strong><br />
-                      <a href="<?php echo $job['absolute_url']?>">Full job description</a></p>
-              <?php endforeach;?>
-              <br />
-              <h3><?php echo $department[0]['name']?></h3>
-              <?php foreach ($department[0]['jobs'] as $job): ?>
-                      <p><strong><?php echo $job['title']?></strong><br />
-                      <a href="<?php echo $job['absolute_url']?>">Full job description</a></p>
-              <?php endforeach;?>
-            </div>
+<div class="col-xs-12 col-sm-10 col-md-10 margin-center">
+    <h2>AnchorFree's Open Positions</h2>
+    
+    <?php if (!empty($_REQUEST['gh_jid'])) :?>
+        <div id="grnhse_app"></div>
+        <script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
     <?php else:?>
-      <h4>There are no open positions for now</h4>
+        
+    <?php if (!empty($jobs)) :?>
+        <?php $department = $jobs['departments']; ?>
+        <div id="careers-accordion">
+            <h3><?php echo $department[2]['name']?> <span class="department-jobs-count"><?php echo count($department[2]['jobs']) ?></span></h3>
+            <div class="textBox_t1">
+                <div>
+                    <?php foreach ($department[2]['jobs'] as $job): ?>
+                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
+                    <?php endforeach;?>
+                </div>
+            </div>
+            
+            <h3><?php echo $department[1]['name']?> <span class="department-jobs-count"><?php echo count($department[1]['jobs']) ?></span></h3>
+            <div class="textBox_t1">
+                <div>
+                    <?php foreach ($department[1]['jobs'] as $job): ?>
+                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
+                    <?php endforeach;?>
+                </div>
+            </div>
+            
+            <h3><?php echo $department[0]['name']?><span class="department-jobs-count"><?php echo count($department[0]['jobs']) ?></span></h3>
+            <div class="textBox_t1">
+                <div>
+                    <?php foreach ($department[0]['jobs'] as $job): ?>
+                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
+                    <?php endforeach;?>
+                </div>
+            </div>
+            <?php else:?>
+              <h4>There are no open positions for now</h4>
+            <?php endif;?>
+        </div>
     <?php endif;?>
-<?php endif;?>
-
+</div>
 
 <?php $view->inc('elements/footer.php'); ?>
-            <script>
+<script>
 $(document).ready(function() {
-                /* cover video from the bottom */
-		var coverVideo = $('.careers-openings');
-		$(window).resize(function() {
-			var videoHeight = $('#videoiframe').innerHeight();
-			if(videoHeight >= 630) {
-				var minusVideoHeight = videoHeight - 630 + 4;
-				coverVideo.css('marginTop', '-'+minusVideoHeight+'px');
-				console.log(videoHeight + " and " + minusVideoHeight);
-			}
-			else {
-				coverVideo.css('marginTop', '-4px');
-			}
-			
-		});
-               
-               /* blue gradient background to be same height as video */
-               function resizeVideo() {
-                 setTimeout(function() {
-                        var videoEleHeight = $('#vi').innerHeight();
-                        $('.careers-top').css('height', videoEleHeight);
-                   }, 500);  
-               }
-               resizeVideo();
-               
-               $(window).resize(function() {
-                    resizeVideo();
-               });
-              
-                
-	}); // end of document ready
-        </script>
-        
-    /* ie8 only -- fix video full width and height */
-   <!--[if lt IE 9]>
-   <script>
-   $(document).ready(function() {
-        var videoRatio = 1.778;
-        var objectEleWidth = $('#videoObject').innerWidth();
-        var objectEleHeight = objectEleWidth / videoRatio;
-        $('#videoObject').css('height', objectEleHeight);
+    $('#careers-accordion').accordion({
+        heightStyle: "content",
+        collapsible: true
+    });
+    
+    /* cover video from the bottom */
+    var coverVideo = $('.careers-openings');
+    $(window).resize(function() {
+            var videoHeight = $('#videoiframe').innerHeight();
+            if(videoHeight >= 630) {
+                    var minusVideoHeight = videoHeight - 630 + 4;
+                    coverVideo.css('marginTop', '-'+minusVideoHeight+'px');
+                    console.log(videoHeight + " and " + minusVideoHeight);
+            }
+            else {
+                    coverVideo.css('marginTop', '-4px');
+            }
 
-         $(window).resize(function() {
-            objectEleWidth = $('#videoObject').innerWidth();
-             objectEleHeight = objectEleWidth / videoRatio;
-             $('#videoObject').css('height', objectEleHeight);
-         });
-   }); // end of document ready
-   </script>
-    <![endif]-->
+    });
+
+   /* blue gradient background to be same height as video */
+   function resizeVideo() {
+     setTimeout(function() {
+            var videoEleHeight = $('#vi').innerHeight();
+            $('.careers-top').css('height', videoEleHeight);
+       }, 500);  
+   }
+   resizeVideo();
+
+   $(window).resize(function() {
+        resizeVideo();
+   });
+}); // end of document ready
+</script>
+        
+/* ie8 only -- fix video full width and height */
+<!--[if lt IE 9]>
+<script>
+$(document).ready(function() {
+    var videoRatio = 1.778;
+    var objectEleWidth = $('#videoObject').innerWidth();
+    var objectEleHeight = objectEleWidth / videoRatio;
+    $('#videoObject').css('height', objectEleHeight);
+
+     $(window).resize(function() {
+        objectEleWidth = $('#videoObject').innerWidth();
+         objectEleHeight = objectEleWidth / videoRatio;
+         $('#videoObject').css('height', objectEleHeight);
+     });
+}); // end of document ready
+</script>
+<![endif]-->
       
       
 <? $a = new Area('javascript');$a->display($c); ?>

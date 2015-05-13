@@ -41,6 +41,9 @@
             echo "<script type='text/javascript' src='//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js'></script>";
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
         }
+        else if(preg_match("/careers/", $URL)) {    // display script on careers page
+            echo "<script src='//code.jquery.com/ui/1.11.4/jquery-ui.js'></script>";
+        }
         else {
             echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
         }

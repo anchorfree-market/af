@@ -92,6 +92,21 @@ a {
 .align-right {
   text-align: right; }
 
+.margin-center {
+    float: none;
+    margin: 0 auto;
+}
+
+.m-top-0 {
+    margin-top: 0;
+}
+.m-top-15 {
+    margin-top: 15px;
+}
+.m-top-40 {
+    margin-top: 40px;
+}
+
 /* --- Typography --- */
 /**
  * Titles
@@ -289,7 +304,7 @@ p {
 .footer-nav a {
   font-weight: 600;
   font-size: 14px;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 14px;
   line-height: 1.4rem;
   -webkit-transition: all 400ms ease-in-out;
@@ -433,6 +448,7 @@ p {
     .btn-sp-right {
         margin-right: 10px;
     }
+
 /* --- Home --- */
 .home h2 {
     margin-top: 0;
@@ -2336,6 +2352,10 @@ p {
 }
 
 /* Careers */
+.txt-white,
+.txt-white h1, .txt-white h2, .txt-white h3, .txt-white h5, .txt-white p {
+    color: #fff;
+}
 #vi {
     position: relative;
     width: 100%;
@@ -2357,7 +2377,10 @@ p {
     background-size: 100%;
     background-repeat: repeat-y;
 }
-.careers-top h1 {
+.careers-top span {
+    display: block;
+    text-align: right;
+    margin: -20px 0 20px;
     color: #fff;
 }
 .careers-openings {
@@ -2365,6 +2388,60 @@ p {
     z-index:2;
     position: relative;
     background: #fff;
+}
+.careers-our-values h5 {
+    padding-bottom: 10px;
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+}
+.careers-more h5 {
+    font-size: 1.6em;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    text-align: left;
+}
+/* careers accordion */
+#careers-accordion h3 {
+    text-align: left;
+    font-size: 1.8em;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px;
+    position: relative;
+    border-bottom: 1px solid #d3d3d3;
+}
+.department-jobs-count {
+    float: right;
+}
+.ui-accordion-content > div {
+    padding: 0px 30px;
+}
+.ui-state-active {
+    border-bottom: none !important;
+}
+.ui-accordion-content p {
+    padding: 10px 20px;
+    margin: 0;
+    border-radius: 4px;
+}
+.ui-accordion-content a {
+    float: right;
+    font-size:.8em !important;
+    font-weight: 600;
+}
+.ui-accordion-content p:nth-child(odd) {
+    background: #1b87da;
+    color: #fff !important;
+}
+.ul-accordion-content p:nth-child(even) {
+    color: #000;
+}
+.ui-accordion-content p:nth-child(2n+1) a {
+    color: #fff !important;
+}
+.ui-accordion-content p:nth-child(2n) a {
+    color: #000 !important;
 }
 
 /* media queries */
