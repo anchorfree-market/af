@@ -1,19 +1,15 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<?php $view->inc('elements/fixed-contact-us.php'); ?>
+<?php $view->inc('elements/fixed-contact-us.php'); 
+    $GLOBALS['topFirstEle'] = 'h1';
+    $GLOBALS['topSecondEle'] = 'h3';
+?>
 
 <section class="section section-featured bg-gradient--blue">
     <div class="wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <? $a = new Area('Featured Text h1');$a->display($c); ?>
-                    <!-- <h1 class="text-white">Reach <span class="strong">25 million</span> active and engaged unique users from around the world</h1>-->
-                </div>
-                <div class="col-sm-12 col-md-6 col-md-offset-3">
-                    <? $a = new Area('Featured Text h3');$a->display($c); ?>
-                    <!-- <h3 class="text-white">Reach mobile and PC users who care about their privacy, love to access content online, travel frequently and love their gadgets.</h3>-->
-                </div>
+                <?php $view->inc('elements/txt-center-blue-bg.php'); ?>
                 <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
                     <? $a = new Area('Advertise Featured Image');$a->display($c); ?>
                     <!--<img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">-->
