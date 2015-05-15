@@ -106,6 +106,9 @@ a {
 .m-top-40 {
     margin-top: 40px;
 }
+.m-bottom-40 {
+    margin-bottom: 40px;
+}
 
 .btn-center-2 a {
     margin-bottom: 8px;
@@ -484,6 +487,10 @@ p {
 .quote h3 {
     font-size: 2.5em;
     line-height: 1.2em;
+    text-indent: 65px;
+    padding-top: 15px;
+    background: url('../images/sprite.png') no-repeat 0 -289px;
+    background-size: auto 600px;
 }
 .quote h3, .quote span {
     text-align: left;
@@ -892,7 +899,7 @@ p {
     line-height: 42px;
     line-height: 4.2rem;
     background-repeat: no-repeat;
-    /*background-image: url("../images/icn_browsers_sprite.png");*/ }
+    }
     .product-page-thumb {
         background-image: url("../images/sprite.png");
         display: inline-block;
@@ -1268,9 +1275,9 @@ p {
   text-align: left; }
 
 .section-contact-us .btn {
-  position: absolute;
-  right: 0;
-  top: 20px; }
+  position: relative;
+  display: block;
+  top: 40px; }
 
 /* Sticky contact */
 .section-contact-sticky {
@@ -1402,7 +1409,7 @@ p {
   margin-top: 70px; }
 
 .video-container {
-  margin-top: 30px;
+  margin-top: 0px;
   box-shadow: 0px 0px 20px 0px rgba(17, 18, 17, 0.3); }
 
 .copyright-video {
@@ -2200,7 +2207,8 @@ p {
   margin-top: 60px; }
 
 .section-contact-us-carrier .btn {
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  width: 320px;}
 
 /* Sticky contact */
 .section-contact-sticky {
@@ -2496,7 +2504,6 @@ p {
       text-align: center; 
     }
     .section-contact-us .btn {
-     position: static;
      margin-top: 20px auto; 
     }
     /*.diagram-router {right: 270px; }*/
@@ -2698,6 +2705,13 @@ p {
      line-height: 2.8rem;
      text-align: center; 
     }
+    .section-contact-us h2 {
+        text-align: center;
+    }
+    .section-contact-us .btn {
+        top: -25px; 
+        margin: 0 auto;
+    }
     .available-on {
       left: 50%;
       margin-left: -100px;
@@ -2794,6 +2808,7 @@ p {
 @media (max-width: 480px) {
     .btn-sp-right {margin-right: 0;}
     .btn-center-2 a {width: 80%;}
+    .section-contact-us-carrier .btn {width: auto;white-space:normal;}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
     .product .product-type {

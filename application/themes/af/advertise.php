@@ -75,34 +75,6 @@ $view->inc('elements/header.php');  ?>
                     </div>
                     <div class="wrapper-counters">
                         <? $a = new Area('Advertise Counters');$a->display($c); ?>
-                        <!--
-                        <ul class="counters">
-                            <li id="counter1" class="counter">
-                                <span class="counter-title">Unique active users</span>
-                                <span class="counter-number"><span id="counter-data1"></span><span class="counter-unit">M</span></span>
-                                <span class="counter-subtitle">Per month</span>
-                            </li>
-                            <li id="counter2" class="counter">
-                                <span class="counter-title">User sessions</span>
-                                <span class="counter-number"><span id="counter-data2"></span><span class="counter-unit">M</span></span>
-                                <span class="counter-subtitle">Per month</span>
-                            </li>
-                            <li id="counter3" class="counter">
-                                <span class="counter-title">Page views/ad views</span>
-                                <span class="counter-number"><span id="counter-data3"></span><span class="counter-unit">B</span></span>
-                                <span class="counter-subtitle">Per month</span>
-                            </li>
-                            <li id="counter4" class="counter">
-                                <span class="counter-title">New downloads</span>
-                                <span class="counter-number"><span id="counter-data4"></span><span class="counter-unit">M</span></span>
-                                <span class="counter-subtitle">Per month</span>
-                            </li>
-                            <li id="counter5" class="counter">
-                                <span class="counter-title">Video views</span>
-                                <span class="counter-number"><span id="counter-data5"></span><span class="counter-unit">M</span></span>
-                                <span class="counter-subtitle">Per month</span>
-                            </li>
-                        </ul>-->
                     </div>
                 </div>
             </div> <!-- .row -->
@@ -116,9 +88,7 @@ $view->inc('elements/header.php');  ?>
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
                     <? $a = new Area('How it Works Text');$a->display($c); ?>
-                    <!--<h2>How it works</h2>
-                    <p class="text-center">Hotspot Shield allows users to access and consume content securely and privately. Each user session spans approximately <span class="italic strong text-dark">148 page views</span>  and all advertising can be contextually targeted.</p>-->
-                </div>
+               </div>
                 <div class="col-md-4 product">
                     <h5 class="product-type product-type--landing"><span class="product-page-thumb product-landing"></span><? $a = new Area('how works 1');$a->display($c); ?><!--User is directed to a landing page--></h5>
                     <img id="img-product1" src="<?php echo $view->getThemePath()?>/images/browser_single_page.png" class="full-width">
@@ -150,9 +120,7 @@ $view->inc('elements/header.php');  ?>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
                     <? $a = new Area('Mobile Advertising h2');$a->display($c); ?>
-                    <!--<h2 class="text-white">Mobile Advertising * <br/> Wi-Fi security and online privacy at the tip of your fingers.</h2>-->
                     <? $a = new Area('Mobile Advertising h3');$a->display($c); ?>
-                    <!--<h3 class="text-white">Reach <span class="italic strong">7.2 million</span> monthly active users at first touch in app!</h3>-->
 
                     <div class="androids">
                         <div class="android android-center">
@@ -191,82 +159,9 @@ $view->inc('elements/header.php');  ?>
                     </a>
                     <h2>
                         <? $a = new Area('comScore Chart');$a->display($c); ?>
-                        <!--
-                    <div class="chart">
-                        <div class="label-axis-y">Strengh: Comscore index</div>
-                        <ul class="chart-lines">
-                            <li><span>180.0</span></li>
-                            <li><span>160.0</span></li>
-                            <li><span>140.0</span></li>
-                            <li><span>120.0</span></li>
-                            <li><span>100.0</span></li>
-                            <li><span>80.0</span></li>
-                            <li><span>60.0</span></li>
-                            <li><span>40.0</span></li>
-                            <li><span>20.0</span></li>
-                            <li><span>0.0</span></li>
-                        </ul>
-                        <ul class="chart-bars">
-                            <li class="chart-bar-autos">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Autos</span>
-                            </li>
-
-                            <li class="chart-bar-retail">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Retail</span>
-                            </li>
-
-                            <li class="chart-bar-entertainment">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Entertainment</span>
-                            </li>
-
-                            <li class="chart-bar-business">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Business &amp; Finance</span>
-                            </li>
-
-                            <li class="chart-bar-travel">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Travel &amp; information</span>
-                            </li>
-
-                            <li class="chart-bar-sports">
-                                <div class="wrapper-bar">
-                                    <span class="chart-bar-anchorfree"></span>
-                                    <span class="chart-bar-comscore"></span>
-                                </div>
-                                <span class="chart-bar-label">Sports</span>
-                            </li>
-                        </ul>
-                        <ul class="chart-legend">
-                            <li class="legend-label legend-label--anchorfree">AncorFree Index</li>
-                            <li class="legend-label legend-label--comscore">ComScore base</li>
-                        </ul>
-                    </div>-->
                 </div>
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <? $a = new Area('comScore');$a->display($c); ?>
-                    <!--
-                    <p class="text-center">
-                        According to ComScore, AnchorFree users have a much higher propensity to visit travel, retail, business and finance websites than the average Internet user. AnchorFree’s rapidly growing network of U.S. Hotspot Shield users living, traveling, and working abroad puts advertisers in touch with an audience that is practically unreachable by any other means.
-                    </p>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
@@ -278,19 +173,13 @@ $view->inc('elements/header.php');  ?>
     <div class="wrapper wrapper--small">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-8 col-md-offset-2 relative">
+                <div class="col-sm-9 col-md-7 col-md-offset-1 relative">
                     <h2 class="text-white" style="padding: 20px 0;">
-                        <?
-                            $a = new Area('Contact Us Text');
-                            $a->display($c);
-                        ?>
+                        <? $a = new Area('Contact Us Text');$a->display($c);?>
                     </h2>
-                    <?
-                        $a = new Area('Contact Us Button');
-                        $a->display($c);
-                    ?>
-                    <!--<h2 class="text-white" style="padding: 20px 0;">For more information about the service</h2>-->
-                    <!--<a class="btn btn-lg btn--green" href="mailto:advertise@anchorfree.com" title="advertise@anchorfree.com" style='top: 40px;'>Contact us</a>-->
+               </div>
+                <div class="col-sm-3 col-md-3">
+                    <? $a = new Area('Contact Us Button');$a->display($c);?>
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
