@@ -43,7 +43,7 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
-                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
                         <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
@@ -53,7 +53,7 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
-                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
                         <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
@@ -63,7 +63,7 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
-                        <p><?php echo $job['title']?> - <?php echo $job['location']['name']?>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
                         <a href="<?php echo $job['absolute_url']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
@@ -117,16 +117,7 @@ $(document).ready(function() {
 <!--[if lt IE 9]>
 <script>
 $(document).ready(function() {
-    var videoRatio = 1.778;
-    var objectEleWidth = $('#videoObject').innerWidth();
-    var objectEleHeight = objectEleWidth / videoRatio;
-    $('#videoObject').css('height', objectEleHeight);
-
-     $(window).resize(function() {
-        objectEleWidth = $('#videoObject').innerWidth();
-         objectEleHeight = objectEleWidth / videoRatio;
-         $('#videoObject').css('height', objectEleHeight);
-     });
+    $('#vi-contain').html('<img src="<?php echo $view->getThemePath()?>/videos/careers-video.png" style="width: 100%;">');
 }); // end of document ready
 </script>
 <![endif]-->

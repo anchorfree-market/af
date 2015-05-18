@@ -1,23 +1,15 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
 
-<section class="section section-featured-carrier bg-gradient--blue" style="position-relative;">
+<section class="section section-featured-carrier bg-gradient--blue top-section" style="position-relative;">
     <div class="wrapper">
         <div class="container">
             <div class="row">
                 <div class="col-sm-8 col-md-7 col-lg-6">
                     <h1 class="text-white align-left">
-                        <?
-                            $a = new Area('Carrier Feature H1');
-                            $a->display($c);
-                        ?>
+                        <?$a = new Area('Carrier Feature H1');$a->display($c);?>
                     </h1>
-                    <?
-                        $a = new Area('How it Works Button');
-                        $a->display($c);
-                    ?>
-                    <!--<a class="btn btn-lg btn--green js-scroll-to howitw" href="#" data-scroll="#howitworks-carrier" title="How it works">How it works</a>-->
-                    <!--<h1 class="text-white align-left">Our <span class="strong">Wi-Fi Security</span> product provides security to your customers when using public Wi-Fi.</h1>-->
+                    <?$a = new Area('How it Works Button');$a->display($c);?>
                     <p class="available-on">Available on</p>
                 </div>
             </div> <!-- .row -->
@@ -32,85 +24,42 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="h2-carrier">
-                        <?
-                            $a = new Area('Carrier Wifi not Safe Title');
-                            $a->display($c);
-                        ?>
+                        <?$a = new Area('Carrier Wifi not Safe Title');$a->display($c);?>
                     </h2>
-                    <!--<h2 class="h2-carrier">Public Wi-Fi is not safe</h2>-->
-                </div>
+               </div>
                 <div class="col-sm-12 col-md-12 col-lg-10 col-lg-offset-1">
-                        <?
-                            $a = new Area('Carrier Wifi not Safe Text');
-                            $a->display($c);
-                        ?> 
-                    <!--<p class="text-center">According to a product manager at a Brazilian carrier, 40% of all subscribers have suffered a form of identity theft from hacking.<span class="divider-blue"></span>According to a Director at Chinese carrier, 10-20% of their 750M subscribers have experienced Apps being hijacked by hackers.</p>-->  
-                </div>
+                        <? $a = new Area('Carrier Wifi not Safe Text');$a->display($c);?> 
+               </div>
             </div> <!-- .row -->
             <ul class="attacks-list row">
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--sniffers"></span>-->
-                        <?
-                            $a = new Area('Carrier Sniffers');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>Sniffers allow hackers to passively intercept data sent between your mobile app or web browser and Wi-Fi routers and web servers on the Internet. This easy attack allows any hackers to view your credentials, any email, apps, search histories or files you transfer between computers or open from network locations on an unsecured Wi-Fi network.</p>-->    
+                       <?$a = new Area('Carrier Sniffers');$a->display($c);?> 
+                   </div>
+                </li>
+                <li class="col-sm-12 col-lg-6 attack-list-type animate">
+                    <div class="attack-list-wrapper">
+                        <?$a = new Area('Carrier Sidejacking');$a->display($c);?> 
+                   </div>
+                </li>
+                <li class="col-sm-12 col-lg-6 attack-list-type animate">
+                    <div class="attack-list-wrapper">
+                        <?$a = new Area('Carrier Hacking Tools');$a->display($c);?> 
+                   </div>
+                </li>
+                <li class="col-sm-12 col-lg-6 attack-list-type animate">
+                    <div class="attack-list-wrapper">
+                        <?$a = new Area('Carrier Rogue Networks');$a->display($c);?> 
+                   </div>
+                </li>
+                <li class="col-sm-12 col-lg-6 attack-list-type animate">
+                    <div class="attack-list-wrapper">
+                        <?$a = new Area('Carrier Man in the Middle Attacks');$a->display($c);?> 
                     </div>
                 </li>
                 <li class="col-sm-12 col-lg-6 attack-list-type animate">
                     <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--sidejacking"></span>
-                        <h4>Sidejacking</h4>-->
-                        <?
-                            $a = new Area('Carrier Sidejacking');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>It is a technique to create an alternative path for IP packets to pass through the hacker's computer en route to their destination.</p>-->
-                    </div>
-                </li>
-                <li class="col-sm-12 col-lg-6 attack-list-type animate">
-                    <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--tools"></span>
-                        <h4>Hacking tools</h4>-->
-                        <?
-                            $a = new Area('Carrier Hacking Tools');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>Hacking software and Apps are readily available for free on the web and there are >200 videos on YouTube to show hackers how to use them.</p>-->
-                    </div>
-                </li>
-                <li class="col-sm-12 col-lg-6 attack-list-type animate">
-                    <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--networks"></span>
-                        <h4>Rogue Networks</h4>-->
-                        <?
-                            $a = new Area('Carrier Rogue Networks');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>There are many fake Wi-Fi hotspots that are setup to deceive Wi-Fi users into believing the hotspots are safe/appropriate. It is often set up to passively gather credentials/logins to real hotspots and apps.</p>-->
-                    </div>
-                </li>
-                <li class="col-sm-12 col-lg-6 attack-list-type animate">
-                    <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--manmiddle"></span>
-                        <h4>Man-in-the-middle Attacks</h4>-->
-                        <?
-                            $a = new Area('Carrier Man in the Middle Attacks');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>Hackers under the same Wi-Fi network with your customers can easily eavesdrop to gain credential and information for social engineering/hacking.</p>-->
-                    </div>
-                </li>
-                <li class="col-sm-12 col-lg-6 attack-list-type animate">
-                    <div class="attack-list-wrapper">
-                        <!--<span class="attack-icon attack-icon--honeypot"></span>
-                        <h4>Honeypot Attacks</h4>-->
-                        <?
-                            $a = new Area('Carrier Honeypot Attacks');
-                            $a->display($c);
-                        ?> 
-                        <!--<p>Also called "<span class="strong">Evil Twin Attacks</span>" or "<span class="strong">ARP Spoofing</span>," it is a technique for the IP to be rerouted to the hacker’s computer instead of the real destination.</p>-->
+                        <?$a = new Area('Carrier Honeypot Attacks');$a->display($c);?> 
                     </div>
                 </li>
             </ul>
@@ -124,26 +73,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <?
-                        $a = new Area('Carrier Video Container');
-                        $a->display($c);
-                    ?>
-                    <!--<div class="video-container">
-                        <div id="video-content" class="pretty-embed play">
-                            <div class="fluid-width-video-wrapper" style="padding-top: 56.2162%;"><iframe src="//www.youtube.com/embed/UoZWa62nzaM?autoplay=0&amp;rel=1" width="100%" height="100%" style="border:none;" allowfullscreen="" id="fitvid118984"></iframe></div>                    
-                            </div>
-                    </div>--><!--/.video-container-->
-                    <!--<p class="copyright-video">© <span class="italic">Men in Grey</span></p>-->
+                    <?$a = new Area('Carrier Video Container');$a->display($c);?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 col-lg-offset-1">
-                    <?
-                        $a = new Area('Carrier Customers can be Hacked');
-                        $a->display($c);
-                    ?>
-                    <!--
-                       <h2 class="text-white align-left">How your customers can be hacked</h2>
-                       <p class="text-white">Public Wi-Fi is unsafe and hackers can gain remarkably detailed information from your users. Hackers can see personally identifiable information, including App usage/passwords, keystrokes, messaging/email and favorites/bookmarks. As this video demonstrates, most Wi-Fi users are unaware of these vulnerabilities. And if the user is hacked, who will they blame for their misfortune?</p>
-                        -->
+                    <?$a = new Area('Carrier Customers can be Hacked');$a->display($c);?>
                     </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
@@ -156,13 +89,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <?
-                        $a = new Area('Carrier Protect Customers identity');
-                        $a->display($c);
-                    ?>
-                    <!--
-                    <h2 class="h2-carrier">Protect your customers' identity and assets</h2> 
-                    <p class="text-center">Discover how AnchorFree's Wi-Fi Security works by simply changing the status of the security control below.</p>-->
+                    <?$a = new Area('Carrier Protect Customers identity');$a->display($c);?>
                 </div>         
                 <div class="col-md-12 relative">
                     <div id="switch-js" class="switch switch--off">
@@ -269,55 +196,21 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <?
-                        $a = new Area('Carrier Wi-Fi Security');
-                        $a->display($c);
-                    ?>
-                    <!--<h2 class="h2-carrier">Wi-Fi Security for mobile carriers</h2>-->
+                    <?$a = new Area('Carrier Wi-Fi Security');$a->display($c);?>
                 </div>
             </div> <!-- .row -->
             <ul class="features-list row">
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <?
-                        $a = new Area('Carrier Security List 1');
-                        $a->display($c);
-                    ?>
-                    <!--
-                    <div class="feature-list-wrapper">
-                        <span class="feature-icon feature-icon--wifi"></span>
-                        <p>AnchorFree’s Wi-Fi Security product provides carrier/OEM’s customers with security when using public Wi-Fi.</p>
-                    </div>
-                    -->
+                    <?$a = new Area('Carrier Security List 1');$a->display($c);?>
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <?
-                        $a = new Area('Carrier Security List 2');
-                        $a->display($c);
-                    ?>
-                    <!--<div class="feature-list-wrapper">
-                        <span class="feature-icon feature-icon--custom"></span>
-                        <p>Wi-Fi Security allows carriers to have a control element when its customers leave the licensed-spectrum.</p>
-                    </div>-->
+                    <?$a = new Area('Carrier Security List 2');$a->display($c);?>
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <?
-                        $a = new Area('Carrier Security List 3');
-                        $a->display($c);
-                    ?>
-                    <!--<div class="feature-list-wrapper">
-                        <span class="feature-icon feature-icon--global"></span>
-                        <p>Wi-Fi Security can utilize a few different business models based on the needs of the carrier/OEM.</p>
-                    </div>-->
+                    <?$a = new Area('Carrier Security List 3');$a->display($c);?>
                 </li>
                 <li class="feature-type col-md-10 col-md-offset-1 relative animate">
-                    <?
-                        $a = new Area('Carrier Security List 4');
-                        $a->display($c);
-                    ?>
-                    <!--<div class="feature-list-wrapper">
-                        <span class="feature-icon feature-icon--multidevice"></span>
-                        <p>Multi-device accounts even when your customer utilizes Wi-Fi on their PC or MAC</p>
-                    </div>-->
+                    <?$a = new Area('Carrier Security List 4');$a->display($c);?>
                 </li>
             </ul>
         </div> <!-- .container -->
@@ -330,13 +223,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-md-offset-1 align-center">
-                    <?
-                        $a = new Area('Carrier Contact Us');
-                        $a->display($c);
-                    ?>
-                    <!--
-                    <h2 class="text-white h2-carrier">Work with AnchorFree, the pioneer and most trusted Wi-Fi security provider with <span class="strong">over 300 million downloads worldwide</span>.</h2>
-                    <a class="btn btn-lg btn--green" href="mailto:bizdev@anchorfree.com" title="bizdev@anchorfree.com">contact us for more information</a>-->
+                    <?$a = new Area('Carrier Contact Us'); $a->display($c);?>
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
