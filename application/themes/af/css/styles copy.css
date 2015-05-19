@@ -1,25 +1,6 @@
 /*@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700|Open+Sans:300,600,700);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,600,700);*/
 /* --- RESET ---*/
-/* copied from typography.css */
-body { 
-	/* customize_body */ font: normal normal 13px Arial; /* customize_body */
-	/* customize_body */ color: #777777; /* customize_body */
-	line-height:18px;
-}
-
-img {border: 0px}
-
-h1,h2,h3,h4,h5{ margin:0px 0px 4px 0px; padding:4px 0px; margin-top:8px }
-h1{ font: normal normal 21px Arial; line-height:28px }
-h2{ font-size:18px; line-height:24px }
-h3{ font-size:16px; line-height:21px }
-h4{ font-size:14px; line-height:18px }
-h5{ font-size:13px; line-height:16px }
-p{ padding:0px 0px 0px 0px; margin:0px 0px 12px 0px; }
-.section-featured-img {margin-top: 40px;}
-/* end copy from typography.css */
-
 *,
 *:before,
 *:after {
@@ -175,6 +156,14 @@ h3, .h3 {
   line-height: 18px;
   line-height: 1.8rem; }
 
+/*
+  @media only screen and (max-width: 768px) {
+    h1, .h1 {
+      line-height: 43px;
+      line-height: 4.3rem;
+      font-size: 40px;
+      font-size: 4rem; } }
+*/
   @media only screen and (max-width: 767px) {
     h1, .h1 {
       line-height: 1.1em;
@@ -509,7 +498,7 @@ p {
 .quote a {
     margin-top: 30px;
 }
-.home-video-container {
+.video-container {
     position: relative;
     padding-bottom:56.25%;
     padding-top:30px;
@@ -517,9 +506,9 @@ p {
     overflow: hidden;
     margin-bottom: 15px;
 }
-.home-video-container iframe,
-.home-video-container object,
-.home-video-container embed {
+.video-container iframe,
+.video-container object,
+.video-container embed {
     position:absolute;
     top:0;
     left:0;
@@ -2676,7 +2665,6 @@ p {
     }
     .meet-visionaries .title {margin-top: 0;}
     .backstretch-contain .container {padding: 30px 0;}
-    .ui-accordion-content a {float: none;display:block;}
 }
 @media only screen and (max-width: 767px) {
     .androids {
@@ -2891,6 +2879,4 @@ p {
     .feature-type .feature-icon--global {background-position: left -660px; }
     .feature-type .feature-icon--wifi {background-position: left -713px;}
     .feature-type .feature-icon--multidevice {background-position: left -497px; }
-    
-    
 }
