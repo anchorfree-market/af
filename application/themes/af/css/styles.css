@@ -2307,7 +2307,7 @@ p {
     float: right;
 }
 .release button {
-    width: 250px;
+    min-width: 250px;
     display: block;
     margin: 0 auto;
 }
@@ -2846,12 +2846,15 @@ p {
 @media only screen and (max-width:520px) {
     .btn-sp-right {margin-right: 0;}
     .btn-center-2 a {width: 80%;}
+    .btn-single {width: 80%;}
+    .quote .btn-single {width: 90%;}
+    .careers-top .btn-single {width: 90%;display:block;margin: 0 auto;float: none !important;}
     .meet-visionaries .container > div {
         width: 100%;
     }
 }
 @media (max-width: 480px) {
-    .section-contact-us-carrier .btn {width: auto;white-space:normal;}
+    .section-contact-us-carrier .btn {white-space:normal;}
     #home-feature-on {
         background-size: 40% auto;
         padding-top: 81%;
