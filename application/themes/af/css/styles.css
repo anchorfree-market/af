@@ -443,8 +443,8 @@ p {
   font-size: 1.6rem;
   color: white;
   border-radius: 3px;
-  padding: 10px 0px;
-  width: 220px;
+  padding: 10px 15px;
+  min-width: 220px;
   text-transform: uppercase;
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: all 0.4s ease-in-out 0s;
@@ -483,11 +483,18 @@ p {
     font-weight:300;
     line-height: 1.2em;
 }
+#home-product .backstretch > img {
+    background: url("../images/sprite-background.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
+    
+}
 .home-product h1 {
     color: #343434 !important;
 }
 .home-product a {
     float: none !important;
+}
+.section-home-readmore .backstretch > img {
+    background: url("/~anchorj6/af/application/themes/af/images/sprite-background.jpg") no-repeat scroll 100% 51% / 100% auto rgba(0, 0, 0, 0);
 }
 .section-home-readmore > wrapper {
     padding: 100px 0;
@@ -533,6 +540,9 @@ p {
     height: 0;
     padding-top: 7%;
     max-width: 1200px;
+}
+.section-home-join-team .backstretch > img {
+    background: url("/~anchorj6/af/application/themes/af/images/sprite-background.jpg") no-repeat scroll right 100% / 100% auto rgba(0, 0, 0, 0);
 }
 /* --- Advertise Section --- */
 /* Section BG */
@@ -2386,10 +2396,8 @@ p {
     padding: 100px 0;
 }
 .txt-right {
-    /*
     background: url('../images/blue-gradients-transparent-bg-rt.png') no-repeat;
     background-position: right top; 
-    */
 }
 .txt-left {
     background: url('../images/blue-gradients-transparent-bg-lt.png') no-repeat;
@@ -2399,7 +2407,8 @@ p {
 .backstretch-contain h1, .backstretch-contain p, .backstretch-contain .btn a {
     color: #ffffff;
 }
-.txt-right h1, .txt-right p {
+.txt-right h1, .txt-right p,
+.careers-top h1, .careers-top p {
     text-align: right;
 }
 .txt-left p {
@@ -2409,7 +2418,7 @@ p {
     display: block;
     margin: 0 auto;
 }
-.txt-right .btn {
+.txt-right .btn, .careers-top .btn {
     float: right;
 }
 
@@ -2564,7 +2573,7 @@ p {
     .section-video h2 {margin-top: 50px; }
     .diagram-router {right: 270px; }
     .diagram-description--holes {left: 325px; }
-    .btn {width: 200px;}
+    .btn {min-width: 242px;}
     
   .popover-custom--hackers {
     left: 385px; }
@@ -2835,13 +2844,13 @@ p {
     .quote a {margin: 30px auto 0;display:block;}
 }
 @media only screen and (max-width:520px) {
+    .btn-sp-right {margin-right: 0;}
+    .btn-center-2 a {width: 80%;}
     .meet-visionaries .container > div {
         width: 100%;
     }
 }
 @media (max-width: 480px) {
-    .btn-sp-right {margin-right: 0;}
-    .btn-center-2 a {width: 80%;}
     .section-contact-us-carrier .btn {width: auto;white-space:normal;}
     #home-feature-on {
         background-size: 40% auto;

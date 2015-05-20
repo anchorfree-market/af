@@ -117,7 +117,7 @@ $(document).ready(function() {
 <!--[if lt IE 9]>
 <script>
 $(document).ready(function() {
-    $('#vi-contain').html('<img src="<?php echo $view->getThemePath()?>/videos/careers-video.png" style="width: 100%;">');
+    $('#vi-contain').html('<img src="<?php echo $view->getThemePath()?>/videos/careers-video.jpg" style="width: 100%;">');
 }); // end of document ready
 </script>
 <![endif]-->

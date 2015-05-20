@@ -37,7 +37,7 @@ $view->inc('elements/header.php');
         <? $a = new Area('Section Featured On');$a->display($c); ?>
     </div>
 </div>  
-<section class="section section-join-team join-team">
+<section class="section section-home-join-team join-team">
     <?php $view->inc('elements/txt-left-img-right-2.php'); ?>
 </section>
 
