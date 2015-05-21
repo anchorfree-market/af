@@ -483,18 +483,11 @@ p {
     font-weight:300;
     line-height: 1.2em;
 }
-#home-product .backstretch > img {
-    background: url("../images/sprite-background.jpg") no-repeat scroll 0 0 / 100% auto rgba(0, 0, 0, 0);
-    
-}
 .home-product h1 {
     color: #343434 !important;
 }
 .home-product a {
     float: none !important;
-}
-.section-home-readmore .backstretch > img {
-    background: url("/~anchorj6/af/application/themes/af/images/sprite-background.jpg") no-repeat scroll 100% 51% / 100% auto rgba(0, 0, 0, 0);
 }
 .section-home-readmore > wrapper {
     padding: 100px 0;
@@ -540,9 +533,6 @@ p {
     height: 0;
     padding-top: 7%;
     max-width: 1200px;
-}
-.section-home-join-team .backstretch > img {
-    background: url("/~anchorj6/af/application/themes/af/images/sprite-background.jpg") no-repeat scroll right 100% / 100% auto rgba(0, 0, 0, 0);
 }
 /* --- Advertise Section --- */
 /* Section BG */

@@ -113,7 +113,7 @@ $(document).ready(function() {
 }); // end of document ready
 </script>
         
-/* ie8 only -- fix video full width and height */
+<!-- ie8 only -- fix video full width and height -->
 <!--[if lt IE 9]>
 <script>
 $(document).ready(function() {
