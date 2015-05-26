@@ -11,7 +11,7 @@ $view->inc('elements/header.php');  ?>
         <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?></div>
         <div class="press-desc"><? $a = new Area('Press Description');$a->display($c); ?></div>
     </div>
-    <div class="col-md-4 press-feature">
+    <div class="col-md-4 press-feature hidden-xs">
         <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
     </div>
 </div>
