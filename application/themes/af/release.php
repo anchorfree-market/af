@@ -1,7 +1,6 @@
 <?php $view->inc('elements/header.php');  ?>
 
 <div class="container-fluid top-section">
-    <div class="col-md-12">
     <? $a = new GlobalArea('Background Header Image');$a->display($c); ?>
 	<div class="wrapper txt-left backstretch-contain">
     <div class="container">
@@ -9,7 +8,7 @@
             <? $a = new Area('Text Left');$a->display($c); ?>
         </div>
         <div class="clearfix"></div>
-    </div></div></div>
+    </div></div>
 </div>
 
 <div class="row">
