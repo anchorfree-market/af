@@ -4,6 +4,7 @@
 	<div class="row">
     <div class="col-md-12">
     <?php $view->inc('elements/txt-left-img-right.php'); ?>
+    <? $a = new Area('Backstretch Script');$a->display($c); ?>
     </div>
     </div>
 <div class="row">
@@ -20,5 +21,4 @@
 </div></div></div>
     
 <?php $view->inc('elements/footer.php'); ?>
-<? $a = new Area('Backstretch Script');$a->display($c); ?>
 
