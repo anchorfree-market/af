@@ -1,8 +1,6 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<section class="section section-about-us about-us top-section">
-</section>
-<section class="section section-about-us about-us top-section">
+<section class="top-section">
 </section>
     <? $a = new Area('Section Main Area');$a->display($c); ?>
 
