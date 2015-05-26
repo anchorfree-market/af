@@ -5,11 +5,11 @@ $view->inc('elements/header.php');  ?>
 </section>
 <div class="wrapper mid press">
     <div class="container">
-        <div class="col-md-7">
-            <h2 class="main-title">Press Releases</h2>
+        <div class="col-md-8">
+            <h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2>
             <? $a = new GlobalArea('Press Release Lists');$a->display($c); ?>
         </div>
-        <div class="col-md-5 press-feature">
+        <div class="col-md-4 press-feature">
             <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
         </div>
     </div>
