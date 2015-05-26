@@ -3,6 +3,7 @@ $view->inc('elements/header.php');  ?>
 <section class="section section-press top-section">
     <div><h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2></div>
 </section>
+<div class="container">
 <div class="wrapper mid press">
     <div class="col-md-8">
         <h2>
@@ -14,5 +15,6 @@ $view->inc('elements/header.php');  ?>
     <div class="col-md-4 press-feature">
         <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
     </div>
+</div>
 </div>
 <?php $view->inc('elements/footer.php'); ?>

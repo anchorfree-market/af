@@ -1,5 +1,4 @@
-<?php 
-$view->inc('elements/header.php');  ?>
+<?php $view->inc('elements/header.php');  ?>
 <section class="section section-press release top-section">
     <?php $view->inc('elements/txt-left-img-right.php'); ?>
 </section>
