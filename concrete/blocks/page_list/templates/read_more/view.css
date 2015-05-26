@@ -46,5 +46,10 @@ div.ccm-block-page-list-page-entry-grid-thumbnail-title {
 div.ccm-block-page-list-page-entry-grid-thumbnail-title i {
     display: none;
 }
-
+.ccm-block-page-list-readmore {
+    text-align: center;
+}
+.ccm-block-page-list-readmore a {
+    display: inline-block !important;
+}
 
