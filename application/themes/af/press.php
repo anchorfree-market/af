@@ -1,7 +1,5 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-
-
 <div class="container-fluid top-section">
 <div class="row">
 	<div class="container">
