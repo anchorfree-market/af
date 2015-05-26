@@ -3,13 +3,6 @@ defined('C5_EXECUTE') or die("Access Denied.");
 $th = Loader::helper('text');
 $c = Page::getCurrentPage();
 $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service\Date */
-
-// check url of current page
-        //$URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); 
-        //$URL = getURL($url);
-        $URL = $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"];
-
-
 ?>
 
 <?php if ( $c->isEditMode() && $controller->isBlockEmpty()) { ?>
@@ -114,33 +107,20 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                     <?php if ($useButtonForLink) { ?>
                         <?php echo $title; ?>
                     <?php } else { ?>
-                        <a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+                    <h1><?php echo $title ?></h1>
                     <?php } ?>
                 </div>
                 <?php endif; ?>
 
                 <?php if ($includeDescription): ?>
                     <div class="ccm-block-page-list-description">
-                        <?php echo $description ?>
+                        <p><?php echo $description ?></p>
                     </div>
                 <?php endif; ?>
-                    <!--
-                    <div class="ccm-block-readme">
-                    <script type="text/javascript">
-                        $(document).ready(function(){
-                            if($('.ccm-block-readme').parent().parent().parent().parent().parent().hasClass('press-latest')) {
-                                
-                                            console.log('yes');
-                            }
-                            else {
-                                console.log('no');
-                            }
-                            
-                        });
-                    </script>
-                    </div>
-                    -->
-                
+                    
+                <div class="ccm-block-page-list-readmore">
+                    <button class="btn btn-success btn-single"><a href="<?php echo $url ?>" target="<?php echo $target ?>">Read More</a></button>
+                </div>
 
                 <?php if ($useButtonForLink): ?>
                 <div class="ccm-block-page-list-page-entry-read-more">

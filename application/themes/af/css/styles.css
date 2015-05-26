@@ -2332,6 +2332,9 @@ p {
 .press img {
     padding: 12px 0;
 }
+.press-latest {
+    color: #fff;
+}
 /* About Page */
 .top-section, .section-featured-carrier, .section-featured {
     margin-top: 97px;
