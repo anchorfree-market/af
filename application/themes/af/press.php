@@ -1,7 +1,6 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<section class="section section-press">
-    <h2 class="main-title">Press Releases</h2>
+<section class="section section-press top-section">
 </section>
 <div class="wrapper mid press">
     <div class="col-md-8">
