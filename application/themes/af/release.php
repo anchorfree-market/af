@@ -8,7 +8,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid horzspace">
 <div class="row">
 <div class="container">
     <div class="col-md-8 press">
