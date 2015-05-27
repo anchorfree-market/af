@@ -14,6 +14,7 @@
     </div>
   </div>
 </div>
+</div>
 
 
 <div class="container-fluid top-section txt-left">
