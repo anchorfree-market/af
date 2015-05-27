@@ -21,4 +21,5 @@
 </div>
     
 <?php $view->inc('elements/footer.php'); ?>
+<? $a = new Area('Backstretch Script');$a->display($c); ?>
 
