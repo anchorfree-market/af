@@ -12,12 +12,12 @@
 <div class="row">
 <div class="container">
 	<div class="wrapper mid press">
-    <div class="col-md-8">
+    <div class="col-md-9">
         <div><h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2></div>
         <div class="press-date"><? $a = new GlobalArea('Press Release Lists');$a->display($c); ?></div>
     </div>
     </div>
-    <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
+    <div class="col-md-3 press-feature hidden-xs">
         <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
     </div>
 </div>
