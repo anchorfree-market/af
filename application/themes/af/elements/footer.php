@@ -1,14 +1,16 @@
        <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
-                        <? $a = new GlobalArea('Footer Navigation');$a->display($c); ?>
-                        <div class="recent-news col-md-6 col-sm-6">
-                            <? $a = new GlobalArea('Footer News');$a->display($c); ?>
-                        </div>
-                        <div class="separator saperator-gradient"></div>
-                        <p class="footer-copyright">Copyright &copy; 2015 AnchorFree, Inc. All Rights Reserved</p>
-                    </div>
+                    <div class="col-md-3 col-sm-3"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
+                    <div class="col-md-3 col-sm-3"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
+                    <div class="recent-news col-md-6 col-sm-6 hidden-xs"><? $a = new GlobalArea('Footer News');$a->display($c); ?></div>
+                    <div class="separator saperator-gradient"></div>
+                       
+                </div>
+                <div class="row">
+                	<div class="footer-copyright col-md-6 col-sm-6"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
+					<div class="footer-copyright col-md-6 col-sm-6"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
+				</div>
                 </div> <!-- .row -->
             </div> <!-- .container -->
         </footer>
