@@ -1,8 +1,8 @@
 <?php $view->inc('elements/header.php');  ?>
 
-<div class="container-fluid top-section">
+<div class="container-fluid top-section txt-left">
     <? $a = new GlobalArea('Background Header Image');$a->display($c); ?>
-	<div class="wrapper txt-left backstretch-contain">
+	<div class="backstretch-contain">
     <div class="container">
         <div class="col-sm-8 col-md-7 col-lg-6">
             <? $a = new Area('Text Left');$a->display($c); ?>
