@@ -1,22 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
 
-<div class="container-fluid top-section">
-<div class="row">
-  <div class="col-sm-12 txt-left backstretch-contain">
-    <? $a = new GlobalArea('Background Header Image');$a->display($c); ?>
-    <div class="row">
-      <div class="col-xs-6 col-sm-6">
-        <? $a = new Area('Text Left');$a->display($c); ?>
-      </div>
-      <div class="col-xs-6 col-sm-6">
-        <? $a = new Area('Text Right');$a->display($c); ?>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-
-
 <div class="container-fluid top-section txt-left">
     <div class="row"><? $a = new GlobalArea('Background Header Image');$a->display($c); ?>
 	<div class="backstretch-contain">
@@ -26,7 +9,7 @@
         </div>
         <div class="clearfix"></div>
     </div></div>
-</div>
+</div></div>
 
 <div class="row">
 <div class="container wrapper mid press">
