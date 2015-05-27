@@ -31,7 +31,7 @@
     <div class="<?php echo $c->getPageWrapperClass()?>">
         <header class="head-body header">
         <!-- Fixed navbar -->
-        <div role="navigation" class="navbar navbar-default navbar-fixed-top">
+        <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
                 <div class="navbar-header">
                     <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
