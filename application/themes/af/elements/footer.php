@@ -7,11 +7,12 @@
                     <div class="recent-news col-md-6 col-sm-6 hidden-xs"><? $a = new GlobalArea('Footer News');$a->display($c); ?></div>
                 </div>
                 
-                    <div class="separator saperator-gradient textpadding"></div>
+                    <div class="separator saperator-gradient"></div>
                        
                 <div class="row">
                 <div class="container">
-					<div class="footer-copyright col-md-8 col-sm-6 col-xs-6"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
+					<div class="footer-copyright col-md-12"><? $a = new GlobalArea('Full Width Area');$a->display($c); ?></div>
+                    <div class="footer-copyright col-md-8 col-sm-6 col-xs-6"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
 					<div class="col-md-4 col-sm-6 col-xs-6"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
 				</div>
                 </div>
