@@ -1,7 +1,7 @@
 <?php $view->inc('elements/header.php');  ?>
 
 <div class="container-fluid top-section txt-left">
-	<div class="backstretch-contain">
+	<div class="backstretch-contain" style="padding: 30px 0px 30px 0px !important;">
     <div class="container">
         <?php $view->inc('elements/txt-left-img-right.php'); ?>
     </div>
