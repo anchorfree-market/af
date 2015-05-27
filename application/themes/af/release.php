@@ -8,6 +8,7 @@
     </div>
 </div>
 
+<div class="container-fluid">
 <div class="row">
 <div class="container wrapper mid press">
     <div class="col-md-8">
@@ -17,6 +18,7 @@
     <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
         <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
     </div>
+</div>
 </div>
 </div>
     
