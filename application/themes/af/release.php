@@ -2,14 +2,14 @@
 
 <div class="container-fluid top-section">
 <div class="row">
-  <div class="col-sm-12 txt-left">
+  <div class="col-sm-12 txt-left backstretch-contain">
     <? $a = new GlobalArea('Background Header Image');$a->display($c); ?>
     <div class="row">
       <div class="col-xs-6 col-sm-6">
         <? $a = new Area('Text Left');$a->display($c); ?>
       </div>
       <div class="col-xs-6 col-sm-6">
-        extra nested space
+        <? $a = new Area('Text Right');$a->display($c); ?>
       </div>
     </div>
   </div>
