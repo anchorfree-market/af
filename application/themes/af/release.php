@@ -27,7 +27,14 @@
 </div>
 </div>
 </div>
-    
+<?php
+if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
+   if ($redirectURL != '') {   
+      Header( "HTTP/1.1 301 Moved Permanently" ); 
+      Header( "Location: " . $redirectURL ); 
+   }
+}
+?>
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
 
