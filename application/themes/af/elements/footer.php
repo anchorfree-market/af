@@ -5,12 +5,10 @@
                 <div class="separator saperator-gradient"></div>
                 
                 <div class="container">
-                    <div class="col-md-3 col-sm-3 nav footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
-                    <div class="col-md-3 col-sm-3 nav footer-nav"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 nav footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
+                    <div class="col-md-3 col-sm-3 col-xs-6 nav footer-nav"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
                     <div class="recent-news col-md-6 col-sm-6 hidden-xs"><? $a = new GlobalArea('Footer News');$a->display($c); ?></div>
                 </div>
-                
-                    <div class="separator saperator-gradient"></div>
                        
                 <div class="row">
                 <div class="container">
