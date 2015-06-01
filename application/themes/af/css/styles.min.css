@@ -2633,6 +2633,12 @@ a.popover-custom--connections {
 .backstretch-contain-press .container {
     padding: 30px 0px 30px 0px;
 }
+.press-home-back {
+    padding: 15px 0px 10px 0px;
+	background: url(/af/application/files/5414/3318/8270/pressdetails-blue-back.jpg);
+    background-size:cover;
+	margin-bottom: 25px;
+}
 .press-details-back {
     padding: 15px 0px 10px 0px;
 	background: url(/af/application/files/5414/3318/8270/pressdetails-blue-back.jpg);
