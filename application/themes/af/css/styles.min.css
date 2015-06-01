@@ -2633,6 +2633,12 @@ a.popover-custom--connections {
 .backstretch-contain-press .container {
     padding: 30px 0px 30px 0px;
 }
+
+.backstretch-contain-press .container {
+    padding: 30px 0px 30px 0px;
+	background: url(/application/files/5414/3318/8270/pressdetails-blue-back.jpg;
+    background-position: right top
+}
 .txt-right {
     background: url(../images/blue-gradients-transparent-bg-rt.png)no-repeat;
     background-position: right top
