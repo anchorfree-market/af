@@ -11,7 +11,6 @@ $view->inc('elements/header.php');  ?>
 <div class="container-fluid">
 <div class="container">
 <div class="row">
-<div class="wrapper mid press">
     <div class="col-md-8">
         <h2><? $a = new Area('Press Title');$a->display($c); ?></h2>
         <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?><p>&nbsp;</p></div>
@@ -26,7 +25,6 @@ $view->inc('elements/header.php');  ?>
         <p><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
-</div>
 </div>
 </div>
 </div>
