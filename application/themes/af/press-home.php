@@ -1,28 +1,32 @@
-<?php 
-$view->inc('elements/header.php');  ?>
-<div class="container-fluid top-section">
-<div class="row">
-	<div class="container">
-<div class="wrapper mid press">
-    <div class="col-md-8">
-        <h2>
-            <? $a = new Area('Press Title');$a->display($c); ?>
-        </h2>
-        <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?></div>
-        <div class="press-desc"><? $a = new Area('Press Description');$a->display($c); ?></div>
+<?php $view->inc('elements/header.php');  ?>
+
+<div class="container-fluid top-section txt-left">
+	<div class="backstretch-contain-press">
+    <div class="container">
+        <?php $view->inc('elements/txt-left-img-right.php'); ?>
     </div>
-    <div class="col-md-4 press-feature hidden-xs">
-        <? $a = new GlobalArea('Press Featured On');$a->display($c); ?>
     </div>
 </div>
-</div></div></div>
-<?php
-if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
-   if ($redirectURL != '') {   
-      Header( "HTTP/1.1 301 Moved Permanently" ); 
-      Header( "Location: " . $redirectURL ); 
-   }
-}
-?>
+
+<div class="container-fluid horzspace">
+<div class="row">
+<div class="container">
+    <div class="col-md-8 press">
+        <div><h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2></div>
+        <div class="press-date"><? $a = new GlobalArea('Press Release Lists');$a->display($c); ?></div>
+    </div>
+    <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
+        <div>
+        <h3><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h3>
+        <p><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
+        <p>&nbsp;</p>
+        <h3><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h3>
+        <p><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        </div>
+    </div>
+</div>
+</div>
+</div>
 <?php $view->inc('elements/footer.php'); ?>
+<? $a = new Area('Backstretch Script');$a->display($c); ?>
 
