@@ -3,7 +3,7 @@ $view->inc('elements/header.php');  ?>
 <div class="container-fluid top-section press-details-back">
         <div class="container">
         <div class="row">
-            <h1><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h1>
+            <h1 class="text-white align-left"><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h1>
         </div>
     	</div>
 </div>
