@@ -3264,6 +3264,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
         background-position: left -497px
     }
 }
+
 .textpadding {
+    padding: 15px 0px 15px 0px !important;
+}
+
+.horizontalpad {
     padding: 15px 0px 15px 0px !important;
 }
