@@ -19,7 +19,7 @@
                 <div class="row">
                 <div class="container">
                     <div class="footer-copyright col-md-8 col-sm-6 col-xs-8"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
-					<div class="col-md-4 col-sm-6 col-xs-3 col-xs-offset-1"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
+					<div class="col-md-4 col-sm-6 col-xs-3"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
 				</div>
                 </div>
                 </div> <!-- .row -->
