@@ -2634,9 +2634,10 @@ a.popover-custom--connections {
     padding: 30px 0px 30px 0px;
 }
 .press-details-back {
-    padding: 30px 0px 30px 0px;
-	background: url(../af/application/files/5414/3318/8270/pressdetails-blue-back.jpg);
-    background-position: right top;
+    padding: 20px 0px 20px 0px;
+	background: url(/af/application/files/5414/3318/8270/pressdetails-blue-back.jpg);
+    background-size:cover;
+	margin-bottom: 25px;
 }
 .txt-right {
     background: url(../images/blue-gradients-transparent-bg-rt.png)no-repeat;
