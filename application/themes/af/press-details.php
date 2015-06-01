@@ -10,7 +10,7 @@ $view->inc('elements/header.php');  ?>
 <div class="row">
     <div class="col-md-8">
     	<!--Get Page Name--><h2 class="align-left"><?php $page = Page::getCurrentPage(); echo $page->getCollectionName(); ?></h2>
-        <div class="horizontalpad"><? $a = new Area('Social Share Buttons');$a->display($c); ?></div>
+        <div class="horizontalpad"><? $a = new GlobalArea('Social Share Buttons');$a->display($c); ?></div>
         <div><h4 class="text-center lead"><em><? $a = new Area('Press Intro');$a->display($c); ?></em></h4></div>
         <div><p class="align-left">
 		<strong><?php $datePublic = date('F j, Y', strtotime($page->getCollectionDatePublic())); echo $datePublic ?> &mdash; 
