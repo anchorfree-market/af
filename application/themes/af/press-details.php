@@ -16,6 +16,7 @@ $view->inc('elements/header.php');  ?>
         <h2 class="align-left"><? $a = new Area('Press Title');$a->display($c); ?></h2>
         <div class="press-desc"><? $a = new Area('Press Description');$a->display($c); ?></div>
         <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?><p>&nbsp;</p></div>
+        <h5><?php $datePublic = date('F j, Y', strtotime($page->getCollectionDatePublic())); echo $datePublic ?></h5>
     </div>
     <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
         <div>
