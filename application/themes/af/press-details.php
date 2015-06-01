@@ -1,7 +1,7 @@
 <?php 
 $view->inc('elements/header.php');  ?>
 <div class="container-fluid top-section">
-    <div class="backstretch-contain-press">
+    <div class="press-details-back">
         <div class="container">
             <h1><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h1>
         </div>
