@@ -21,7 +21,6 @@
 					<div class="col-md-4 col-sm-6 col-xs-3 pull-right"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
                     </div>
                 </div>
-                       
                 
                 </div> <!-- .row -->
             </div> <!-- .container -->
