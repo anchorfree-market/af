@@ -1,5 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
-<div class="container-fluid top-section press-details-back">
+<div class="container-fluid top-section backstretch-contain-press">
         <div class="container">
         <div><?php $view->inc('elements/txt-left-img-right.php'); ?></div>
     	</div>
