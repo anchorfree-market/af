@@ -3272,3 +3272,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .horizontalpad {
     padding: 15px 0px 15px 0px !important;
 }
+
+.marginbot25 {
+	margin-bottom: 25px !important;
+}
