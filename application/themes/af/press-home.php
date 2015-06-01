@@ -8,9 +8,9 @@
     </div>
 </div>
 
-<div class="container-fluid horzspace">
-<div class="row">
+<div class="container-fluid">
 <div class="container">
+<div class="row">
     <div class="col-md-8 press">
         <div><h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2></div>
         <div class="press-date"><? $a = new GlobalArea('Press Release Lists');$a->display($c); ?></div>

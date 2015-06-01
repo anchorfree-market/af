@@ -6,9 +6,11 @@ $view->inc('elements/header.php');  ?>
             <h1><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h1>
         </div>
     </div>
-    
-    <div class="row">
+</div>
+
+<div class="container-fluid">
 <div class="container">
+<div class="row">
 <div class="wrapper mid press">
     <div class="col-md-8">
         <h2><? $a = new Area('Press Title');$a->display($c); ?></h2>
