@@ -3,7 +3,7 @@ $view->inc('elements/header.php');  ?>
 <div class="container-fluid top-section press-details-back">
         <div class="container">
         <div class="row">
-            <h1 class="text-white align-left"><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h1>
+            <h2 class="text-white align-left"><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h2>
         </div>
     	</div>
 </div>
@@ -12,17 +12,18 @@ $view->inc('elements/header.php');  ?>
 <div class="container">
 <div class="row">
     <div class="col-md-8">
-        <h2><? $a = new Area('Press Title');$a->display($c); ?></h2>
-        <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?><p>&nbsp;</p></div>
+    	<h2 class="align-left"><?php $page = Page::getCurrentPage(); echo $page->getCollectionName(); ?></h2>
+        <h2 class="align-left"><? $a = new Area('Press Title');$a->display($c); ?></h2>
         <div class="press-desc"><? $a = new Area('Press Description');$a->display($c); ?></div>
+        <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?><p>&nbsp;</p></div>
     </div>
     <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
         <div>
-        <h3><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h3>
-        <p><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
+        <h2 class="align-left"><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h2>
+        <p class="align-left"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
         <p>&nbsp;</p>
-        <h3><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h3>
-        <p><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
+        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
 </div>

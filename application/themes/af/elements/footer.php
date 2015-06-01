@@ -1,6 +1,9 @@
        <footer class="footer">
             <div class="container-fluid">
                 <div class="row">
+                <p>&nbsp;</p>
+                <div class="separator saperator-gradient"></div>
+                
                 <div class="container">
                     <div class="col-md-3 col-sm-3 nav footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
                     <div class="col-md-3 col-sm-3 nav footer-nav"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
