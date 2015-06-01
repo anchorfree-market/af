@@ -8,7 +8,6 @@ $view->inc('elements/header.php');  ?>
     	</div>
 </div>
 
-<div class="container-fluid">
 <div class="container">
 <div class="row">
     <div class="col-md-8">
@@ -28,7 +27,6 @@ $view->inc('elements/header.php');  ?>
         <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
-</div>
 </div>
 </div>
 <?php
