@@ -12,7 +12,7 @@
                        
                 <div class="row">
                 <div class="container">
-					<div class="footer-copyright col-md-12"><? $a = new GlobalArea('Full Width Area');$a->display($c); ?></div>
+					<div class="col-md-12"><? $a = new GlobalArea('Full Width Area');$a->display($c); ?></div>
                 </div>
                 </div>
                     
