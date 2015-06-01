@@ -2633,68 +2633,67 @@ a.popover-custom--connections {
 .backstretch-contain-press .container {
     padding: 30px 0px 30px 0px;
 }
-
 .press-details-back {
     padding: 30px 0px 30px 0px;
-	background: url(/application/files/5414/3318/8270/pressdetails-blue-back.jpg;
-    background-position: right top
+	background: url(../af/application/files/5414/3318/8270/pressdetails-blue-back.jpg);
+    background-position: right top;
 }
 .txt-right {
     background: url(../images/blue-gradients-transparent-bg-rt.png)no-repeat;
-    background-position: right top
+    background-position: right top;
 }
 .txt-left {
     background: url(../images/blue-gradients-transparent-bg-lt.png)no-repeat;
     background-size: cover!important;
-    background-position: left top
+    background-position: left top;
 }
 .careers-top h1,
 .careers-top p,
 .txt-right h1,
 .txt-right p {
-    text-align: right
+    text-align: right;
 }
 .txt-left p {
-    text-align: center
+    text-align: center;
 }
 .txt-left .btn {
     display: block;
-    margin: 0 auto
+    margin: 0 auto;
 }
 #vi {
-    position: relative
+    position: relative;
 }
 #videoiframe object {
     width: 100%;
     height: 720px;
-    background: red
+    background: red;
 }
 .careers-top {
     position: absolute;
     top: 0;
     right: 0;
     background-size: 100%;
-    background-repeat: repeat-y
+    background-repeat: repeat-y;
 }
 .careers-top .wrapper {
-    padding: 100px 30px
+    padding: 100px 30px;
 }
 .careers-more h5,
 .careers-our-values h5 {
     border-bottom: 1px solid #ccc;
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 .careers-top span {
     display: block;
     text-align: right;
     margin: -20px 0 20px;
-    color: #fff
+    color: #fff;
 }
 .careers-openings {
     margin-top: -4px;
     z-index: 2;
     position: relative;
-    background: #fff
+    background: #fff;
 }
 .careers-our-values h5 {
     text-align: left
