@@ -12,11 +12,12 @@ $view->inc('elements/header.php');  ?>
 <div class="container">
 <div class="row">
     <div class="col-md-8">
-    	<h2 class="align-left"><?php $page = Page::getCurrentPage(); echo $page->getCollectionName(); ?></h2>
-        <h2 class="align-left"><? $a = new Area('Press Title');$a->display($c); ?></h2>
-        <div class="press-desc"><? $a = new Area('Press Description');$a->display($c); ?></div>
-        <div class="press-date"><? $a = new Area('Press Date');$a->display($c); ?><p>&nbsp;</p></div>
-        <h5><?php $datePublic = date('F j, Y', strtotime($page->getCollectionDatePublic())); echo $datePublic ?></h5>
+    	<!--Get Page Name--><h2 class="align-left"><?php $page = Page::getCurrentPage(); echo $page->getCollectionName(); ?></h2>
+        <div><p class="text-center"><? $a = new Area('Press Intro');$a->display($c); ?></p></div>
+        <div><h5 class="align-left">
+		<?php $datePublic = date('F j, Y', strtotime($page->getCollectionDatePublic())); echo $datePublic ?> &mdash; 
+		<?php $page = Page::getCollectionAttributeValue('press_detail_city'); echo $page->getCollectionAttributeValue(); ?>)</h5>
+		<p class="align-left"><? $a = new Area('Press Description');$a->display($c); ?></p></div>
     </div>
     <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
         <div>
