@@ -57,7 +57,6 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
         $date = $dh->formatDateTime($page->getCollectionDatePublic(), true);
 		//Other useful page data...
 
-
 		//$last_edited_by = $page->getVersionObject()->getVersionAuthorUserName();
 
 		//$original_author = Page::getByID($page->getCollectionID(), 1)->getVersionObject()->getVersionAuthorUserName();
@@ -114,7 +113,12 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                     <?php if ($useButtonForLink) { ?>
                         <?php echo $title; ?>
                     <?php } else { ?>
-                        <a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+                        <!-- redirect will open in new tab -->
+                        <?php if($page->getCollectionAttributeValue('redirect_to_url')): ?>
+                            <a href="<?php echo $url ?>" target="_blank"><?php echo $title ?></a>
+                        <?php else: ?>
+                            <a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
+                        <?php endif; ?>     
                     <?php } ?>
                 </div>
                 <?php endif; ?>
@@ -124,24 +128,6 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                         <?php echo $description ?>
                     </div>
                 <?php endif; ?>
-                    <!--
-                    <div class="ccm-block-readme">
-                    <script type="text/javascript">
-                        $(document).ready(function(){
-                            if($('.ccm-block-readme').parent().parent().parent().parent().parent().hasClass('press-latest')) {
-                                
-                                            console.log('yes');
-                            }
-                            else {
-                                console.log('no');
-                            }
-                            
-                        });
-                    </script>
-                    </div>
-                    -->
-                
-
                 <?php if ($useButtonForLink): ?>
                 <div class="ccm-block-page-list-page-entry-read-more">
                     <a href="<?php echo $url?>" class="<?php echo $buttonClasses?>"><?php echo $buttonLinkText?></a>
