@@ -32,7 +32,7 @@ $view->inc('elements/header.php');  ?>
 if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
    if ($redirectURL != '') {   
       Header( "HTTP/1.1 301 Moved Permanently" ); 
-      Header( "Location: " . $redirectURL ); 
+      Header( "Location: " . $redirectURL . 'target="_blank"'); 
    }
 }
 ?>
