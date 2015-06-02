@@ -29,11 +29,12 @@ $view->inc('elements/header.php');  ?>
 </div>
 </div>
 <?php
-if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url' . 'target="_blank"')) {
+if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
    if ($redirectURL != '') {   
       Header( "HTTP/1.1 301 Moved Permanently" ); 
-      Header( "Location: " . $redirectURL); 
+      Header( "Location: " . $redirectURL ); 
    }
 }
 ?>
 <?php $view->inc('elements/footer.php'); ?>
+
