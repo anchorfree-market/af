@@ -5,10 +5,10 @@ $view->inc('elements/header.php');  ?>
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>
 <div class="wrapper mid about">
-    <div class="container marginbot15">
+    <div class="container">
         <div class="col-md-12">
             <h2 class="main-title align-center"><? $a = new Area('About Title');$a->display($c);?></h2>
-            <p><? $a = new Area('About Content');$a->display($c);?></p>
+            <p marginbot15><? $a = new Area('About Content');$a->display($c);?></p>
         </div>
         <div class=" col-md-12 separator saperator-gradient marginbot15"></div>
         <div class="col-md-12">
