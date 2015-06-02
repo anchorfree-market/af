@@ -58,7 +58,7 @@ $view->inc('elements/header.php');  ?>
     
 </div>
 <section class="section section-join-team join-team">
-    <?php $view->inc('elements/txt-left-img-right.php'); ?>
+    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </section>
     
 <?php $view->inc('elements/footer.php'); ?>
