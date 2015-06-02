@@ -10,7 +10,7 @@ $view->inc('elements/header.php');  ?>
             <h2 class="main-title align-center"><? $a = new Area('About Title');$a->display($c);?></h2>
             <p><? $a = new Area('About Content');$a->display($c);?></p>
         </div>
-        <div class="separator saperator-gradient"></div>
+        <div class=" col-md-12 separator saperator-gradient"></div>
         <div class="col-md-12">
             <h2>Contact AnchorFree Inc.</h2>
         </div>
