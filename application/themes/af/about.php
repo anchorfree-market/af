@@ -7,12 +7,10 @@ $view->inc('elements/header.php');  ?>
 <div class="wrapper mid about">
     <div class="container">
         <div class="col-md-12">
-            <h2 class="main-title">
-                <? $a = new Area('About Title');$a->display($c);?>
-            </h2>
+            <h2 class="main-title align-center"><? $a = new Area('About Title');$a->display($c);?></h2>
             <p><? $a = new Area('About Content');$a->display($c);?></p>
         </div>
-        <hr>
+        <div class="separator saperator-gradient"></div>
         <div class="col-md-12">
             <h2>Contact AnchorFree Inc.</h2>
         </div>
