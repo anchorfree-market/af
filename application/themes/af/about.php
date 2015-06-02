@@ -27,10 +27,10 @@ $view->inc('elements/header.php');  ?>
 <section class="map">
     <? $a = new Area('Map');$a->display($c);?>
 </section>
-<div class="wrapper about-form">
+<div class="wrapper fullfadeblue">
     <div class="container">
-        <h2>Email Us</h2>
-        <? $a = new Area('Form');$a->display($c);?>
+        <h2><? $a = new Area('Form Title');$a->display($c);?></h2>
+        <div class="col-md-12"><? $a = new Area('Form');$a->display($c);?></div>
     </div>
 </div>
 <div class="wrapper meet-visionaries">
