@@ -5,12 +5,12 @@ $view->inc('elements/header.php');  ?>
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>
 <div class="wrapper mid about">
-    <div class="container">
+    <div class="container marginbot15">
         <div class="col-md-12">
             <h2 class="main-title align-center"><? $a = new Area('About Title');$a->display($c);?></h2>
             <p><? $a = new Area('About Content');$a->display($c);?></p>
         </div>
-        <div class=" col-md-12 separator saperator-gradient"></div>
+        <div class=" col-md-12 separator saperator-gradient marginbot15"></div>
         <div class="col-md-12">
             <h2>Contact AnchorFree Inc.</h2>
         </div>
