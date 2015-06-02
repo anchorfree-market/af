@@ -30,9 +30,9 @@ $view->inc('elements/header.php');  ?>
 </div>
 <?php
 if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
-   if ($redirectURL != '') {   
+   if ($redirectURL != '' . 'target="_blank"') {   
       Header( "HTTP/1.1 301 Moved Permanently" ); 
-      Header( "Location: " . $redirectURL . 'target="_blank"'); 
+      Header( "Location: " . $redirectURL); 
    }
 }
 ?>
