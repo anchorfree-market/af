@@ -18,9 +18,9 @@ $view->inc('elements/header.php');  ?>
         <div class="col-md-12 marginbot15"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
         
         <div class="row">
-        <div class="col-md-2 col-md-offset-1"><h4"><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
+        <div class="col-md-2 col-md-offset-1"><h4><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3"><h4 class="align-left-imp"><? $a = new Area('US Headquarter Address');$a->display($c);?></h4></div>
-        <div class="col-md-2 col-md-offset-1"><h4"><? $a = new Area('Swiss Address Title');$a->display($c);?></h4></div>
+        <div class="col-md-2 col-md-offset-1"><h4><? $a = new Area('Swiss Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3"><h4 class="align-left-imp"><? $a = new Area('Swiss Address');$a->display($c);?></h4></div>
     	</div>
 	</div>
