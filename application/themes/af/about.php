@@ -56,16 +56,6 @@ $view->inc('elements/header.php');  ?>
 	<div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div>
 </div>
 
-<section class="section section-join-team">
-    <div class="leftfadeblue backstretch-contain">
-    <div class="container">
-        <div class="col-md-6 align-left"><? $a = new GlobalArea('Join Text Left');$a->display($c); ?></div>
-        <div class="col-md-6 align-right"><? $a = new GlobalArea('Join Text Right');$a->display($c); ?></div>
-        <div class="clearfix"></div>
-    </div>
-	</div>
-</section>
-
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
