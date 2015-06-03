@@ -53,7 +53,7 @@ $view->inc('elements/header.php');  ?>
     </div> 
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid leftfadeblue">
 	<div><?php $view->inc('elements/joinaf-text-left-img-right.php'); ?></div>
 </div>
 
