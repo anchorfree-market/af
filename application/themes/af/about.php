@@ -54,6 +54,7 @@ $view->inc('elements/header.php');  ?>
 <div class="row wrapper col-md-12">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
+</div></div>
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
