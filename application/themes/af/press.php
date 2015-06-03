@@ -28,6 +28,10 @@ $view->inc('elements/header.php');  ?>
     </div>
 </div>
 </div>
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
+
 <?php
 if ($redirectURL = $c->getCollectionAttributeValue('redirect_to_url')) {
    if ($redirectURL != '') {   

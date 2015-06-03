@@ -3,8 +3,9 @@ $view->inc('elements/header.php');  ?>
 <!--<img src="<?php echo $view->getThemePath()?>/images/blue-gradients-transparent-bg-rt.png">-->
 <section class="section section-about-us about-us top-section">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
-</section>
 <a name="about" style="padding-top:100px;"></a>
+</section>
+
 <div class="wrapper mid about">
     <div class="container">
         <div class="col-md-12">
