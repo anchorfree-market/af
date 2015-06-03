@@ -53,9 +53,9 @@ $view->inc('elements/header.php');  ?>
     </div> 
 </div>
 
-<div class="container-fluid leftfadeblue">
-	<div><?php $view->inc('elements/joinaf-text-left-img-right.php'); ?></div>
-</div>
+<section class="section section-join-team">
+    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
+</section>
 
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
