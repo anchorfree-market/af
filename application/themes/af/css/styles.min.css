@@ -2602,7 +2602,8 @@ a.popover-custom--connections {
     margin: 0 0 38px 32px
 }
 .wrapper.meet-visionaries {
-    padding-bottom: 0
+    padding-bottom: 0;
+	overflow: visible !important;
 }
 .wrapper.investors-board-advisors {
     padding-top: 0
