@@ -3,8 +3,8 @@ $view->inc('elements/header.php');  ?>
 <!--<img src="<?php echo $view->getThemePath()?>/images/blue-gradients-transparent-bg-rt.png">-->
 <section class="section section-about-us about-us top-section">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
-    <a name="about"></a>
 </section>
+<a name="about" style="padding-top:100px;"></a>
 <div class="wrapper mid about">
     <div class="container">
         <div class="col-md-12">
@@ -57,6 +57,8 @@ $view->inc('elements/header.php');  ?>
 	<div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div>
 </div>
 
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
