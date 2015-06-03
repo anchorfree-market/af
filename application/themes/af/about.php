@@ -12,14 +12,17 @@ $view->inc('elements/header.php');  ?>
         </div>
         
         <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
+        
         <div class="col-md-12"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
-        <div class="row">
+        
+        <div class="row marginbot40">
         <div class="col-md-2 col-md-offset-1"><h4 class="align-right-imp"><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3"><h4 class="align-left-imp"><? $a = new Area('US Headquarter Address');$a->display($c);?></h4></div>
         <div class="col-md-2 col-md-offset-1"><h4 class="align-right-imp"><? $a = new Area('Swiss Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3"><h4 class="align-left-imp"><? $a = new Area('Swiss Address');$a->display($c);?></h4></div>
     	</div>
 	</div>
+</div>
 
 <div class="map hidden-xs"><? $a = new Area('Map');$a->display($c);?></div>
 
@@ -50,11 +53,11 @@ $view->inc('elements/header.php');  ?>
     
     
 </div>
-<div class="container-fluid leftfadeblue">
+<section class="leftfadeblue">
 <div class="row wrapper col-md-12">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
-</div></div>
+</section></div>
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
