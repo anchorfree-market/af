@@ -25,11 +25,11 @@ $view->inc('elements/header.php');  ?>
 
 <div class="wrapper fullfadeblue">
     <div class="container">
-        <h2 class="align-left-imp"><? $a = new Area('Form Title');$a->display($c);?></h2>
+        <h2 class="align-left-imp text-white"><? $a = new Area('Form Title');$a->display($c);?></h2>
         <div class="col-md-12"><? $a = new Area('Form');$a->display($c);?></div>
     </div>
 </div>
-<div class="wrapper meet-visionaries">
+<div class="wrapper meet-visionaries marginbot40">
     <div class="container">
         <div class="col-md-12"><h2><? $a = new Area('Team Title');$a->display($c);?></h2></div>
         <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-1');$a->display($c);?><? $a = new Area('vision-desc-1');$a->display($c);?></div>
@@ -50,7 +50,8 @@ $view->inc('elements/header.php');  ?>
     
     
 </div>
-<div class="wrapper col-md-12">
+<div class="container-fluid">
+<div class="row wrapper col-md-12">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
     
