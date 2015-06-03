@@ -15,7 +15,7 @@ $view->inc('elements/header.php');  ?>
         
         <div class="col-md-12 marginbot15"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
         
-        <div class="row marginbot40">
+        <div class="row">
         <div class="col-md-2 col-md-offset-1"><h4 class="align-right-imp"><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3"><h4 class="align-left-imp"><? $a = new Area('US Headquarter Address');$a->display($c);?></h4></div>
         <div class="col-md-2 col-md-offset-1"><h4 class="align-right-imp"><? $a = new Area('Swiss Address Title');$a->display($c);?></h4></div>
@@ -52,11 +52,12 @@ $view->inc('elements/header.php');  ?>
     </div> 
 </div>
 
-<div class="leftfadeblue container-fluid">
-    <div class="row wrapper col-md-12">
-        <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
-    </div>
-</div>
+<div class="container-fluid"><div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div></div>
+
+<section class="section section-join-team">
+    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
+</section>
+
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
