@@ -8,9 +8,9 @@ $view->inc('elements/header.php');  ?>
     <div class="container">
         <div class="col-md-12">
             <h2 class="main-title align-center"><? $a = new Area('About Title');$a->display($c);?></h2>
-            <p marginbot15><? $a = new Area('About Content');$a->display($c);?></p>
+            <p class="marginbot50><? $a = new Area('About Content');$a->display($c);?></p>
         </div>
-        <div class=" col-md-12 separator saperator-gradient marginbot15"></div>
+        <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
         <div class="col-md-12">
             <h2>Contact AnchorFree Inc.</h2>
         </div>
