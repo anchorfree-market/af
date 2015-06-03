@@ -2629,7 +2629,7 @@ a.popover-custom--connections {
     background-size: cover!important
 }
 .backstretch-contain .container {
-    padding: 100px;
+    padding: 100px 0px 100px 0px;
 }
 .backstretch-contain-press .container {
     padding: 30px 0px 30px 0px;
