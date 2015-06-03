@@ -1,9 +1,7 @@
 <?php $view->inc('elements/header.php');  ?>
-<div class="container-fluid top-section press-home-back">
-        <div class="container">
-        <div><?php $view->inc('elements/txt-left-img-right.php'); ?></div>
-    	</div>
-</div>
+<section class="section press-home-back top-section">
+    <?php $view->inc('elements/press-text-left-img-right.php'); ?>
+</section>
 
 <div class="container">
 <div class="row">
@@ -22,6 +20,9 @@
     </div>
 </div>
 </div>
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
 
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
