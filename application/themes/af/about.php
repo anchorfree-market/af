@@ -52,12 +52,9 @@ $view->inc('elements/header.php');  ?>
     </div> 
 </div>
 
-<div class="container-fluid"><div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div></div>
-
-<section class="section section-join-team">
-    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
-</section>
-
+<div class="container-fluid">
+	<div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div>
+</div>
     
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
