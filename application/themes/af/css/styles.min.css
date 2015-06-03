@@ -3293,6 +3293,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .marginbot50 {
 	margin-bottom: 50px !important;
 }
+.marginbot40 {
+	margin-bottom: 40px !important;
+}
 .marginbot25 {
 	margin-bottom: 25px !important;
 }
@@ -3342,3 +3345,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283a83', endColorstr='#1b7bce',GradientType=1 ); /* IE6-9 */
 	background-position: left top;
 }
+.align-center-imp {text-align:center !important;}
+.align-right-imp {text-align:right !important;}
+.align-left-imp {text-align:left !important;}
