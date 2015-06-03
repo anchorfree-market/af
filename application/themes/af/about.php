@@ -54,7 +54,7 @@ $view->inc('elements/header.php');  ?>
 </div>
 
 <div class="container-fluid">
-	<div class="row"><? $a = new GlobalArea('Join Team');$a->display($c);?></div>
+	<div><?php $view->inc('elements/joinaf-text-left-img-right.php'); ?></div>
 </div>
 
 <div class="marginbot40"></div>
