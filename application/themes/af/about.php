@@ -50,7 +50,7 @@ $view->inc('elements/header.php');  ?>
     
     
 </div>
-<div class="container-fluid">
+<div class="container-fluid leftfadeblue">
 <div class="row wrapper col-md-12">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
