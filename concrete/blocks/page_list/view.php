@@ -123,15 +123,12 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                 </div>
                 <?php endif; ?>
                 
-                <?php if ($includeName): ?>
+                <!-- redirect will open in same tab -->
+				<?php if ($includeName): ?>
                 <div class="ccm-block-page-list-title">
-                    <?php } else { ?>
-                        <!-- redirect will open in same tab -->
                         <?php if($page->getCollectionAttributeValue('internal_url')): ?>
                             <a href="<?php echo $url ?>"><?php echo $title ?></a>
-                        
-                        <?php endif; ?>     
-                    <?php } ?>
+                        <?php endif; ?>
                 </div>
                 <?php endif; ?>
 
