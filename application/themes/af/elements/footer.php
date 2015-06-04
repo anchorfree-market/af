@@ -40,7 +40,7 @@
             echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>";
             echo "<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js'></script>";
         }
-        else if(preg_match("/careers/", $URL)) {    // display script on careers page
+        else if(preg_match("/careers/", $URL) || preg_match("/jobs/", $URL)) {    // display script on careers page
             echo "<script src='//code.jquery.com/ui/1.11.4/jquery-ui.js'></script>";
         }
         else { // including press and about page
