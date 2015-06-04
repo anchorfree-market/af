@@ -130,7 +130,7 @@ $dh = Core::make('helper/date'); /* @var $dh \Concrete\Core\Localization\Service
                     <?php } else { ?>
                         <!-- redirect will open in same tab -->
                         <?php if($page->getCollectionAttributeValue('internal_url')): ?>
-                            <a href="<?php echo $url ?>" target="_blank"><?php echo $title ?></a>
+                            <a href="<?php echo $url ?>"><?php echo $title ?></a>
                         <?php else: ?>
                             <a href="<?php echo $url ?>" target="<?php echo $target ?>"><?php echo $title ?></a>
                         <?php endif; ?>     
