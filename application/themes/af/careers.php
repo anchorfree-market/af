@@ -75,6 +75,9 @@
     <?php endif;?>
 </div>
 
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
+
 <?php $view->inc('elements/footer.php'); ?>
 <script>
 $(document).ready(function() {
