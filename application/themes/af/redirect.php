@@ -33,7 +33,7 @@ $view->inc('elements/header.php');  ?>
 <div class="separator saperator-gradient"></div>
 
 <?php
-if ($redirectURL = $c->getCollectionAttributeValue('redirect_int')) {
+if ($redirectURL = $c->getCollectionAttributeValue('internal_url')) {
    if ($redirectURL != '') {   
       Header( "HTTP/1.1 301 Moved Permanently" ); 
       Header( "Location: " . $redirectURL ); 
