@@ -40,13 +40,14 @@
     </div>
 </div>
 
-<div class="fullfadeblue marginbot40">
+<div class=" wrapper fullfadeblue">
     <div class="container">
         <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h2></div>
         <div class="col-md-12 align-center-imp marginbot40 text-white"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
    </div>
 </div>
 
+<div class=" wrapper"></div>
 <?php
     function getURL($url) {
         $ch = curl_init();
