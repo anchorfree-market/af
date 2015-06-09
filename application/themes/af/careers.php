@@ -116,7 +116,7 @@
             <?php endif;?>
         </div>
     <?php endif;?>
-</div>
+</div></div></div>
 
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
