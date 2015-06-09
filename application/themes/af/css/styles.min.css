@@ -2682,6 +2682,8 @@ a.popover-custom--connections {
     right: 0;
     background-size: 100%;
     background-repeat: repeat-y;
+	overflow: hidden !important;
+  	max-height: 600px;
 }
 .careers-top .wrapper {
     padding: 100px 30px;
