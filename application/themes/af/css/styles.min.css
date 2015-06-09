@@ -2682,8 +2682,6 @@ a.popover-custom--connections {
     right: 0;
     background-size: 100%;
     background-repeat: repeat-y;
-	overflow: hidden !important;
-  	max-height: 600px;
 }
 .careers-top .wrapper {
     padding: 100px 30px;
@@ -2707,6 +2705,10 @@ a.popover-custom--connections {
 }
 .careers-our-values h5 {
     text-align: left
+}
+.careers-video {
+	overflow: hidden !important;
+  	max-height: 600px;
 }
 .careers-more h5 {
     font-size: 1.6em;
