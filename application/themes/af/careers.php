@@ -40,8 +40,13 @@
     </div>
 </div>
 
-   <? $a = new Area('More');$a->display($c); ?>
-   <? $a = new Area('Be Apart');$a->display($c); ?>
+<div class="wrapper fullfadeblue">
+    <div class="container">
+        <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h2></div>
+        <div class="col-md-12 align-center-imp marginbot40"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
+   </div>
+</div>
+
 <?php
     function getURL($url) {
         $ch = curl_init();
@@ -64,8 +69,10 @@
     }
 ?>
 
-<div class="col-xs-12 col-sm-10 col-md-10 margin-center">
-    <h2>AnchorFree's Open Positions</h2>
+<div class="wrapper">
+    <div class="container">
+    <div class="col-md-12 margin-center">
+    <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
     
     <?php if (!empty($_REQUEST['gh_jid'])) :?>
         <div id="grnhse_app"></div>
@@ -75,7 +82,7 @@
     <?php if (!empty($jobs)) :?>
         <?php $department = $jobs['departments']; ?>
         <div id="careers-accordion">
-            <h3><?php echo $department[2]['name']?> <span class="department-jobs-count"><?php echo count($department[2]['jobs']) ?></span></h3>
+            <h3><?php echo $department[2]['name']?> <span class="department-jobs-count"><?php echo count($department[2]['jobs']) ?></span>&nbsp;&nbsp;</h3>
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
@@ -85,7 +92,7 @@
                 </div>
             </div>
             
-            <h3><?php echo $department[1]['name']?> <span class="department-jobs-count"><?php echo count($department[1]['jobs']) ?></span></h3>
+            <h3><?php echo $department[1]['name']?> <span class="department-jobs-count"><?php echo count($department[1]['jobs']) ?></span>&nbsp;&nbsp;</h3>
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
@@ -95,7 +102,7 @@
                 </div>
             </div>
             
-            <h3><?php echo $department[0]['name']?><span class="department-jobs-count"><?php echo count($department[0]['jobs']) ?></span></h3>
+            <h3><?php echo $department[0]['name']?><span class="department-jobs-count"><?php echo count($department[0]['jobs']) ?></span>&nbsp;&nbsp;</h3>
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
