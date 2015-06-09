@@ -5,7 +5,7 @@ $view->inc('elements/header.php');  ?>
     $GLOBALS['topSecondEle'] = 'h3';
 ?>
 
-<section class="section fullfadeblue">
+<section class="section section-featured fullfadeblue">
     <div class="wrapper">
         <div class="container">
             <div class="row">
