@@ -1,5 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
-<section class="careers-video top-section" style="overflow:hidden !important;">
+<section class="careers-video top-section">
    <? $a = new Area('Top Video');$a->display($c); ?>
 </section>
    <? $a = new Area('Open Position');$a->display($c); ?>
