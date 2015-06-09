@@ -24,7 +24,7 @@
     </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper marginbot40">
     <div class="container">
         <h2 class="align-center-imp"><? $a = new Area('Perks Title');$a->display($c);?></h2>
         <p class="marginbot40 align-center-imp"><? $a = new Area('Perks Content');$a->display($c);?></p>
@@ -40,10 +40,10 @@
     </div>
 </div>
 
-<div class="wrapper fullfadeblue">
+<div class="fullfadeblue marginbot40">
     <div class="container">
         <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h2></div>
-        <div class="col-md-12 align-center-imp marginbot40"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
+        <div class="col-md-12 align-center-imp marginbot40 text-white"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
    </div>
 </div>
 
@@ -69,15 +69,12 @@
     }
 ?>
 
-<div class="wrapper">
-    <div class="container">
+<div class="container">
     <a name="careerslist"></a>
-    <div class="col-md-12 marginbot30"><h2 class="align-center-imp"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
-    </div>
+    <div class="col-md-12"><h2 class="align-center-imp"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
 </div>
 
-<div class="wrapper">
-    <div class="container">
+<div class="container">
     <div class="col-md-12 margin-center">
      <?php if (!empty($_REQUEST['gh_jid'])) :?>
         <div id="grnhse_app"></div>
@@ -121,7 +118,8 @@
             <?php endif;?>
         </div>
     <?php endif;?>
-</div></div></div>
+</div>
+</div>
 
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
