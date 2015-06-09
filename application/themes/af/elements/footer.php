@@ -1,3 +1,4 @@
+<div class="wrapper marginbot40">
        <footer class="footer">
                 <div class="container">
                     
@@ -12,6 +13,7 @@
                         <div class="col-md-4 col-sm-6 col-xs-3 pull-right"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
                 </div>
         </footer>
+</div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <!-- only show bootstrap.min.js if isEditMode -->
     <?php $c = Page::getCurrentPage();
