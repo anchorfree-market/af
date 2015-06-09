@@ -2555,10 +2555,8 @@ a.popover-custom--connections {
 .press-latest {
     color: #fff
 }
-.section-featured,
-.section-featured-carrier,
 .top-section {
-    margin-top: 97px
+    margin-top: 50px
 }
 #about-mission {
     font-size: 1.6rem

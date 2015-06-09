@@ -5,7 +5,7 @@ $view->inc('elements/header.php');  ?>
     $GLOBALS['topSecondEle'] = 'h3';
 ?>
 
-<section class="section section-featured bg-gradient--blue top-section">
+<section class="section fullfadeblue">
     <div class="wrapper">
         <div class="container">
             <div class="row">
@@ -106,7 +106,7 @@ $view->inc('elements/header.php');  ?>
     </div> <!-- .wrapper -->
 </section> <!-- .section-howitworks -->
 
-<section class="section section-mobile bg-gradient--blue">
+<section class="section section-mobile fullfadeblue">
     <div class="wrapper relative">
 
         <div class="circles">
@@ -169,7 +169,7 @@ $view->inc('elements/header.php');  ?>
 </section> <!-- .section-chart -->
 
 <!-- CONTACT US -->
-<section class="section section-contact-us bg-gradient--blue">
+<section class="section section-contact-us fullfadeblue">
     <div class="wrapper wrapper--small">
         <div class="container">
             <div class="row">

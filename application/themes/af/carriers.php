@@ -1,7 +1,7 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
 
-<section class="section section-featured-carrier bg-gradient--blue top-section" style="position-relative;">
+<section class="section section-featured-carrier fullfadeblue" style="position-relative;">
     <div class="wrapper">
         <div class="container">
             <div class="row">
@@ -68,7 +68,7 @@
 </section> <!-- .section-attacks -->
 
 <!-- VIDEO -->
-<section class="section section-video bg-gradient--blue">
+<section class="section section-video fullfadeblue">
     <div class="wrapper">        
         <div class="container">
             <div class="row">
@@ -218,7 +218,7 @@
 </section> <!-- .section-features-list -->
 
 <!-- CONTACT US -->
-<section class="section section-contact-us-carrier bg-gradient--blue">
+<section class="section section-contact-us-carrier fullfadeblue">
     <div class="wrapper wrapper--small">
         <div class="container">
             <div class="row">
