@@ -5,7 +5,7 @@
 
 <div class="wrapper">
     <div class="container">
-        <div class="col-md-12">
+        <div class="col-md-12 marginbot40">
             <h2 class="main-title align-center-imp"><? $a = new Area('Mission Title');$a->display($c);?></h2>
             <p class="marginbot30 align-center-imp"><? $a = new Area('Mission Content');$a->display($c);?></p>
         </div>
@@ -15,27 +15,28 @@
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-center-imp text-white"><? $a = new Area('Values Title');$a->display($c);?></h2>
-        <p class="marginbot30 align-center-imp text-white"><? $a = new Area('Values Content');$a->display($c);?></p>
+        <p class="marginbot40 align-center-imp text-white"><? $a = new Area('Values Content');$a->display($c);?></p>
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 1');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 2');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 3');$a->display($c);?></div>
-        <div class="col-md-12 text-white"><? $a = new Area('Value Area');$a->display($c);?></div>
-        <div class="col-md-12 align-center-imp"><? $a = new Area('Value CTA');$a->display($c);?></div>
+        <div class="col-md-12 text-white marginbot40"><? $a = new Area('Value Area');$a->display($c);?></div>
+        <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Value CTA');$a->display($c);?></div>
     </div>
 </div>
 
 <div class="wrapper">
     <div class="container">
         <h2 class="align-center-imp"><? $a = new Area('Perks Title');$a->display($c);?></h2>
-        <p class="marginbot30 align-center-imp"><? $a = new Area('Perks Content');$a->display($c);?></p>
+        <p class="marginbot40 align-center-imp"><? $a = new Area('Perks Content');$a->display($c);?></p>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 1');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 2');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 3');$a->display($c);?></div>
+        <div class="col-md-12 marginbot20"><? $a = new Area('Perks Area');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 4');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 5');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 6');$a->display($c);?></div>
-        <div class="col-md-12"><? $a = new Area('Perks Area');$a->display($c);?></div>
-        <div class="col-md-12 align-center-imp"><? $a = new Area('Perks CTA');$a->display($c);?></div>
+        <div class="col-md-12 marginbot40"><? $a = new Area('Perks Area');$a->display($c);?></div>
+        <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Perks CTA');$a->display($c);?></div>
     </div>
 </div>
 
