@@ -71,7 +71,7 @@
 
 <div class="wrapper">
     <div class="container">
-    <div class="col-md-12 text-white marginbot30"><h2 class="align-center-imp text-white"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
+    <div class="col-md-12 marginbot30"><h2 class="align-center-imp"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
     </div>
 </div>
 
