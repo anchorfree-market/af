@@ -3,14 +3,14 @@
                 <div class="container">
                     
                         <div class="col-md-12"><? $a = new GlobalArea('Full Width Area');$a->display($c); ?></div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 nav footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
-                        <div class="col-md-3 col-sm-3 col-xs-6 nav footer-nav"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>
+                        <div class="col-md-3 col-sm-3 col-xs-6 footer-nav"><? $a = new GlobalArea('Footer Navigation2');$a->display($c); ?></div>
                         <div class="recent-news col-md-6 col-sm-6 hidden-xs"><? $a = new GlobalArea('Footer News');$a->display($c); ?></div>
                     
                     	<div class="col-md-12"><? $a = new GlobalArea('Full Width Area');$a->display($c); ?></div>
                     
-                        <div class="footer-copyright col-md-8 col-sm-6 col-xs-8"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
-                        <div class="col-md-4 col-sm-6 col-xs-3 pull-right"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
+                        <div class="footer-copyright col-md-8 col-sm-6 col-xs-12"><? $a = new GlobalArea('Copyright');$a->display($c); ?></div>
+                        <div class="col-md-4 col-sm-6 col-xs-12 pull-right"><? $a = new GlobalArea('Social Links');$a->display($c); ?></div>
                 </div>
         </footer>
 </div>
