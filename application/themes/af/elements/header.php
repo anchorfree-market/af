@@ -3,6 +3,8 @@
 <head>
     <?=Loader::element('header_required')?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="GgYCYvq0MPlNIjM0Q1FRpoX1JWEKwvaPsIR7BkxxiVE" />
+
 <!-- Facebook Open Graph 
 <meta property="og:title" content="AnchorFree"/>
 <meta property="og:url" content="http://anchorfree.com"/>
