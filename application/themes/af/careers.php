@@ -71,10 +71,14 @@
 
 <div class="wrapper">
     <div class="container">
+    <div class="col-md-12 text-white marginbot30"><h2 class="align-center-imp text-white"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
+    </div>
+</div>
+
+<div class="wrapper">
+    <div class="container">
     <div class="col-md-12 margin-center">
-    <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
-    
-    <?php if (!empty($_REQUEST['gh_jid'])) :?>
+     <?php if (!empty($_REQUEST['gh_jid'])) :?>
         <div id="grnhse_app"></div>
         <script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
     <?php else:?>
