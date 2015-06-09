@@ -1,4 +1,4 @@
-<div class="wrapper marginbot15">
+<div class="wrapper">
        <footer class="footer">
                 <div class="container">
                     
