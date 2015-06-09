@@ -24,9 +24,21 @@
     </div>
 </div>
 
+<div class="wrapper">
+    <div class="container">
+        <h2 class="align-center-imp"><? $a = new Area('Perks Title');$a->display($c);?></h2>
+        <p class="marginbot30 align-center-imp"><? $a = new Area('Perks Content');$a->display($c);?></p>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 1');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 2');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 3');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 4');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 5');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 6');$a->display($c);?></div>
+        <div class="col-md-12"><? $a = new Area('Perks Area');$a->display($c);?></div>
+        <div class="col-md-12 align-center-imp"><? $a = new Area('Perks CTA');$a->display($c);?></div>
+    </div>
+</div>
 
-   <? $a = new Area('Open Position');$a->display($c); ?>
-   <? $a = new Area('Our Values');$a->display($c); ?>
    <? $a = new Area('More');$a->display($c); ?>
    <? $a = new Area('Be Apart');$a->display($c); ?>
 <?php
