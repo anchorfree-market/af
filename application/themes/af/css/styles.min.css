@@ -2684,7 +2684,7 @@ a.popover-custom--connections {
     background-repeat: repeat-y;
 }
 .careers-top .wrapper {
-    padding: 100px 30px;
+    padding: 120px 30px 0px 0px;
 }
 .careers-more h5,
 .careers-our-values h5 {
@@ -2861,7 +2861,7 @@ a.popover-custom--connections {
         left: 465px
     }
     .careers-top .wrapper {
-        padding: 70px 30px
+        padding: 110px 30px 0px 0px;
     }
 }
 @media only screen and (max-width: 992px) {
