@@ -15,29 +15,15 @@
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-center-imp text-white"><? $a = new Area('Values Title');$a->display($c);?></h2>
-        <p class="marginbot30 align-center-imp"><? $a = new Area('Values Content');$a->display($c);?></p>
-        <div class="col-md-4 align-left-imp"><? $a = new Area('Value 1');$a->display($c);?></div>
-        <div class="col-md-4 align-left-imp"><? $a = new Area('Value 2');$a->display($c);?></div>
-        <div class="col-md-4 align-left-imp"><? $a = new Area('Value 3');$a->display($c);?></div>
-        <div class="col-md-12"><? $a = new Area('Value Area');$a->display($c);?></div>
+        <p class="marginbot30 align-center-imp text-white"><? $a = new Area('Values Content');$a->display($c);?></p>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 1');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 2');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 3');$a->display($c);?></div>
+        <div class="col-md-12 text-white"><? $a = new Area('Value Area');$a->display($c);?></div>
         <div class="col-md-12 align-center-imp"><? $a = new Area('Value CTA');$a->display($c);?></div>
     </div>
 </div>
 
-<div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-10 col-md-offset-1">
-                <h2 class="m-top-0">What We Stand For</h2>
-            </div>
-            <div class="col-sm-12 col-md-10 col-md-offset-1 align-center">
-                <h3>We want to have a positive impact in the world and our energy is focused in a common direction-internet freedom. We have a big ambition, with a clear focus of the future; enjoy the environment of forward momentum. We want to impact the world and we need your help. Join the challenge. 
-
-                </h3>
-                <a href="#careerslist" class="btn btn--green m-top-15 btn-single js-scroll-to" data-scroll="#afOpenPositions">view open positions</a>
-            </div>
-        </div> <!-- .row -->
-    </div> <!-- .container -->
-</div>
 
    <? $a = new Area('Open Position');$a->display($c); ?>
    <? $a = new Area('Our Values');$a->display($c); ?>
