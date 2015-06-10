@@ -9,7 +9,7 @@
     	<div><h2 class="main-title"><? $a = new Area('Press Title');$a->display($c); ?></h2></div>
         <div class="press-date"><? $a = new GlobalArea('Press Release Lists');$a->display($c); ?></div>
     </div>
-    <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
+    <div class="col-md-3 col-md-offset-1 press-feature">
         <div>
         <h2 class="align-left"><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h2>
         <p class="align-left"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
