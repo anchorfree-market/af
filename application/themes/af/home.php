@@ -39,10 +39,6 @@ $view->inc('elements/header.php');
         </div>
     </div>
 </section>
-
-<section class="section product-home-back">
-    <?php $view->inc('elements/txt-right-img-left.php'); ?>
-</section>
  
 <section class="section press-home-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
