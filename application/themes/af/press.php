@@ -17,13 +17,13 @@ $view->inc('elements/header.php');  ?>
 		<?php $page = Page::getCurrentPage(); echo $page->getCollectionAttributeValue('press_detail_city'); ?></strong><br>
 		<? $a = new Area('Press Description');$a->display($c); ?></p></div>
     </div>
-    <div class="col-md-3 col-md-offset-1 press-feature">
+    <div class="col-md-3 col-md-offset-1 press-feature hidden-xs">
         <div>
-        <h2 class="align-left"><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h2>
-        <p class="align-left"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
+        <h2 class="align-left visble-xs"><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h2>
+        <p class="align-left visble-xs"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
         <p>&nbsp;</p>
-        <h2 class="align-left hidden-xs"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
-        <p class="align-left hidden-xs"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
+        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
 </div>
