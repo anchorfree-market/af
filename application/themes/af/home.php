@@ -64,10 +64,19 @@ $view->inc('elements/header.php');
 </div>    
 <div class="wrapper">
     <div class="container">   
-        <div class="col-md-12">
-        <div><? $a = new GlobalArea('Featured On');$a->display($c); ?></div>
-        <div id="greyscale"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
-        </div>
+        <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo1');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo2');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo3');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo4');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo5');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo6');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo7');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo8');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo9');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo10');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo11');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo12');$a->display($c); ?></div>
         <div class="clearfix"></div>
         
     </div>
