@@ -65,8 +65,8 @@ $view->inc('elements/header.php');
 <div class="wrapper">
     <div class="container">   
         <div class="col-md-12">
-        <div><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></div>
-        <div id="greyscale"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></div>
+        <div><? $a = new GlobalArea('Featured On');$a->display($c); ?></div>
+        <div id="greyscale"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
         </div>
         <div class="clearfix"></div>
         
