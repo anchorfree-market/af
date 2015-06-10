@@ -3292,7 +3292,21 @@ only screen and (min-device-pixel-ratio: 1.5) {
 .horizontalpad {
     padding: 15px 0px 15px 0px !important;
 }
-
+.marginbot97 {
+	margin-bottom: 97px !important;
+}
+.marginbot90 {
+	margin-bottom: 90px !important;
+}
+.marginbot80 {
+	margin-bottom: 80px !important;
+}
+.marginbot70 {
+	margin-bottom: 70px !important;
+}
+.marginbot60 {
+	margin-bottom: 60px !important;
+}
 .marginbot50 {
 	margin-bottom: 50px !important;
 }
