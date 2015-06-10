@@ -43,9 +43,9 @@ $view->inc('elements/header.php');  ?>
         <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-4');$a->display($c);?><? $a = new Area('vision-desc-4');$a->display($c);?></div>
         <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-5');$a->display($c);?><? $a = new Area('vision-desc-5');$a->display($c);?></div>
         <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-6');$a->display($c);?><? $a = new Area('vision-desc-6');$a->display($c);?></div>
-        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-7');$a->display($c);?><? $a = new Area('vision-desc-4');$a->display($c);?></div>
-        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-8');$a->display($c);?><? $a = new Area('vision-desc-5');$a->display($c);?></div>
-        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-9');$a->display($c);?><? $a = new Area('vision-desc-6');$a->display($c);?></div>
+        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-7');$a->display($c);?><? $a = new Area('vision-desc-7');$a->display($c);?></div>
+        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-8');$a->display($c);?><? $a = new Area('vision-desc-8');$a->display($c);?></div>
+        <div class="col-md-4 col-sm-4 col-xs-6"><? $a = new Area('vision-image-9');$a->display($c);?><? $a = new Area('vision-desc-9');$a->display($c);?></div>
 	</div>
 </div>
 <div class="wrapper investors-board-advisors">
