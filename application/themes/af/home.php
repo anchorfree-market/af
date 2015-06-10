@@ -1,21 +1,8 @@
 <?php 
 $view->inc('elements/header.php');  
 ?>
-<section class="section top-section bg-gradient--blue home">
-    <div class="wrapper backstretch-contain">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-10 col-md-offset-1">
-                    <? $a = new Area('Home Section Title');$a->display($c); ?>
-                </div>
-                <div class="col-sm-12 col-md-12 align-center">
-                    <? $a = new Area('Section Features');$a->display($c); ?>
-                </div>
-                <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
-                </div>
-            </div> <!-- .row -->
-        </div> <!-- .container -->
-    </div> <!-- .wrapper -->
+<section>
+    <? $a = new Area('Hero Image Area');$a->display($c);?>
 </section> <!-- .section-featured -->
 
 <div class="wrapper">
