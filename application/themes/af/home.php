@@ -38,20 +38,25 @@ $view->inc('elements/header.php');
             
         </div>
     </div>
-</section> 
-<section class="section section-home-readmore">
-    <?php $view->inc('elements/txt-left-img-right.php'); ?>
+</section>
+
+<section class="section product-home-back">
+    <?php $view->inc('elements/txt-right-img-left.php'); ?>
+</section>
+ 
+<section class="section press-home-back">
+    <?php $view->inc('elements/press-text-left-img-right.php'); ?>
 </section>
 
 <div class="wrapper"><!-- video -->
     <div class="container">
-        <div class='col-sm-12 col-md-12'><h2 class="m-top-0 m-bottom-40">Providing a Secure Internet that keep your basic human rights.</h2></div>
-        <div class='col-sm-7 col-md-7'>
+        <div class="col-md-12 marginbot30"><h2><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></h2></div>
+        <div class="col-md-8">
             <div class="home-video-container">
-                <? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?>
+            <? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?>
             </div>
         </div>
-        <div class="col-sm-5 col-md-5 quote">
+        <div class="col-sm-5 col-md-4 quote">
             <? $a = new Area('Section Our Mission 2');$a->display($c); ?>
         </div>
         <div class="clearfix"></div>   
@@ -59,9 +64,9 @@ $view->inc('elements/header.php');
 </div>    
 <div class="wrapper">
     <div class="container">   
-        <div class='col-md-12'>
-        <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
-        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        <div class="col-md-12">
+        <div><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></div>
+        <div id="greyscale"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></div>
         </div>
         <div class="clearfix"></div>
         

@@ -15,7 +15,7 @@
         <p class="align-left visble-xs"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
         <p>&nbsp;</p>
         <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
-        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        <p class="align-left" id="greyscale"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
 </div>
