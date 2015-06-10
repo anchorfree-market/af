@@ -19,6 +19,9 @@
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 1');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 2');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 3');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 4');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 5');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp text-white"><? $a = new Area('Value 6');$a->display($c);?></div>
         <div class="col-md-12 text-white marginbot40"><? $a = new Area('Value Area');$a->display($c);?></div>
         <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Value CTA');$a->display($c);?></div>
     </div>
@@ -35,6 +38,9 @@
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 4');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 5');$a->display($c);?></div>
         <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 6');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 7');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 8');$a->display($c);?></div>
+        <div class="col-md-4 align-left-imp"><? $a = new Area('Perks 9');$a->display($c);?></div>
         <div class="col-md-12 marginbot40"><? $a = new Area('Perks Area');$a->display($c);?></div>
         <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Perks CTA');$a->display($c);?></div>
     </div>
@@ -42,12 +48,12 @@
 
 <div class=" wrapper fullfadeblue">
     <div class="container">
-        <div class="col-md-12 text-white marginbot40"><h2 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h2></div>
-        <div class="col-md-12 align-center-imp marginbot40 text-white"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
+        <div class="col-md-12 text-white"><h1 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h1></div>
+        <div class="col-md-12 align-center-imp marginbot20 text-white"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
    </div>
 </div>
 
-<div class=" wrapper"></div>
+<div class="marginbot50"></div>
 <?php
     function getURL($url) {
         $ch = curl_init();
