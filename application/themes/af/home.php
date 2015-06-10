@@ -41,7 +41,7 @@ $view->inc('elements/header.php');
 </section>
 
 <section class="section home-product-back">
-    <?php $view->inc('elements/home-text-right-img-left'); ?>
+    <?php $view->inc('elements/home-text-right-img-left.php'); ?>
 </section>
  
 <section class="section home-back">
