@@ -60,18 +60,15 @@ $view->inc('elements/header.php');
 <div class="wrapper">
     <div class="container">   
         <div class='col-md-12'>
-            <? $a = new Area('Section Featured On');$a->display($c); ?>
-        </div>
-        <div class="col-md-12">
-            <div id="home-feature-on">
-            </div>
+        <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
+        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
         <div class="clearfix"></div>
         
     </div>
 </div>  
-<section class="section section-home-join-team join-team">
-    <?php $view->inc('elements/txt-left-img-right-2.php'); ?>
+<section class="section section-join-team">
+    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </section>
 
 <?php $view->inc('elements/footer.php'); ?>

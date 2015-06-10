@@ -9,8 +9,8 @@ $view->inc('elements/header.php');  ?>
     <div class="container">
         <div class="col-md-12">
             <a name="contact" class="top-section"></a>
-            <h2 class="main-title align-center-imp"><? $a = new Area('About Title');$a->display($c);?></h2>
-            <p class="marginbot50 align-center-imp"><? $a = new Area('About Content');$a->display($c);?></p>
+            <h2 class="main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
+            <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div>
         
         <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
