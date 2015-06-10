@@ -2914,7 +2914,7 @@ a.popover-custom--connections {
         padding: 30px 10px 0px 0px;
     }
 	.marginbot97 {
-  		margin-bottom: 97px !important;
+  		margin-bottom: 97px;
 	}
 }
 @media all and (max-width: 991px) {
@@ -2924,7 +2924,7 @@ a.popover-custom--connections {
 }
 @media only screen and (max-width: 768px) {
     .marginbot97 {
-		margin-bottom: 125px !important;
+		margin-bottom: 125px;
 	}
 	.product .product-type {
         line-height: 20px;
@@ -3233,7 +3233,7 @@ a.popover-custom--connections {
 	background-position: left top;
 	}
 	.marginbot97 {
-	margin-bottom: 58px !important;
+	margin-bottom: 58px;
 	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -3302,7 +3302,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
     padding: 15px 0px 15px 0px !important;
 }
 .marginbot97 {
-	margin-bottom: 97px !important;
+	margin-bottom: 97px;
 }
 .marginbot90 {
 	margin-bottom: 90px !important;
