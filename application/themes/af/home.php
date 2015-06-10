@@ -47,8 +47,8 @@ $view->inc('elements/header.php');
 <div class="wrapper"><!-- video -->
     <div class="container">
         <div class="col-md-12 marginbot50"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
-        <div class="col-md-8"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
-        <div class="col-md-4 quote"><? $a = new Area('Section Our Mission 2');$a->display($c); ?></div>
+        <div class="col-md-6"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
+        <div class="col-md-4 quote pull-right"><? $a = new Area('Section Our Mission 2');$a->display($c); ?></div>
         <div class="clearfix"></div>   
     </div>
 </div>    
