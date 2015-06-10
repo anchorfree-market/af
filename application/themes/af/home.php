@@ -17,7 +17,7 @@ $view->inc('elements/header.php');
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-featured -->
-<!--
+
 <div class="wrapper">
     <div class="container">
         <div class="row">
@@ -25,20 +25,6 @@ $view->inc('elements/header.php');
         </div> 
     </div> 
 </div> 
--->
-<section id="home-product">
-    <div class="wrapper text-center backstretch-contain">
-        <div class="container">
-            <div class='col-sm-5 col-md-5'></div>
-            <div class="col-sm-7 col-md-7 home-product">
-                <? $a = new Area('Section Our Product');$a->display($c); ?>
-            </div>
-            <div class="clearfix"></div>
-            
-            
-        </div>
-    </div>
-</section>
 
 <section class="section home-product-back">
     <?php $view->inc('elements/home-text-right-img-left.php'); ?>
