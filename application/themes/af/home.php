@@ -50,18 +50,16 @@ $view->inc('elements/header.php');
 
 <div class="wrapper"><!-- video -->
     <div class="container">
-        <div class="col-md-12 marginbot30"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
-        <div class="col-md-8">
-            <div class="home-video-container">
-            <? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?>
-            </div>
-        </div>
-        <div class="col-sm-5 col-md-4 quote">
-            <? $a = new Area('Section Our Mission 2');$a->display($c); ?>
-        </div>
+        <div class="col-md-12 marginbot50"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
+        <div class="col-md-8"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
+        <div class="col-md-4 quote"><? $a = new Area('Section Our Mission 2');$a->display($c); ?></div>
         <div class="clearfix"></div>   
     </div>
 </div>    
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
+
 <div class="wrapper">
     <div class="container">   
         <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
@@ -84,6 +82,9 @@ $view->inc('elements/header.php');
 <section class="section section-join-team">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </section>
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
 
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
