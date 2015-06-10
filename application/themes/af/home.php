@@ -50,7 +50,7 @@ $view->inc('elements/header.php');
 
 <div class="wrapper"><!-- video -->
     <div class="container">
-        <div class="col-md-12 marginbot30"><h2><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></h2></div>
+        <div class="col-md-12 marginbot30"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
         <div class="col-md-8">
             <div class="home-video-container">
             <? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?>
