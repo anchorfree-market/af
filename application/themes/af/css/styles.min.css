@@ -2913,6 +2913,9 @@ a.popover-custom--connections {
     .careers-top .wrapper {
         padding: 30px 10px 0px 0px;
     }
+	.marginbot97 {
+  		margin-bottom: 97px !important;
+	}
 }
 @media all and (max-width: 991px) {
     .release .clearfix {
@@ -2920,7 +2923,10 @@ a.popover-custom--connections {
     }
 }
 @media only screen and (max-width: 768px) {
-    .product .product-type {
+    .marginbot97 {
+		margin-bottom: 125px !important;
+	}
+	.product .product-type {
         line-height: 20px;
         line-height: 2rem
     }
@@ -3225,7 +3231,10 @@ a.popover-custom--connections {
 	background: linear-gradient(to right,  rgba(40,58,131,1) 0%,rgba(27,123,206,1) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283a83', endColorstr='#1b7bce',GradientType=1 ); /* IE6-9 */
 	background-position: left top;
-}
+	}
+	.marginbot97 {
+	margin-bottom: 58px !important;
+	}
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
