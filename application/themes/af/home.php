@@ -21,7 +21,8 @@ $view->inc('elements/header.php');
 <div class="wrapper">
     <div class="container">
         <div class="row">
-            <? $a = new Area('Section Our Mission');$a->display($c); ?>
+            <h2 class="main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
+            <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div> 
     </div> 
 </div> 
