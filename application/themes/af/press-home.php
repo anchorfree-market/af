@@ -1,5 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
-<section class="section press-home-back">
+<section class="section press-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
 </section>
 

@@ -40,7 +40,7 @@ $view->inc('elements/header.php');
     </div>
 </section>
  
-<section class="section press-home-back">
+<section class="section home-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
 </section>
 
