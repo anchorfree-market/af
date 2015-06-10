@@ -31,7 +31,7 @@
 </head>
 <body>
     <div class="<?php echo $c->getPageWrapperClass()?>">
-        <header class="head-body header">
+        <header class="head-body header marginbot97">
         <!-- Fixed navbar -->
         <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
