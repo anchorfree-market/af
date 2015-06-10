@@ -1,6 +1,6 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<div class="container-fluid top-section press-details-back">
+<div class="container-fluid press-details-back">
         <div class="container">
         <div><h2 class="text-white align-left"><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h2></div>
     	</div>
@@ -22,8 +22,8 @@ $view->inc('elements/header.php');  ?>
         <h2 class="align-left"><? $a = new GlobalArea('Press Inquiries Title');$a->display($c); ?></h2>
         <p class="align-left"><? $a = new GlobalArea('Press Inquiries');$a->display($c); ?></p>
         <p>&nbsp;</p>
-        <h2 class="align-left"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
-        <p class="align-left"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
+        <h2 class="align-left hidden-xs"><? $a = new GlobalArea('Press Featured On');$a->display($c); ?></h2>
+        <p class="align-left hidden-xs"><? $a = new GlobalArea('Press Featured Logos');$a->display($c); ?></p>
         </div>
     </div>
 </div>
