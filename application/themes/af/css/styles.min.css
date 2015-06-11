@@ -2855,7 +2855,7 @@ a.popover-custom--connections {
         left: 325px
     }
     .btn {
-        min-width: 242px
+        min-width: 
     }
     .popover-custom--hackers {
         left: 385px
@@ -3187,10 +3187,10 @@ a.popover-custom--connections {
         margin: -2px 0 10px
     }
     .about-form .btn.btn-success {
-        width: 100%
+        width: 100%;
     }
     .btn {
-        padding: 10px 30px
+        padding: 15px;
     }
     .quote a {
         margin: 30px auto 0;
