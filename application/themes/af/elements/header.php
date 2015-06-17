@@ -35,6 +35,7 @@
         <!-- Fixed navbar -->
         <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
+            	<div class="row">
                 <div class="navbar-header">
 	                    <div class="col-md-2 col-sm-12 col-xs-12">
 							<? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?>
@@ -47,9 +48,9 @@
                             <span class="icon-bar"></span>
                         </button>
                         </div>
-                    <div class="clearfix"></div>   
                     <!--<a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>-->
                 </div><!--.navbar-header -->
+                </div>
             </div><!--.container -->  
         </div>
         </header>
