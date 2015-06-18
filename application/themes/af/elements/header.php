@@ -42,7 +42,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getRelativePath()?>/images/logo_anchorfree@2x.png"></a>
+                    <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath)?>/images/logo_anchorfree@2x.png"></a>
                 </div><!--.navbar-header -->
                 <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
             </div><!--.container -->  
