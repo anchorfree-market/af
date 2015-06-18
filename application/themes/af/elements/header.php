@@ -36,16 +36,15 @@
         <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
                 <div class="navbar-header">
-                    <div class="col-md-8">
                     <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    </div>
-                    <div class="full-width col-md-3"><? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?></div>
+                    <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getRelativePath()?>/images/logo_anchorfree@2x.png"></a>
                 </div><!--.navbar-header -->
+                <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
             </div><!--.container -->  
         </div>
         </header>
