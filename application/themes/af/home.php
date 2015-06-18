@@ -1,1 +1,64 @@
-<div class="wrapper"><footer class="footer"><div class="container"><div class="col-md-12"><div class="col-md-3 col-sm-3 col-xs-6 footer-nav"><div class="col-md-3 col-sm-3 col-xs-6 footer-nav"><div class="recent-news col-md-6 col-sm-6 hidden-xs"><div class="col-md-12"><div class="footer-copyright col-md-8 col-sm-6 col-xs-12"></footer><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><?php $c = Page::getCurrentPage(); if($c->isEditMode()) {} else { echo "<script src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>"; } ?><?php $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); $themePath = $view->getThemePath(); if(preg_match("/carriers/", $URL)) { // display script on carriers page echo "<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>"; echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>"; echo "<script type='text/javascript' src='".$themePath."/js/carriers.js'></script>"; echo "<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js'></script>"; } else if(preg_match("/advertise/", $URL)) { // display script on advertise page echo "<script type='text/javascript' src='//cdn.jsdelivr.net/countupjs/1.1.0/countUp.min.js'></script>"; echo "<script type='text/javascript' src='".$themePath."/js/imageLens.min.js'></script>"; echo "<script type='text/javascript' src='//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js'></script>"; } else if(preg_match("/careers/", $URL) || preg_match("/jobs/", $URL)) { // display script on careers page echo "<script src='//code.jquery.com/ui/1.11.4/jquery-ui.js'></script>"; } else { // including press and about page echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>"; } ?><? Loader::element('footer_required')?>
+<?php 
+$view->inc('elements/header.php');  
+?>
+<section>
+    <? $a = new Area('Hero Image Area');$a->display($c);?>
+</section> <!-- .section-featured -->
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <h2 class="main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
+            <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
+        </div> 
+    </div> 
+</div> 
+
+<section class="section home-product-back">
+    <?php $view->inc('elements/home-text-right-img-left.php'); ?>
+</section>
+ 
+<section class="section home-back">
+    <?php $view->inc('elements/press-text-left-img-right.php'); ?>
+</section>
+
+<div class="wrapper"><!-- video -->
+    <div class="container">
+        <div class="col-md-12 marginbot50"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
+        <div class="col-md-7"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
+        <div class="col-md-4 quote pull-right"><? $a = new Area('Section Our Mission 2');$a->display($c); ?></div>
+        <div class="clearfix"></div>   
+    </div>
+</div>    
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
+
+<div class="wrapper">
+    <div class="container">   
+        <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo1');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo2');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo3');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo4');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo5');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo6');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo7');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo8');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo9');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo10');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo11');$a->display($c); ?></div>
+        <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo12');$a->display($c); ?></div>
+        <div class="clearfix"></div>
+        
+    </div>
+</div>  
+<section class="section section-join-team">
+    <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
+</section>
+
+<div class="marginbot40"></div>
+<div class="separator saperator-gradient"></div>
+
+<?php $view->inc('elements/footer.php'); ?>
+<? $a = new Area('Backstretch Script');$a->display($c); ?>
