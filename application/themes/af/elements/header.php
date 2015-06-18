@@ -35,20 +35,33 @@
         <!-- Fixed navbar -->
         <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
-            	<div class="row">
-	                    <div class="col-md-2 col-sm-12 col-xs-12">
+                
+                <!--<div class="navbar-header">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
+                </div><!--.navbar-header -->
+                
+                <div class="row">
+	                    <div class="col-md-3 col-sm-12 col-xs-12">
 							<? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?>
                         </div>
-                        <div class="col-md-10 col-sm-12 col-xs-12" pull-right>
-                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
+                        <div class="col-md-8 col-sm-12 col-xs-12 pull-right">
+                        <div class="navbar-header">
+                            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
                         </div>
-                    <!--<a href="/~anchorj6/af/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>-->
+                        </div>
                 </div>
+                
             </div><!--.container -->  
         </div>
         </header>
