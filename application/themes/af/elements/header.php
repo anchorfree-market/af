@@ -46,6 +46,8 @@
                         <span class="icon-bar"></span>
                     </button>
                 </div><!--.navbar-header -->
+                
+                <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
             </div><!--.container -->  
         </div>
         </header>
