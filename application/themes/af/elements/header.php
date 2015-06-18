@@ -36,34 +36,16 @@
         <div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
             <div class="container">
                 <div class="navbar-header">
+                    <div class="col-md-8">
                     <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <div class="navbar-brand full-width"><? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?></div>
+                    </div>
+                    <div class="full-width col-md-3"><? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?></div>
                 </div><!--.navbar-header -->
             </div><!--.container -->  
         </div>
         </header>
-        
-        
-        <!--<header class="head-body header marginbot97">
-        <!-- Fixed navbar -->
-        <!--<div role="navigation" class="navbar navbar-default navbar-fixed-top col-md-12">
-            <div class="container">
-            	<div class="col-md-3 col-sm-12 col-xs-12">
-					<? $a = new GlobalArea('Site Name or Logo');$a->display($c); ?>
-                </div>
-                <div class="navbar-header col-md-8 col-sm-12 col-xs-12">
-                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div><!--.navbar-header -->
-        <!--    </div><!--.container -->  
-        <!--</div>
-        </header>-->
