@@ -77,10 +77,12 @@
     }
 ?>
 
+<?php if (empty($_REQUEST['gh_jid'])): ?>
 <div class="container">
     <a name="careerslist"></a>
     <div class="col-md-12"><h2 class="align-center-imp"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
 </div>
+<?php endif; ?>
 
 <div class="container">
     <div class="col-md-12 margin-center">
