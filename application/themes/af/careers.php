@@ -1,4 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
+<?php if (empty($_REQUEST['gh_jid'])): ?>
 <section class="careers-video">
    <? $a = new Area('Top Video');$a->display($c); ?>
 </section>
@@ -52,7 +53,7 @@
         <div class="col-md-12 align-center-imp marginbot20 text-white"><p class="align-center-imp text-white"><? $a = new Area('Stats Content');$a->display($c);?></p>			</div>
    </div>
 </div>
-
+<?php endif; ?>
 <div class="marginbot50"></div>
 <?php
     function getURL($url) {
@@ -96,7 +97,7 @@
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -106,7 +107,7 @@
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -116,7 +117,7 @@
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
