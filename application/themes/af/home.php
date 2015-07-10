@@ -59,6 +59,38 @@ $view->inc('elements/header.php');
 
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-
+<script type="text/javascript">
+        // device detection
+        window.onload = function() {
+                if(navigator.appVersion.indexOf('iPad') > -1 || navigator.appVersion.indexOf('iPhone') > -1) { // iPhone and iPad
+                        $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'iOS'})" ); 
+                        //alert('iphone');
+                }
+                else if(navigator.appVersion.indexOf('Android') > -1) { // Android
+                        $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Android'})" );
+                        //alert('android');
+                }
+                else if(navigator.appVersion.indexOf("Mac")!=-1){ //Mac 
+                        $(".btn-free").attr("href", "http://50.87.248.60/~anchorj6/af/application/files/2014/3648/6677/HSS-3.19.3-444.dmg");
+                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})" ); 
+                        //alert('mac');
+                }
+                else { //Windows
+                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Windows'})" ); 
+                        //alert('other');
+                }
+            };
+        // Redirect user to thank you page on click of buttons
+        $(document).ready(function(){
+                $(".btn-free").bind('click', function(){
+                        setTimeout( function() {
+                                window.location = "http://www.hotspotshield.com/thankyou.html";
+                        }, 3000 );	
+                })	
+        });
+</script>
+<!-- End Button Device Detection -->			
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
