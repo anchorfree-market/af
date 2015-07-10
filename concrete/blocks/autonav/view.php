@@ -78,12 +78,12 @@ foreach ($navItems as $ni) {
 	}
 	*/
 
-	/*
+	
 	if ($ni->hasSubmenu) {
 		//class for items that have dropdown sub-menus
-		$classes[] = 'nav-dropdown';
+		$classes[] = 'nav-dropdown dropdown';
 	}
-	*/
+	
 
 	/*
 	if (!empty($ni->attrClass)) {
@@ -118,11 +118,12 @@ if (count($navItems) > 0) {
     foreach ($navItems as $ni) {
 
         echo '<li class="' . $ni->classes . '">'; //opens a nav item
-        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
-
+       
         if ($ni->hasSubmenu) {
-            echo '<ul>'; //opens a dropdown sub-menu
+            echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '" data-toggle="dropdown">' . $ni->name . '<span class="caret"></span></a>';
+            echo '<ul class="dropdown-menu">'; //opens a dropdown sub-menu
         } else {
+            echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
             echo '</li>'; //closes a nav item
             echo str_repeat('</ul></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
         }
