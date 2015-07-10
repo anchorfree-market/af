@@ -517,6 +517,13 @@ p {
 .btn-txt-green {
     color: #6bbc27
 }
+.btn-xlg {
+  padding: 18px 36px !important;
+  font-size: 20px !important;
+  min-width: 300px !important;
+  line-height: 1.33 !important;
+  border-radius: 6px !important;
+}
 .btn-white-blue-border {
     border: 1px solid #1794d5;
     background: #fff;
