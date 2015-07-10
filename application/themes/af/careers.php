@@ -1,9 +1,8 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php if (empty($_REQUEST['gh_jid'])): ?>
-<section class="careers-video">
+<section class="careers-video fullfadeblue">
    <? $a = new Area('Top Video');$a->display($c); ?>
 </section>
-
 <div class="wrapper">
     <div class="container">
         <div class="col-md-12 marginbot40">
@@ -12,7 +11,6 @@
         </div>
 	</div>
 </div>
-
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-center-imp text-white"><? $a = new Area('Values Title');$a->display($c);?></h2>
@@ -27,7 +25,6 @@
         <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Value CTA');$a->display($c);?></div>
     </div>
 </div>
-
 <div class="wrapper marginbot40">
     <div class="container">
         <h2 class="align-center-imp"><? $a = new Area('Perks Title');$a->display($c);?></h2>
@@ -46,7 +43,6 @@
         <div class="col-md-12 align-center-imp marginbot40"><? $a = new Area('Perks CTA');$a->display($c);?></div>
     </div>
 </div>
-
 <div class=" wrapper fullfadeblue">
     <div class="container">
         <div class="col-md-12 text-white"><h1 class="align-center-imp text-white"><? $a = new Area('Stats Title');$a->display($c);?></h1></div>
@@ -62,13 +58,11 @@
         curl_setopt($ch, CURLOPT_HEADER, 0);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
         $content = curl_exec($ch);
         curl_close($ch);
         return $content;
     }
     $jobs = null;
-    
     if (empty($_REQUEST['gh_jid'])) {
 	$data = getURL('https://api.greenhouse.io/v1/boards/anchorfree/embed/departments');
 	if (!empty($data)) {
@@ -76,21 +70,18 @@
 	}
     }
 ?>
-
 <?php if (empty($_REQUEST['gh_jid'])): ?>
 <div class="container">
     <a name="careerslist"></a>
     <div class="col-md-12"><h2 class="align-center-imp"><? $a = new Area('Positions Title');$a->display($c);?></h2></div>
 </div>
 <?php endif; ?>
-
 <div class="container">
     <div class="col-md-12 margin-center">
      <?php if (!empty($_REQUEST['gh_jid'])) :?>
         <div id="grnhse_app"></div>
         <script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
     <?php else:?>
-        
     <?php if (!empty($jobs)) :?>
         <?php $department = $jobs['departments']; ?>
         <div id="careers-accordion">
@@ -99,17 +90,16 @@
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
-            
             <h3><?php echo $department[1]['name']?> <span class="department-jobs-count"><?php echo count($department[1]['jobs']) ?></span>&nbsp;&nbsp;</h3>
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -119,7 +109,7 @@
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/af/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -130,10 +120,8 @@
     <?php endif;?>
 </div>
 </div>
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-
 <?php $view->inc('elements/footer.php'); ?>
 <script>
 $(document).ready(function() {
@@ -141,7 +129,6 @@ $(document).ready(function() {
         heightStyle: "content",
         collapsible: true
     });
-    
     /* cover video from the bottom */
     var coverVideo = $('.careers-openings');
     $(window).resize(function() {
@@ -156,7 +143,6 @@ $(document).ready(function() {
             }
 
     });
-
    /* blue gradient background to be same height as video */
    function resizeVideo() {
      setTimeout(function() {
@@ -165,22 +151,17 @@ $(document).ready(function() {
        }, 500);  
    }
    resizeVideo();
-
    $(window).resize(function() {
         resizeVideo();
    });
 }); // end of document ready
 </script>
-        
 <!-- ie8 only -- fix video full width and height -->
 <!--[if lt IE 9]>
 <script>
 $(document).ready(function() {
-    $('#vi-contain').html('<img src="<?php echo $view->getThemePath()?>/videos/careers-video.jpg" style="width: 100%;">');
+    $('#vi-contain').html('<img src="/application/files/9014/3215/3041/Careers-heroposter.jpg" style="width: 100%;">');
 }); // end of document ready
 </script>
-<![endif]-->
-      
-      
+<![endif]-->      
 <? $a = new Area('javascript');$a->display($c); ?>
-

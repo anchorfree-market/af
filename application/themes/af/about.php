@@ -1,6 +1,5 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<!--<img src="<?php echo $view->getThemePath()?>/images/blue-gradients-transparent-bg-rt.png">-->
 <section class="section section-about-us about-us">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>

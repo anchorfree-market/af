@@ -2635,7 +2635,7 @@ a.popover-custom--connections {
 .press-details-back,
 .press-home-back {
     padding: 15px 0 10px;
-    background: url(/af/application/files/8614/3639/3408/blue-back.jpg);
+    background: url(/files/8614/3639/3408/blue-back.jpg);
     background-size: cover;
     margin-bottom: 25px
 }
@@ -2711,7 +2711,6 @@ a.popover-custom--connections {
     font-size: 1.8em;
     cursor: pointer;
     margin: 0;
-    padding: 15px;
     position: relative;
     border-bottom: 1px solid #d3d3d3
 }

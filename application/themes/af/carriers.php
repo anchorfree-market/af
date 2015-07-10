@@ -1,6 +1,5 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
-
 <section class="section section-featured-carrier fullfadeblue" style="position-relative;">
     <div class="wrapper">
         <div class="container">
@@ -16,7 +15,6 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-featured -->
-
 <!-- ATTACKS -->
 <section class="section section-attacks">
     <div class="wrapper">
@@ -66,7 +64,6 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-attacks -->
-
 <!-- VIDEO -->
 <section class="section section-video fullfadeblue">
     <div class="wrapper">        
@@ -82,7 +79,6 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-video -->
-
 <!-- HOW IT WORKS -->
 <section id="howitworks-carrier" class="section section-howitworks-carrier">
     <div class="wrapper">
@@ -142,7 +138,6 @@
                             <img src="<?php echo $view->getThemePath()?>/images/placeholder_wifi_off@2x.png" width="100%" alt="" />
                         </div>
                     </div><!-- #security-off -->
-
                     <div id="security-on" class="col-md-12 relative diagram">
                         <div class="hidden-sm hidden-xs">                
                             <div class="diagram-hacker diagram-hacker--off">
@@ -189,7 +184,6 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-howitworks -->
-
 <!-- FEATURES LIST -->
 <section class="section section-features-list bg-gradient--lightgrey--top">
     <div class="wrapper wrapper-border">
@@ -216,7 +210,6 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-features-list -->
-
 <!-- CONTACT US -->
 <section class="section section-contact-us-carrier fullfadeblue">
     <div class="wrapper wrapper--small">

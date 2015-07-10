@@ -12,7 +12,6 @@ $view->inc('elements/header.php');  ?>
                 <?php $view->inc('elements/txt-center-blue-bg.php'); ?>
                 <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
                     <? $a = new Area('Advertise Featured Image');$a->display($c); ?>
-                    <!--<img src="<?php echo $view->getThemePath()?>/images/composition@2x.png" class="full-width section-featured-img">-->
                 </div>
                 
             </div> <!-- .row -->
@@ -51,15 +50,11 @@ $view->inc('elements/header.php');  ?>
                 </div>
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <? $a = new Area('Target Text');$a->display($c); ?>
-                    <!--
-                    <p class="text-center">The AnchorFree Platform can put your brand in front of 25 million active monthly users on the Web and mobile devices. Almost every person with a computer or a mobile phone uses a Wi-Fi network. Hotspot Shield, the most popular privacy app in the world, reaches virtually every demographic segment of a technically savvy/content hungry population.</p>
-                    <p class="text-center">Whether you are trying to reach expats or travelers, The AnchorFree Platform is your ideal destination.</p>-->
                 </div>
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-who -->
-
 <section class="section section-counter bg-gradient--grey">
     <div class="wrapper wrapper-border">
         <div class="container">
@@ -68,7 +63,6 @@ $view->inc('elements/header.php');  ?>
                     <h2>
                         <? $a = new Area('Advertise Users in Common Title');$a->display($c); ?>
                     </h2>
-                    <!--<h2>What do our users have in common?</h2>-->
                     <div class="global-usage">
                         <span class="global-usage-title"><? $a = new Area('Global Usage');$a->display($c); ?><!-- Global Usage in over--></span>
                         <span class="global-usage-number"><? $a = new Area('Number of countries');$a->display($c); ?><!--190 countries--></span>
@@ -81,7 +75,6 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-counter -->
-
 <section class="section section-howitworks">
     <div class="wrapper">
         <div class="container">
@@ -105,10 +98,8 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-howitworks -->
-
 <section class="section section-mobile fullfadeblue">
     <div class="wrapper relative">
-
         <div class="circles">
             <div class="circle circle-1"></div>
             <div class="circle circle-2"></div>
@@ -121,19 +112,15 @@ $view->inc('elements/header.php');  ?>
                 <div class="col-md-10 col-md-offset-1">
                     <? $a = new Area('Mobile Advertising h2');$a->display($c); ?>
                     <? $a = new Area('Mobile Advertising h3');$a->display($c); ?>
-
                     <div class="androids">
                         <div class="android android-center">
                             <? $a = new Area('Advertise Android Center');$a->display($c); ?>
-
                         </div>
                         <div class="android android-blur android-blur--left">
                             <? $a = new Area('Advertise Android blur');$a->display($c); ?>
-
                         </div>
                         <div class="android android-blur android-blur--right">
                             <? $a = new Area('Advertise Android blur');$a->display($c); ?>
-
                         </div>
                         <span class="android-only italic">* Android only</span>
                     </div>
@@ -142,7 +129,6 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-mobile -->
-
 <section class="section section-chart bg-gradient--lightgrey">
     <div class="wrapper wrapper-border">
         <div class="container">
@@ -151,7 +137,6 @@ $view->inc('elements/header.php');  ?>
                     <h2>
                         <? $a = new Area('comScore Title');$a->display($c); ?>
                     </h2>
-                    <!--<h2>Security and privacy-minded World Citizens. Content Enthusiasts.</h2>-->
                 </div>
                 <div class="col-md-12">
                     <a href="#" class="link-comscore pull-right">
@@ -167,7 +152,6 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-chart -->
-
 <!-- CONTACT US -->
 <section class="section section-contact-us fullfadeblue">
     <div class="wrapper wrapper--small">
