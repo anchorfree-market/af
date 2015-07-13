@@ -90,11 +90,7 @@
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-<<<<<<< HEAD
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
-=======
                         <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
->>>>>>> origin/master
                     <?php endforeach;?>
                 </div>
             </div>
@@ -103,11 +99,7 @@
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-<<<<<<< HEAD
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
-=======
                         <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
->>>>>>> origin/master
                     <?php endforeach;?>
                 </div>
             </div>
@@ -117,11 +109,7 @@
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-<<<<<<< HEAD
-                        <a href="<?php echo "http://50.87.248.60/~anchorj6/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
-=======
                         <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
->>>>>>> origin/master
                     <?php endforeach;?>
                 </div>
             </div>
