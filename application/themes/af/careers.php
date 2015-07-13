@@ -78,8 +78,8 @@
 <?php endif; ?>
 <div class="container">
      <?php if (!empty($_REQUEST['gh_jid'])) :?>
-        <div class="col-md-4 margin-center"></div>
-        <div class="col-md-8 margin-center">
+        <div class="col-md-5 hidden-xs"><? $a = new Area('Careers Job Listing Side Nav');$a->display($c);?></div>
+        <div class="col-md-7 margin-center">
     	<div id="grnhse_app"></div>
         <script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
     <?php else:?>
@@ -91,7 +91,7 @@
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/af/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/af/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -110,7 +110,7 @@
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
                     <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                        <a href="<?php echo "/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
+                        <a href="<?php echo "/af/index.php/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
