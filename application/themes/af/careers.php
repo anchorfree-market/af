@@ -77,10 +77,10 @@
 </div>
 <?php endif; ?>
 <div class="container">
-	<div class="col-md-4></div>
-    <div class="col-md-8 margin-center">
      <?php if (!empty($_REQUEST['gh_jid'])) :?>
-        <div id="grnhse_app"></div>
+        <div class="col-md-4"><? $a = new Area('Career Side Nav');$a->display($c);?></div>
+    	<div class="col-md-8 margin-center">
+    	<div id="grnhse_app"></div>
         <script src='https://app.greenhouse.io/embed/job_board/js?for=anchorfree'></script>
     <?php else:?>
     <?php if (!empty($jobs)) :?>
