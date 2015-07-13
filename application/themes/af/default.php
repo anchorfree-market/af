@@ -36,7 +36,6 @@
 -->
 <!-- CSS 
 <link href="source/v.SOURCE_VERSION/css/styles_v2.min.css" rel="stylesheet">
-
 <link href="source/v.1.0/css/carriers.css" rel="stylesheet">-->
 <?php Loader::element('header_required')?>
 </head>
@@ -55,7 +54,6 @@
                 </button>
                 <a href="/" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo $view->getThemePath()?>/images/logo_anchorfree@2x.png"></a>
             </div><!--.navbar-header -->
-
             <div class="navbar-collapse collapse" style="height: 1px;">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://www.hotspotshield.com">Hotspot Shield VPN</a></li>
@@ -70,7 +68,6 @@
         </div><!--.container -->
     </div>
     </header>
-  
 <div class="<?php echo $c->getPageWrapperClass()?>">
     <?php
         $a = new Area('Area Name');
@@ -95,7 +92,6 @@
     </div> <!-- .container -->
 </footer>
 </div><!-- end .head-wrapper -->
-
 <!-- JavaScript 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>

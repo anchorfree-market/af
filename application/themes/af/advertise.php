@@ -4,7 +4,6 @@ $view->inc('elements/header.php');  ?>
     $GLOBALS['topFirstEle'] = 'h1';
     $GLOBALS['topSecondEle'] = 'h3';
 ?>
-
 <section class="section section-featured fullfadeblue">
     <div class="wrapper">
         <div class="container">
@@ -13,12 +12,10 @@ $view->inc('elements/header.php');  ?>
                 <div class="col-sm-12 col-md-8 col-md-offset-2 section-featured-img">
                     <? $a = new Area('Advertise Featured Image');$a->display($c); ?>
                 </div>
-                
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-featured -->
-
 <section class="section section-target">
     <div class="wrapper">
         <div class="container">

@@ -2,7 +2,6 @@
 <section class="section press-home-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
 </section>
-
 <div class="container">
 <div class="row">
     <div class="col-md-8">
@@ -20,10 +19,7 @@
     </div>
 </div>
 </div>
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
-

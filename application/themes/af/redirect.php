@@ -5,7 +5,6 @@ $view->inc('elements/header.php');  ?>
         <div><h2 class="text-white align-left"><? $a = new GlobalArea('Press Title Name');$a->display($c); ?></h2></div>
     	</div>
 </div>
-
 <div class="container">
 <div class="row">
     <div class="col-md-8">
@@ -28,10 +27,8 @@ $view->inc('elements/header.php');  ?>
     </div>
 </div>
 </div>
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-
 <?php
 if ($redirectURL = $c->getCollectionAttributeValue('internal_url')) {
    if ($redirectURL != '') {   
@@ -41,4 +38,3 @@ if ($redirectURL = $c->getCollectionAttributeValue('internal_url')) {
 }
 ?>
 <?php $view->inc('elements/footer.php'); ?>
-

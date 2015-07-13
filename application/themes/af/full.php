@@ -10,6 +10,5 @@ $view->inc('elements/header.php');  ?>
     <? $a = new Area('Section Our Mission 2');$a->display($c); ?>
     <? $a = new Area('Section Featured On');$a->display($c); ?>
     <? $a = new Area('Section Join Our Team');$a->display($c); ?>
-
  <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>

@@ -4,7 +4,6 @@ $view->inc('elements/header.php');
 <section>
     <? $a = new Area('Hero Image Area');$a->display($c);?>
 </section> <!-- .section-featured -->
-
 <div class="wrapper">
     <div class="container">
         <div class="row">
@@ -13,15 +12,12 @@ $view->inc('elements/header.php');
         </div> 
     </div> 
 </div> 
-
 <section class="section home-product-back">
     <?php $view->inc('elements/home-text-right-img-left.php'); ?>
 </section>
- 
 <section class="section home-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
 </section>
-
 <div class="wrapper"><!-- video -->
     <div class="container">
         <div class="col-md-12 marginbot50"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
@@ -30,10 +26,8 @@ $view->inc('elements/header.php');
         <div class="clearfix"></div>   
     </div>
 </div>    
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-
 <div class="wrapper">
     <div class="container">   
         <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
@@ -50,13 +44,11 @@ $view->inc('elements/header.php');
         <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo11');$a->display($c); ?></div>
         <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo12');$a->display($c); ?></div>
         <div class="clearfix"></div>
-        
     </div>
 </div>  
 <section class="section section-join-team">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </section>
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
 <script type="text/javascript">

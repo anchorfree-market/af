@@ -11,11 +11,8 @@ $view->inc('elements/header.php');  ?>
             <h2 class="main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
             <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div>
-        
         <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
-        
         <div class="col-md-12 marginbot15"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
-        
         <div class="row">
         <div class="col-md-2 col-md-offset-1 col-xs-12"><h4><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
         <div class="col-md-3 col-xs-12"><h4 class="align-left-imp"><? $a = new Area('US Headquarter Address');$a->display($c);?></h4></div>
@@ -24,9 +21,7 @@ $view->inc('elements/header.php');  ?>
     	</div>
 	</div>
 </div>
-
 <div class="map hidden-xs"><? $a = new Area('Map');$a->display($c);?></div>
-
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-left-imp text-white"><? $a = new Area('Form Title');$a->display($c);?></h2>
@@ -55,13 +50,10 @@ $view->inc('elements/header.php');  ?>
        <div class="col-md-4 col-sm-4"><? $a = new Area('Investors Board Advisors Column 3');$a->display($c);?></div>
     </div> 
 </div>
-
 <section class="section section-join-team">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </section>
-
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-    
 <?php $view->inc('elements/footer.php'); ?>
 <? $a = new Area('Backstretch Script');$a->display($c); ?>
