@@ -73,7 +73,7 @@ $view->inc('elements/header.php');
                         //alert('android');
                 }
                 else if(navigator.appVersion.indexOf("Mac")!=-1){ //Mac 
-                        $(".btn-free").attr("href", "http://50.87.248.60/~anchorj6/af/application/files/2014/3648/6677/HSS-3.19.3-444.dmg");
+                        $(".btn-free").attr("href", "http://mydati.com//download/hss-mac/HSS-444.dmg");
                         $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})" ); 
                         //alert('mac');
                 }
