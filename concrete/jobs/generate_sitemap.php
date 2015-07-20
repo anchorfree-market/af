@@ -13,6 +13,10 @@ use \Concrete\Core\Permission\Access\Entity\GroupEntity as GroupPermissionAccess
 use SimpleXMLElement;
 use Page;
 use Events;
+
+
+
+
 class GenerateSitemap extends AbstractJob {
 
 	/** The end-of-line terminator.
@@ -54,11 +58,57 @@ class GenerateSitemap extends AbstractJob {
 			);
 			$instances['guestGroupAE'] = array(GroupPermissionAccessEntity::getOrCreate($instances['guestGroup']));
 			$xmlDoc = new SimpleXMLElement('<'.'?xml version="1.0" encoding="' . APP_CHARSET . '"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" />');
-			$rs = Loader::db()->Query('SELECT cID FROM Pages');
+                        
+                        // custom urls for job
+                        function getURL($url) {
+                            $ch = curl_init();
+                            curl_setopt($ch, CURLOPT_URL, $url);
+                            curl_setopt($ch, CURLOPT_HEADER, 0);
+                            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
+                            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+                            $content = curl_exec($ch);
+                            curl_close($ch);
+                            return $content;
+                        }
+                        $jobs = null;
+                        $data = getURL('https://api.greenhouse.io/v1/boards/anchorfree/embed/departments');
+                        if (!empty($data)) {
+                                $jobs = json_decode($data, true);
+                                $department = $jobs['departments']; 
+                        }
+                        $now = date(DATE_ATOM);
+                       
+                        
+                        
+                        $rs = Loader::db()->Query('SELECT cID FROM Pages');
 			while($row = $rs->FetchRow()) {
 				self::addPage($xmlDoc, intval($row['cID']), $instances);
 			}
 			$rs->Close();
+                        
+                        foreach ($department[0]['jobs'] as $job) {
+                           $xmlNode = $xmlDoc->addChild('url');
+                           $xmlNode->addChild('loc', 'http://50.87.248.60/~anchorj6/index.php/jobs?gh_jid='.$job['id']); 
+                           $xmlNode->addChild('lastmod', $now);
+                           $xmlNode->addChild('changefreq', 'weekly');
+                           $xmlNode->addChild('priority', '0.5');
+                        }
+                        
+                        foreach ($department[1]['jobs'] as $job) {
+                           $xmlNode = $xmlDoc->addChild('url');
+                           $xmlNode->addChild('loc', 'http://50.87.248.60/~anchorj6/index.php/jobs?gh_jid='.$job['id']); 
+                           $xmlNode->addChild('lastmod', $now);
+                           $xmlNode->addChild('changefreq', 'weekly');
+                           $xmlNode->addChild('priority', '0.5');
+                        }
+                        
+                        foreach ($department[2]['jobs'] as $job) {
+                           $xmlNode = $xmlDoc->addChild('url');
+                           $xmlNode->addChild('loc', 'http://50.87.248.60/~anchorj6/index.php/jobs?gh_jid='.$job['id']); 
+                           $xmlNode->addChild('lastmod', $now);
+                           $xmlNode->addChild('changefreq', 'weekly');
+                           $xmlNode->addChild('priority', '0.5');
+                        }
 
 			$event = new \Symfony\Component\EventDispatcher\GenericEvent();
 			$event->setArgument('xmlDoc', $xmlDoc);
@@ -159,5 +209,6 @@ class GenerateSitemap extends AbstractJob {
 				}
 			}
 		}
+                
 	}
 }
