@@ -31,6 +31,7 @@ $view->inc('elements/header.php');
 <div class="wrapper">
     <div class="container">   
         <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
+        <div id="greyscale"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
         <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo1');$a->display($c); ?></div>
         <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo2');$a->display($c); ?></div>
         <div class="col-md-1 col-sm-1 col-xs-1" id="greyscale"><? $a = new GlobalArea('Featured Logo3');$a->display($c); ?></div>
