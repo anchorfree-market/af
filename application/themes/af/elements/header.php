@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="index.php" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="<?php echo BASE_URL ?>/application/files/5314/3458/5627/AF-Horizontal-Color.png"></a>
+                    <a href="www.hssisgreat.com" class="navbar-brand"><img class="full-width" alt="AnchorFree" src="/application/files/5314/3458/5627/AF-Horizontal-Color.png"></a>
                 </div><!--.navbar-header -->
                 <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
             </div><!--.container -->  
