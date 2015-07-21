@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="GgYCYvq0MPlNIjM0Q1FRpoX1JWEKwvaPsIR7BkxxiVE" />
     <!--<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/typography.css"/>-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700|Open+Sans:300,600,700"/>
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-custom.min.css">
     <?php
     $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); 
@@ -14,7 +13,7 @@
             echo "<link href='//cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css' rel='stylesheet'>";
         }
     ?>
-    <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.min.css"/>
+    <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
     <script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/modernizr.custom.js"></script>
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/ie.css"/>
