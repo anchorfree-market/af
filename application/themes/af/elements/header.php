@@ -38,4 +38,4 @@
                 <? $a = new GlobalArea('Header Nav');$a->display($c); ?>
             </div><!--.container -->  
         </div>
-        </header><!-- end header-->
+        </header>
