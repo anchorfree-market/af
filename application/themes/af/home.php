@@ -21,7 +21,7 @@ $view->inc('elements/header.php');
 <div class="wrapper"><!-- video -->
     <div class="container">
         <div class="col-md-12 marginbot50"><h2><? $a = new Area('Video Title');$a->display($c); ?></h2></div>
-        <div class="col-md-7"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
+        <div class="col-md-7 home-video"><? $a = new Area('Section Our Mission 2 Video');$a->display($c); ?></div>
         <div class="col-md-4 quote pull-right"><? $a = new Area('Section Our Mission 2');$a->display($c); ?></div>
         <div class="clearfix"></div>   
     </div>
@@ -30,7 +30,7 @@ $view->inc('elements/header.php');
 <div class="separator saperator-gradient"></div>
 <div class="wrapper">
     <div class="container">   
-        <div class="col-md-12"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
+        <div class="col-md-12 home-featured-on"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
         <div id="greyscale" class="home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
         <div class="clearfix"></div>
     </div>
@@ -40,36 +40,37 @@ $view->inc('elements/header.php');
 </section>
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
         // device detection
         window.onload = function() {
-                if(navigator.appVersion.indexOf('iPad') > -1 || navigator.appVersion.indexOf('iPhone') > -1) { // iPhone and iPad
-                        $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
-                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'iOS'})" ); 
-                        //alert('iphone');
-                }
-                else if(navigator.appVersion.indexOf('Android') > -1) { // Android
-                        $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
-                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Android'})" );
-                        //alert('android');
-                }
-                else if(navigator.appVersion.indexOf("Mac")!=-1){ //Mac 
-                        $(".btn-free").attr("href", "http://mydati.com//download/hss-mac/HSS-444.dmg");
-                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})" ); 
-                        //alert('mac');
-                }
-                else { //Windows
-                        $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Windows'})" ); 
-                        //alert('other');
-                }
-            };
+            if(navigator.appVersion.indexOf('iPad') > -1 || navigator.appVersion.indexOf('iPhone') > -1) { // iPhone and iPad
+                    $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'iOS'})" ); 
+                    //alert('iphone');
+            }
+            else if(navigator.appVersion.indexOf('Android') > -1) { // Android
+                    $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Android'})" );
+                    //alert('android');
+            }
+            else if(navigator.appVersion.indexOf("Mac")!=-1){ //Mac 
+                    $(".btn-free").attr("href", "http://mydati.com//download/hss-mac/HSS-444.dmg");
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})" ); 
+                    //alert('mac');
+            }
+            else { //Windows
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Windows'})" ); 
+                    //alert('other');
+            }
+        };
         // Redirect user to thank you page on click of buttons
         $(document).ready(function(){
-                $(".btn-free").bind('click', function(){
-                        setTimeout( function() {
-                                window.location = "http://www.hotspotshield.com/thankyou.html";
-                        }, 3000 );	
-                })	
+            $(".btn-free").bind('click', function(){
+                    setTimeout( function() {
+                            window.location = "http://www.hotspotshield.com/thankyou.html";
+                    }, 3000 );	
+            });	
         });
 </script>
 <!-- End Button Device Detection -->			
