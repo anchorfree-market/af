@@ -37,7 +37,11 @@
         else if(preg_match("/careers/", $URL) || preg_match("/jobs/", $URL)) {    // display script on careers page
             echo "<script src='//code.jquery.com/ui/1.11.4/jquery-ui.js'></script>";
         }
-        else { // including press and about page}
+        else if(preg_match("~\bhssisgreat.com\b~", $URL)) {// display script on home page
+        }
+        else { // including press and about page
+            echo "<script type='text/javascript' src='".$themePath."/js/jquery.backstretch.min-ck.js'></script>";
+        }
     ?>
     </div>
     <? Loader::element('footer_required')?>

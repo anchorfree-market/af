@@ -40,26 +40,32 @@ $view->inc('elements/header.php');
 </section>
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript">
         // device detection
+/*
         window.onload = function() {
+            console.log('detect onload');
             if(navigator.appVersion.indexOf('iPad') > -1 || navigator.appVersion.indexOf('iPhone') > -1) { // iPhone and iPad
-                    $(".btn-free").attr({"href": "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9",
-                    "onclick": "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'iOS'})"});
+                    $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'iOS'})" );  
+                    console.log('iphone');
             }
             else if(navigator.appVersion.indexOf('Android') > -1) { // Android
-                    $(".btn-free").attr({"href": "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9",
-                    "onclick": "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Android'})"});
+                    $(".btn-free").attr("href", "http://ad.apsalar.com/api/v1/ad?re=0&st=484721002049&h=76747007d9cd6f218a89cf72cbd95b9ed71adac9");
+                    $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Android'})" );
+                    console.log('android');
             }
             else if(navigator.appVersion.indexOf("Mac")!=-1){ //Mac 
-                    $(".btn-free").attr({"href": "http://mydati.com//download/hss-mac/HSS-444.dmg",
-                    "onclick": "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})"});
+                    $(".btn-free").attr("href", "http://mydati.com//download/hss-mac/HSS-444.dmg");
+                   $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'OSX'})" ); 
+                   console.log('mac');
             }
             else { //Windows
                     $(".btn-free").attr("onclick", "ga('send', 'event', { eventCategory: 'AnchorFree Homepage Download', eventAction: 'Button Click', eventLabel: 'Windows'})" ); 
+                    console.log('windows');
             }
         };
+        */
         // Redirect user to thank you page on click of buttons
         $(document).ready(function(){
             $(".btn-free").bind('click', function(){
