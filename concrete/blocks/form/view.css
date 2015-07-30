@@ -29,7 +29,7 @@ div.ccm-block-type-form div.form-group label.control-label {
 .fields .field-textarea textarea {height: 110px;}
 .form-group.captcha {
     position: absolute;
-    top: 163px;
+    bottom: 20px;
     right: 0;
 }
 .form-group.captcha .control-label {
@@ -47,10 +47,14 @@ div.ccm-block-type-form div.form-group label.control-label {
     top: 28px;
     left:210px;
 }
+.ccm-input-captcha {
+    position: relative;
+    top: -16px;
+}
 .form-actions {
     position: absolute;
     bottom: 0;
-    left: 592px;
+    left: 577px;
 }
 @media (max-width: 1200px) {
     img.ccm-captcha-image {
