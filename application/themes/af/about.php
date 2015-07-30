@@ -25,7 +25,10 @@ $view->inc('elements/header.php');  ?>
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-left-imp text-white"><? $a = new Area('Form Title');$a->display($c);?></h2>
-        <div class="col-md-12"><? $a = new Area('Form');$a->display($c);?></div>
+        
+        
+        <div class="col-md-12"><? $a = new GlobalArea('Contact Form');$a->display($c);?></div>
+        <!--<div class="col-md-12"><? $a = new Area('Form');$a->display($c);?></div>-->
     </div>
 </div>
 <div class="wrapper meet-visionaries marginbot40">
