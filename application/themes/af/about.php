@@ -4,7 +4,7 @@ $view->inc('elements/header.php');  ?>
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
 </section>
 <a name="about" class="top-section"></a>
-<div class="wrapper mid about about-test">
+<div class="wrapper mid about">
     <div class="container">
         <div class="col-md-12">
             <a name="contact" class="top-section"></a>
