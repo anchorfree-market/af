@@ -11,7 +11,10 @@ $view->inc('elements/header.php');
             <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div> 
     </div> 
-</div> 
+</div>
+<section>
+    <? $a = new Area('Levent');$a->display($c);?>
+</section> <!-- .section-featured -->
 <section class="section home-product-back">
     <?php $view->inc('elements/home-text-right-img-left.php'); ?>
 </section>
