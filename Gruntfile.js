@@ -26,9 +26,9 @@ module.exports = function(grunt) {
         {
           // convert css files to min.css
           expand: true,
-          cwd: 'concrete/blocks/page_list',
+          cwd: 'application/themes/af/css',
           src: ['*.css', '!*.min.css'],
-          dest: 'concrete/blocks/page_list',
+          dest: 'application/themes/af/css',
           ext: '.min.css'
         }
         ]
