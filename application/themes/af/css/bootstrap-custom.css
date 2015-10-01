@@ -2051,9 +2051,6 @@ select[multiple].input-lg, textarea.input-lg {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     background-clip: padding-box;
 }
-.dropdown-menu:hover .dropdown-menu {
-    display: block;
-}
 .btn-group-vertical>.btn:not(:first-child):not(:last-child), .btn-group>.btn-group:not(:first-child):not(:last-child)>.btn, .btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
     border-radius: 0;
 }
@@ -2144,7 +2141,7 @@ select[multiple].input-lg, textarea.input-lg {
     bottom: 0;
 }
 @media (min-width:768px) {
-    .navbar-right .dropdown-menu {
+.navbar-right .dropdown-menu {
     left: auto;
     right: 0;
 }
@@ -4144,6 +4141,9 @@ button.close {
     text-shadow: none;
 }
 @media screen and (min-width:768px) {
+    .nav-dropdown:hover .dropdown-menu {
+        display: block;
+    }
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
     width: 30px;
     height: 30px;
