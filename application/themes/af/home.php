@@ -12,7 +12,7 @@ $view->inc('elements/header.php');
         </div> 
     </div> 
 </div>
-<section>
+<section style="background:white;">
     <div class="wrapper">
         <div class="container">
             <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>
