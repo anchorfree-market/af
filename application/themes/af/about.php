@@ -12,25 +12,18 @@ $view->inc('elements/header.php');  ?>
             <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div>
         <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
-        <div class="col-md-12 marginbot15"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
-        <div class="row">
-        <div class="col-md-2 col-md-offset-1 col-xs-12"><h4><? $a = new Area('US Headquarter Address Title');$a->display($c);?></h4></div>
-        <div class="col-md-3 col-xs-12"><h4 class="align-left-imp"><? $a = new Area('US Headquarter Address');$a->display($c);?></h4></div>
-        <div class="col-md-2 col-md-offset-1 col-xs-12"><h4><? $a = new Area('Swiss Address Title');$a->display($c);?></h4></div>
-        <div class="col-md-3 col-xs-12"><h4 class="align-left-imp"><? $a = new Area('Swiss Address');$a->display($c);?></h4></div>
-    	</div>
-	</div>
 </div>
 <div class="map hidden-xs"><? $a = new Area('Map');$a->display($c);?></div>
+<!--
 <div class="wrapper fullfadeblue">
     <div class="container">
         <h2 class="align-left-imp text-white"><? $a = new Area('Form Title');$a->display($c);?></h2>
-        
-        
         <div class="col-md-12"><? $a = new GlobalArea('Contact Form');$a->display($c);?></div>
         <!--<div class="col-md-12"><? $a = new Area('Form');$a->display($c);?></div>-->
+
     </div>
 </div>
+-->
 <div class="wrapper meet-visionaries marginbot40">
     <div class="container">
         <div class="col-md-12"><h2><? $a = new Area('Team Title');$a->display($c);?></h2></div>
