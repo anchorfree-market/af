@@ -30,7 +30,6 @@ $view->inc('elements/header.php');  ?>
                 <div class="contact-block">
                     <? $a = new Area('Contact Lower Right');$a->display($c);?>
                 </div>
-
             </div>
         </div>
     </div> 
