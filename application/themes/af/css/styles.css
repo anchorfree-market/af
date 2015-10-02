@@ -780,6 +780,8 @@ p {
     margin: 0 auto;
     clear: both;
 }
+.intro-social-buttons {margin-bottom: 20px;}
+.intro-social-buttons li a {min-width: 188px;}
 .section-featured .wrapper {
     padding-bottom: 0;
     background: url(../images/bg_featured.png) center -50px no-repeat;

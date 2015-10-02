@@ -4,6 +4,7 @@
     <?=Loader::element('header_required')?>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-site-verification" content="GgYCYvq0MPlNIjM0Q1FRpoX1JWEKwvaPsIR7BkxxiVE" />
+    <link media="all" type="text/css" rel="stylesheet" href="../../../concrete/css/font-awesome.css">
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-custom.min.css">
     <?php
     $URL = BASE_URL. $this->url($this->getCollectionObject()->cPath); 
