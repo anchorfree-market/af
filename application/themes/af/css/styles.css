@@ -3039,6 +3039,7 @@ a.popover-custom--connections {
 .address div {
     margin-left: 0;
 }
+.contact-info .col-sm-1 {display: block;}
 .meet-visionaries .people, .meet-visionaries img {
     width: 70%}
 .meet-visionaries .col-sm-4 {

@@ -10,7 +10,7 @@ $view->inc('elements/header.php');  ?>
             <div class="col-md-3 col-xs-12"><h4 class="align-left-imp"><? $a = new Area('Swiss Address');$a->display($c);?></h4></div>
     	</div>
         <div class="row contact-info">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-1">
                 <div class="contact-block">
                     <? $a = new Area('Contact Upper Left');$a->display($c);?>
                 </div>
@@ -18,12 +18,12 @@ $view->inc('elements/header.php');  ?>
                     <? $a = new Area('Contact Lower Left');$a->display($c);?>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-1">
                 <div class="contact-block">
                     <? $a = new Area('Contact Center');$a->display($c);?>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-1">
                 <div class="contact-block">
                     <? $a = new Area('Contact Upper Right');$a->display($c);?>
                 </div>
