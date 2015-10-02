@@ -13,7 +13,13 @@ $view->inc('elements/header.php');
     </div> 
 </div>
 <section>
-    <? $a = new Area('Levent');$a->display($c);?>
+    <div class="wrapper">
+        <div class="container">
+            <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>
+            <div class="col-md-5"><? $a = new Area('Home Levent Right');$a->display($c); ?></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
 </section> <!-- .section-featured -->
 <section class="section home-product-back">
     <?php $view->inc('elements/home-text-right-img-left.php'); ?>
