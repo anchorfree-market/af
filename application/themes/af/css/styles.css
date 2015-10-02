@@ -1593,6 +1593,10 @@ to {
     display: block;
     top: 40px;
 }
+.contact-block {text-align: center;}
+.contact-block img {width: 110px; display: block; margin: 0 auto;}
+.contact-block h5 {font-size: 1.9em;}
+.contact-block a {color: #000000;}
 .fluid-width-video-wrapper {
     width: 100%;
     position: relative;
