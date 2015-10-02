@@ -1593,10 +1593,13 @@ to {
     display: block;
     top: 40px;
 }
-.contact-block {text-align: center;}
+.contact-address {padding-bottom: 20px;}
+.contact-info {padding: 60px 0 20px; display: table; width: 100%;}
+.contact-block {text-align: center; padding: 20px 0;}
+.contact-block .col-md-4 {display: table-cell; vertical-align: middle; float: none;}
 .contact-block img {width: 110px; display: block; margin: 0 auto;}
 .contact-block h5 {font-size: 1.9em;}
-.contact-block a {color: #000000;}
+.contact-block a {color: #000000; font-size: 1.2rem;}
 .fluid-width-video-wrapper {
     width: 100%;
     position: relative;
