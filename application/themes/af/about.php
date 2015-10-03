@@ -12,7 +12,6 @@ $view->inc('elements/header.php');  ?>
             <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
         </div>
         <div class=" col-md-12 separator saperator-gradient marginbot40"></div>
-        <div class="col-md-12 marginbot15"><h2><? $a = new Area('Address Title');$a->display($c);?></h2></div>
 	</div>
 </div>
 <div class="map hidden-xs"><? $a = new Area('Map');$a->display($c);?></div>
