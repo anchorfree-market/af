@@ -12,6 +12,8 @@ $view->inc('elements/header.php');
         </div> 
     </div> 
 </div>
+<div class="separator saperator-gradient">
+</div>
 <section style="background:white;">
     <div class="wrapper">
         <div class="container">
