@@ -2790,19 +2790,16 @@ a.popover-custom--connections {
 .ui-state-active {
     border-bottom: none!important;
 }
-.ui-accordion-content a {
-    float: right;
-    font-size: .8em!important;
-    cursor: pointer; 
-    display: block; 
-    width: 100%;
-}
 .ui-accordion-content p {
     padding: 10px 20px;
     margin: 0;
     border-radius: 4px;
 }
-.ui-accordion-content .learn-more {font-weight: 600;}
+.ui-accordion-content a {
+    float: right;
+    font-size: .8em!important;
+    font-weight: 600;
+}
 .ui-accordion-content p:nth-child(odd) {
     background: #1b87da;
     color: #fff!important;

@@ -90,10 +90,8 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[2]['jobs'] as $job): ?>
-                    <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">
-                        <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                            <span class="learn-more">LEARN MORE</span></p>
-                    </a>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -101,10 +99,8 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[1]['jobs'] as $job): ?>
-                    <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">
-                        <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                            <span class="learn-more">LEARN MORE</span></p>
-                    </a>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
@@ -113,10 +109,8 @@
             <div class="textBox_t1">
                 <div>
                     <?php foreach ($department[0]['jobs'] as $job): ?>
-                    <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">
-                        <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
-                            <span class="learn-more">LEARN MORE</span></p>
-                    </a>
+                    <p><span><?php echo $job['title']?></span> - <?php echo $job['location']['name']?>
+                        <a href="<?php echo "/jobs/?gh_jid=" . $job['id']?>">LEARN MORE</a></p>
                     <?php endforeach;?>
                 </div>
             </div>
