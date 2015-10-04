@@ -1598,8 +1598,8 @@ to {
 .contact-info .col-md-4 {display: table-cell; vertical-align: middle; float: none;}
 .contact-block {text-align: center; padding: 20px 0;}
 .contact-block img {
-    width: 65%;
-    max-width: 90px;
+    width: 100%;
+    max-width: 100px;
     display: block;
     margin: 0 auto;
 }
