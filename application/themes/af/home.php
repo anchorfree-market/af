@@ -6,10 +6,8 @@ $view->inc('elements/header.php');
 </section> <!-- .section-featured -->
 <div class="wrapper">
     <div class="container">
-        <div class="row">
-            <h2 class="main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
-            <p class="marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
-        </div> 
+            <h2 class="col-md-12 main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
+            <p class="col-md-12 marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
     </div> 
 </div>
 <div class="separator saperator-gradient">
@@ -17,9 +15,9 @@ $view->inc('elements/header.php');
 <section style="background:white;">
     <div class="wrapper">
         <div class="container">
-            <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>
-            <div class="col-md-5"><? $a = new Area('Home Levent Right');$a->display($c); ?></div>
-            <div class="clearfix"></div>
+                <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>
+                <div class="col-md-5"><? $a = new Area('Home Levent Right');$a->display($c); ?></div>
+                <div class="clearfix"></div>
         </div>
     </div>
 </section> <!-- .section-featured -->
@@ -42,7 +40,7 @@ $view->inc('elements/header.php');
 <div class="wrapper">
     <div class="container">   
         <div class="col-md-12 home-featured-on"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
-        <div id="greyscale" class="home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
+        <div id="greyscale" class="col-md-12 home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
         <div class="clearfix"></div>
     </div>
 </div>  
