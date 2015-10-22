@@ -702,10 +702,16 @@ p {
     color: #6bbc27;
 }
 .btn-xlg {
-    padding: 18px 36px!important;
-    min-width: 300px!important;
+    padding: 18px!important;
+    min-width: 100px!important;
     line-height: 1.33!important;
-    border-radius: 6px!important;
+    border-radius: 6px!important; 
+    width: auto !important;
+}
+.visible-xs .btn-xlg {
+    padding: 18px 10px!important;
+    min-width: 100px!important;
+    white-space: normal !important;  
 }
 .btn-white-blue-border {
     border: 1px solid #1794d5;
@@ -3075,7 +3081,6 @@ a.popover-custom--connections {
 }
 .ui-accordion-content a {
     float: none;
-    display: block;
 }
 }
 @media only screen and (max-width:767px) {
@@ -3236,6 +3241,9 @@ a.popover-custom--hackers {
 .careers-top span {
     margin: -2px 0 10px;
 }
+.ui-accordion-content p {height: auto;}
+.ui-accordion-content > div {padding: 0 10px;}
+span.learn-more {float: none; font-weight: 100; display: none;}
 .about-form .btn.btn-success {
     width: 100%}
 .btn {

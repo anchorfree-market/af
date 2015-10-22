@@ -85,7 +85,7 @@
     <?php else:?>
     <?php if (!empty($jobs)) :?>
         <?php $department = $jobs['departments']; ?>
-        <div id="careers-accordion">
+        <div id="careers-accordion" class="col-md-12">
             <h3><?php echo $department[2]['name']?> <span class="department-jobs-count"><?php echo count($department[2]['jobs']) ?></span>&nbsp;&nbsp;</h3>
             <div class="textBox_t1">
                 <div>
