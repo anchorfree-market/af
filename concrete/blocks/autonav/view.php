@@ -113,17 +113,19 @@ foreach ($navItems as $ni) {
 
 if (count($navItems) > 0) {
     echo '<div class="navbar-collapse collapse" style="height: 1px;">';
-    echo '<ul class="nav navbar-nav navbar-right">'; //opens the top-level menu
+    //echo '<ul class="nav navbar-nav navbar-right">'; //opens the top-level menu
+    echo '<ul class="nav">'; //opens the top-level menu
 
     foreach ($navItems as $ni) {
 
         echo '<li class="' . $ni->classes . '">'; //opens a nav item
+        echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '" data-toggle="dropdown">' . $ni->name . '<span class="caret"></span></a>';
        
         if ($ni->hasSubmenu) {
-            echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '" data-toggle="dropdown">' . $ni->name . '<span class="caret"></span></a>';
+            
             echo '<ul class="dropdown-menu">'; //opens a dropdown sub-menu
         } else {
-            echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
+            //echo '<a href="' . $ni->url . '" target="' . $ni->target . '" class="' . $ni->classes . '">' . $ni->name . '</a>';
             echo '</li>'; //closes a nav item
             echo str_repeat('</ul></li>', $ni->subDepth); //closes dropdown sub-menu(s) and their top-level nav item(s)
         }
