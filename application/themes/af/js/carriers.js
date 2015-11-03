@@ -60,7 +60,7 @@ $(document).ready(function() {
         $('.section-features-list').find('*').addClass('animate');
     }
     
-    $('.section-video').css('background','linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat');
+    $('.section-video').addClass('section-video-background');
     
     // Animation on scroll
     $(window).scroll(function() {

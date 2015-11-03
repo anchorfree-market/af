@@ -1,6 +1,6 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php $view->inc('elements/fixed-contact-us.php'); ?>
-<section class="section section-featured-carrier fullfadeblue" style="position-relative;">
+<div class="section section-featured-carrier fullfadeblue" style="position-relative;">
     <div class="wrapper">
         <div class="container">
             <div class="row">
@@ -12,9 +12,10 @@
                     <p class="available-on">Available on</p>
                 </div>
             </div> <!-- .row -->
+            <img src="<?php echo $view->getThemePath()?>/images/bg_hero_carrier@2x.jpg" style="display: none;">
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-featured -->
+</div> <!-- .section-featured -->
 <!-- ATTACKS -->
 <section class="section section-attacks">
     <div class="wrapper">
@@ -65,7 +66,7 @@
     </div> <!-- .wrapper -->
 </section> <!-- .section-attacks -->
 <!-- VIDEO -->
-<section class="section section-video fullfadeblue">
+<div class="section section-video fullfadeblue">
     <div class="wrapper">        
         <div class="container">
             <div class="row">
@@ -78,7 +79,7 @@
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-video -->
+</div> <!-- .section-video -->
 <!-- HOW IT WORKS -->
 <section id="howitworks-carrier" class="section section-howitworks-carrier">
     <div class="wrapper">
