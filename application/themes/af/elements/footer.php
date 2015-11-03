@@ -9,7 +9,7 @@
                 </div>
         </footer>
 </div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
     <script type='text/javascript' src='<?php echo $view->getThemePath()?>/js/jquery.backstretch.min-ck.js'></script>
     <!-- only show bootstrap.min.js if isEditMode -->
     <?php $c = Page::getCurrentPage();

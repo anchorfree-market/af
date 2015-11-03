@@ -212,7 +212,7 @@
     </div> <!-- .wrapper -->
 </section> <!-- .section-features-list -->
 <!-- CONTACT US -->
-<section class="section section-contact-us-carrier fullfadeblue">
+<div class="section section-contact-us-carrier fullfadeblue">
     <div class="wrapper wrapper--small">
         <div class="container">
             <div class="row">
@@ -222,7 +222,7 @@
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-contactus -->
+</div> <!-- .section-contactus -->
  <?php $view->inc('elements/footer.php'); ?>
 <script type="text/javascript">
     $('.section-featured-carrier').backstretch('<?php echo $view->getThemePath()?>/images/bg_hero_carrier@2x.jpg');

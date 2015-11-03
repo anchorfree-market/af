@@ -523,14 +523,8 @@ p {
 .quote {
     padding-left: 35px;
 }
-.quote h3 {
-    font-size: 2.5em;
-    line-height: 1.2em;
-    text-indent: 65px;
-    padding-top: 15px;
-    background: url(../images/sprite.png) 0 -289px no-repeat;
-    background-size: auto 600px;
-}
+.quote h3 {font-size: 2.5em; line-height: 1.2em; text-indent: 65px; padding-top: 15px; position: relative;}
+.quote h3 span {display: block; position:absolute; height: 50px; width: 66px; background: url(../images/sprite.png) 0 -342px no-repeat; top: 0; left: 0; transform: scale(.8);}
 .quote a {
     margin-top: 30px;
 }
@@ -562,6 +556,8 @@ p {
 .home-featured-companies img {
     margin: 0 auto;
     clear: both;
+    width: 100%;
+    display:block;
 }
 .intro-social-buttons {margin-bottom: 20px;}
 .intro-social-buttons li a {min-width: 188px;}
