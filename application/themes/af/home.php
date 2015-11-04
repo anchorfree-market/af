@@ -12,7 +12,7 @@ $view->inc('elements/header.php');
 </div>
 <div class="separator saperator-gradient">
 </div>
-<section style="background:white;">
+<section class="home-choose-download" style="background:white;">
     <div class="wrapper">
         <div class="container">
                 <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>

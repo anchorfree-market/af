@@ -4,7 +4,7 @@ $view->inc('elements/header.php');  ?>
     $GLOBALS['topFirstEle'] = 'h1';
     $GLOBALS['topSecondEle'] = 'h3';
 ?>
-<section class="section section-featured fullfadeblue">
+<div class="section section-featured fullfadeblue">
     <div class="wrapper">
         <div class="container">
             <div class="row">
@@ -15,7 +15,7 @@ $view->inc('elements/header.php');  ?>
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-featured -->
+</div> <!-- .section-featured -->
 <section class="section section-target">
     <div class="wrapper">
         <div class="container">
@@ -52,7 +52,7 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-who -->
-<section class="section section-counter bg-gradient--grey">
+<div class="section section-counter bg-gradient--grey">
     <div class="wrapper wrapper-border">
         <div class="container">
             <div class="row">
@@ -71,7 +71,7 @@ $view->inc('elements/header.php');  ?>
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-counter -->
+</div> <!-- .section-counter -->
 <section class="section section-howitworks">
     <div class="wrapper">
         <div class="container">
@@ -95,7 +95,7 @@ $view->inc('elements/header.php');  ?>
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </section> <!-- .section-howitworks -->
-<section class="section section-mobile fullfadeblue">
+<div class="section section-mobile fullfadeblue">
     <div class="wrapper relative">
         <div class="circles">
             <div class="circle circle-1"></div>
@@ -125,7 +125,7 @@ $view->inc('elements/header.php');  ?>
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-mobile -->
+</div> <!-- .section-mobile -->
 <section class="section section-chart bg-gradient--lightgrey">
     <div class="wrapper wrapper-border">
         <div class="container">
@@ -150,7 +150,7 @@ $view->inc('elements/header.php');  ?>
     </div> <!-- .wrapper -->
 </section> <!-- .section-chart -->
 <!-- CONTACT US -->
-<section class="section section-contact-us fullfadeblue">
+<div class="section section-contact-us fullfadeblue">
     <div class="wrapper wrapper--small">
         <div class="container">
             <div class="row">
@@ -165,5 +165,5 @@ $view->inc('elements/header.php');  ?>
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</section> <!-- .section-contactus -->
+</div> <!-- .section-contactus -->
  <?php $view->inc('elements/footer.php'); ?>

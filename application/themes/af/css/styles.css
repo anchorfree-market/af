@@ -212,6 +212,7 @@ a:focus, a:hover {
     line-height: 18px;
     line-height: 1.8rem;
 }
+.txt-shadow {text-shadow: 1px 1px 1px #000000;-moz-text-shadow: 1px 1px 1px #000000; -webkit-text-shadow: 1px 1px 1px #000000; filter: dropshadow(color=#000000, offx=1, offy=1); zoom: 1;}
 @media only screen and (max-width:767px) {
     
 .h1, h1 {
@@ -517,13 +518,17 @@ p {
 .page-template-home > section {
     background: #1d378b;
 }
+/*
+.home-choose-download {height: 455px;}
+.home-choose-download .HTMLBlock {height: 550px;}
+*/
 .section-home-readmore>wrapper {
     padding: 100px 0;
 }
 .quote {
     padding-left: 35px;
 }
-.quote h3 {font-size: 2.5em; line-height: 1.2em; text-indent: 65px; padding-top: 15px; position: relative;}
+.quote h3 {font-size: 2.5em; line-height: 1.2em; text-indent: 65px; padding-top: 15px; position: relative; float: left; display: block; overflow: hidden;}
 .quote h3 span {display: block; position:absolute; height: 50px; width: 66px; background: url(../images/sprite.png) 0 -342px no-repeat; top: 0; left: 0; transform: scale(.8);}
 .quote a {
     margin-top: 30px;

@@ -1,8 +1,8 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php if (empty($_REQUEST['gh_jid'])): ?>
-<section class="careers-video fullfadeblue">
+<div class="careers-video fullfadeblue">
    <? $a = new Area('Top Video');$a->display($c); ?>
-</section>
+</div>
 <div class="wrapper">
     <div class="container">
         <div class="col-md-12 marginbot40">

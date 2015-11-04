@@ -1,8 +1,8 @@
 <?php 
 $view->inc('elements/header.php');  ?>
-<section class="section section-about-us about-us">
+<div class="section section-about-us about-us">
     <?php $view->inc('elements/txt-right-img-left.php'); ?>
-</section>
+</div>
 <a name="about" class="top-section"></a>
 <div class="wrapper mid about">
     <div class="container">
@@ -47,9 +47,9 @@ $view->inc('elements/header.php');  ?>
        <div class="col-md-4 col-sm-4"><? $a = new Area('Investors Board Advisors Column 3');$a->display($c);?></div>
     </div> 
 </div>
-<section class="section section-join-team">
+<div class="section section-join-team">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
-</section>
+</div>
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
 <?php $view->inc('elements/footer.php'); ?>
