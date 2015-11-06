@@ -16,7 +16,7 @@ $view->inc('elements/header.php');
     <div class="wrapper">
         <div class="container">
                 <div class="col-md-7"><? $a = new Area('Home Levent');$a->display($c);?></div>
-                <div class="col-md-5"><? $a = new Area('Home Levent Right');$a->display($c); ?></div>
+                <div class="col-md-5 download-devices-img"><? $a = new Area('Home Levent Right');$a->display($c); ?></div>
                 <div class="clearfix"></div>
         </div>
     </div>
@@ -48,9 +48,8 @@ $view->inc('elements/header.php');
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
 <div class="marginbot40"></div>
-<div class="separator saperator-gradient"></div>		
-<?php $view->inc('elements/footer.php'); ?>
-<? $a = new Area('Backstretch Script');$a->display($c); ?>
+<div class="separator saperator-gradient"></div>
+
 <script type="text/javascript">
     // device detection
     if(navigator.appVersion.indexOf('iPad') > -1 || navigator.appVersion.indexOf('iPhone') > -1) { // iPhone and iPad
@@ -77,4 +76,35 @@ $view->inc('elements/header.php');
             }, 3000 );	
         });	
     });
+ 
+    // check flash version
+    function getFlashVersion(){
+        // ie
+        try {
+          try {
+            var axo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+            try { axo.AllowScriptAccess = 'always'; }
+            catch(e) { return '6,0,0'; }
+          } catch(e) {}
+          return new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version').replace(/\D+/g, ',').match(/^,?(.+),?$/)[1];
+        // other browsers
+        } catch(e) {
+          try {
+            if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+              return (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]).description.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1];
+            }
+          } catch(e) {}
+        }
+        return '0,0,0';
+    }
 </script>
+<!--[if lt IE 9]>
+<script>
+        var version = getFlashVersion().split(',').shift();
+        if(version < 10){
+          $('.home-video').append('<span>Your Flash Player is outdated. Please update to the latest version.</span>').css({color: '#FF0000', fontWeight: 'bold'});
+        }
+</script>
+<![endif]-->
+<?php $view->inc('elements/footer.php'); ?>
+<? $a = new Area('Backstretch Script');$a->display($c); ?>

@@ -1,4 +1,4 @@
-<div class="wrapper">
+<div class="wrapper p-bottom-0">
        <footer class="footer">
                 <div class="container">
                         <div class="col-md-3 col-sm-3 col-xs-6 footer-nav"><? $a = new GlobalArea('Footer Navigation');$a->display($c); ?></div>

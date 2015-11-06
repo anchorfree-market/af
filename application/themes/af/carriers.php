@@ -223,8 +223,40 @@
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
 </div> <!-- .section-contactus -->
+<!--[if lt IE 9]>
+<script>
+        var version = getFlashVersion().split(',').shift();
+        if(version < 10){
+          $('.section-video #HTMLBlock1332').append('<span>Your Flash Player is outdated. Please update to the latest version.</span>').css({color: '#FF0000', fontWeight: 'bold'});
+        }
+</script>
+<![endif]-->
+
+<script type="text/javascript">    
+    function getFlashVersion(){
+        // ie
+        try {
+          try {
+            var axo = new ActiveXObject('ShockwaveFlash.ShockwaveFlash.6');
+            try { axo.AllowScriptAccess = 'always'; }
+            catch(e) { return '6,0,0'; }
+          } catch(e) {}
+          return new ActiveXObject('ShockwaveFlash.ShockwaveFlash').GetVariable('$version').replace(/\D+/g, ',').match(/^,?(.+),?$/)[1];
+        // other browsers
+        } catch(e) {
+          try {
+            if(navigator.mimeTypes["application/x-shockwave-flash"].enabledPlugin){
+              return (navigator.plugins["Shockwave Flash 2.0"] || navigator.plugins["Shockwave Flash"]).description.replace(/\D+/g, ",").match(/^,?(.+),?$/)[1];
+            }
+          } catch(e) {}
+        }
+        return '0,0,0';
+    }
+ 
+    
+</script>
  <?php $view->inc('elements/footer.php'); ?>
-<script type="text/javascript">
+<script>
     $('.section-featured-carrier').backstretch('<?php echo $view->getThemePath()?>/images/bg_hero_carrier@2x.jpg');
-    $('.section-video').backstretch('<?php echo $view->getThemePath()?>/images/bg_video_section.png');
+    $('.section-video').backstretch('<?php echo $view->getThemePath()?>/images/bg_video_section.png');    
 </script>

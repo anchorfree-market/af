@@ -1,7 +1,7 @@
 <?php $view->inc('elements/header.php');  ?>
-<section class="section press-home-back">
+<div class="section press-home-back">
     <?php $view->inc('elements/press-text-left-img-right.php'); ?>
-</section>
+</div>
 <div class="container">
 <div class="row">
     <div class="col-md-8">
