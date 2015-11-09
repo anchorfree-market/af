@@ -66,7 +66,7 @@
     </div> <!-- .wrapper -->
 </section> <!-- .section-attacks -->
 <!-- VIDEO -->
-<div class="section section-video fullfadeblue">
+<section class="section section-video fullfadeblue">
     <div class="wrapper">        
         <div class="container">
             <div class="row">
@@ -79,7 +79,7 @@
             </div> <!-- .row -->
         </div> <!-- .container -->
     </div> <!-- .wrapper -->
-</div> <!-- .section-video -->
+</section> <!-- .section-video -->
 <!-- HOW IT WORKS -->
 <section id="howitworks-carrier" class="section section-howitworks-carrier">
     <div class="wrapper">
@@ -255,8 +255,9 @@
  
     
 </script>
- <?php $view->inc('elements/footer.php'); ?>
 <script>
     $('.section-featured-carrier').backstretch('<?php echo $view->getThemePath()?>/images/bg_hero_carrier@2x.jpg');
     $('.section-video').backstretch('<?php echo $view->getThemePath()?>/images/bg_video_section.png');    
 </script>
+ <?php $view->inc('elements/footer.php'); ?>
+

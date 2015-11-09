@@ -261,13 +261,6 @@ p {
     -moz-transition: color 400ms ease-in-out;
     transition: color 400ms ease-in-out;
 }
-@media only screen and (max-width:992px) {
-    .navbar-default .navbar-nav li a {
-    padding: 7px 10px;
-    font-size: 12px;
-    font-size: 1.2rem;
-}
-}
 @media only screen and (max-width:768px) {
     .navbar-brand {
     width: 190px;
@@ -1478,14 +1471,15 @@ to {
     margin-top: 70px;
 }
 .section-video-background {
-    background: linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat;
-    background: -moz-linear-gradient(45deg, #1d2879 0%, #1b87da 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, 45deg, color-stop(0%,#1d2879), color-stop(100%,##1b87da)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(left,  #1d2879 0%,#1b87da 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(left,  #1d2879 1%,#1b87da 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(left,  #1d2879 1%,#1b87da 100%); /* IE10+ */
-    background: linear-gradient(to right,  #1d2879 1%,#1b87da 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283a83', endColorstr='#1b7bce',GradientType=1 );
+    background: #1d2879; 
+    background: linear-gradient(45deg, #1d2879 0%, #1b87da 100%) repeat !important;
+    background: -moz-linear-gradient(45deg, #1d2879 0%, #1b87da 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, 45deg, color-stop(0%,#1d2879), color-stop(100%,#1b87da)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #1d2879 0%,#1b87da 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  #1d2879 1%,#1b87da 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #1d2879 1%,#1b87da 100%) !important; /* IE10+ */
+    background: linear-gradient(to right,  #1d2879 1%,#1b87da 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283a83', endColorstr='#1b7bce',GradientType=1 ) !important;
 }
 .video-container {
     margin-top: 0;
@@ -2707,6 +2701,9 @@ a.popover-custom--connections {
 }
 /* 992 */
 @media only screen and (max-width:992px) {
+    .navbar {height: 60px;}
+    .navbar-brand {margin-top: -8px; width: 200px;}
+    .nav.navbar-nav {top: 14px;}
     .counter .counter-subtitle {
         font-size: 10px;
         font-size: 1rem;
@@ -2760,9 +2757,8 @@ a.popover-custom--connections {
 }
 /* 991 */
 @media all and (max-width:991px) {
-    .release .clearfix {
-        padding: 0;
-    }
+    .release .clearfix {padding: 0;}
+    .navbar-default .navbar-nav li a {padding: 7px 10px; font-size: 1.2rem;}
 }
 /* 768 */
 @media only screen and (max-width:768px) {

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/styles.css"/>
     <script type="text/javascript" src="<?php echo $view->getThemePath()?>/js/modernizr.custom.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type='text/javascript' src='<?php echo $view->getThemePath()?>/js/jquery.backstretch.min-ck.js'></script>
     <!--[if lt IE 9]>
         <link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/ie.css"/>
     <![endif]-->

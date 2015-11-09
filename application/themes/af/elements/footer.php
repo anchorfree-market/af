@@ -10,7 +10,7 @@
         </footer>
 </div>
     
-    <script type='text/javascript' src='<?php echo $view->getThemePath()?>/js/jquery.backstretch.min-ck.js'></script>
+    
     <!-- only show bootstrap.min.js if isEditMode -->
     <?php $c = Page::getCurrentPage();
         if($c->isEditMode()) {} 
