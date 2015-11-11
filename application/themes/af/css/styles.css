@@ -158,6 +158,19 @@ a:focus, a:hover {
 .m-top-40 {margin-top: 40px;}
 .m-bottom-40 {margin-bottom: 40px;}
 .p-bottom-0 {padding-bottom: 0;}
+.horizontalpad, .textpadding {padding: 15px 0!important;}
+.marginbot97 {margin-bottom: 97px;}
+.marginbot90 {margin-bottom: 90px!important;}
+.marginbot80 {margin-bottom: 80px!important;}
+.marginbot70 {margin-bottom: 70px!important;}
+.marginbot60 {margin-bottom: 60px!important;}
+.marginbot50 {margin-bottom: 50px!important;}
+.marginbot40 {margin-bottom: 40px!important;}
+.marginbot25 {margin-bottom: 25px!important;}
+.marginbot20 {margin-bottom: 20px!important;}
+.marginbot15 {margin-bottom: 15px!important;}
+.marginbot10 {margin-bottom: 10px!important;}
+.marginbot5 {margin-bottom: 5px!important;}
 .btn-center-2 a {
     margin-bottom: 8px;
 }
@@ -1182,7 +1195,7 @@ to {
     font-size: 1.6rem;
     color: #343434;
     position: absolute;
-    left: -100px;
+    left: -115px;
     top: 140px;
     -webkit-transform-origin: center center;
     -moz-transform-origin: center center;
@@ -1198,6 +1211,7 @@ to {
 .chart-bars li, .chart-lines li {
     font-weight: 600;
     color: #5a5a5a;
+    text-align: left;
 }
 .chart-lines {
     z-index: 1;
@@ -1217,6 +1231,7 @@ to {
     width: 35px;
     text-align: right;
     display: block;
+    font-size: 11px;
 }
 .chart-bars {
     position: relative;
@@ -1235,7 +1250,7 @@ to {
     bottom: -310px;
     position: relative;
     float: left;
-    font-size: 1.1rem;
+    font-size: 11px;
 }
 .chart-bars li .chart-bar-label {
     width: 100%;
@@ -3154,19 +3169,7 @@ span.learn-more {float: none; font-weight: 100; display: none;}
     background-position: left -497px;
 }
 }
-.horizontalpad, .textpadding {padding: 15px 0!important;}
-.marginbot97 {margin-bottom: 97px;}
-.marginbot90 {margin-bottom: 90px!important;}
-.marginbot80 {margin-bottom: 80px!important;}
-.marginbot70 {margin-bottom: 70px!important;}
-.marginbot60 {margin-bottom: 60px!important;}
-.marginbot50 {margin-bottom: 50px!important;}
-.marginbot40 {margin-bottom: 40px!important;}
-.marginbot25 {margin-bottom: 25px!important;}
-.marginbot20 {margin-bottom: 20px!important;}
-.marginbot15 {margin-bottom: 15px!important;}
-.marginbot10 {margin-bottom: 10px!important;}
-.marginbot5 {margin-bottom: 5px!important;}
+
 .leftfadewhite {
     background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 1) 50%) right top;
     background: -webkit-gradient(linear, left top, right top, color-stop(20%, rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 1))) right top;
