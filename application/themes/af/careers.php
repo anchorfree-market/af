@@ -1,7 +1,20 @@
 <?php $view->inc('elements/header.php');  ?>
 <?php if (empty($_REQUEST['gh_jid'])): ?>
-<div class="careers-video fullfadeblue">
-   <? $a = new Area('Top Video');$a->display($c); ?>
+<div class="careers-video fullfadeblue top-section">
+    <div id="vi">
+        <? $a = new Area('Top Video');$a->display($c); ?>
+        <div class="container careers-top">
+        <div class="col-md-12">
+        <div class='col-sm-6 col-md-6 pull-left'></div>
+        <div class="col-sm-6 col-md-6 wrapper txt-white">
+            <h1 style="text-align:right;"><? $a = new Area('Top Video Title');$a->display($c); ?></h1>
+            <h3 class="hidden-xs" style="text-align:right;"><? $a = new Area('Top Video Description');$a->display($c); ?></h3><br>
+            <? $a = new Area('Top Video CTA');$a->display($c); ?>
+        </div>
+        <div class="clearfix"></div>
+        </div>
+    </div>
+   </div>
 </div>
 <div class="wrapper">
     <div class="container">

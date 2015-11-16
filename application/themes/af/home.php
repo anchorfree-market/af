@@ -1,7 +1,7 @@
 <?php 
 $view->inc('elements/header.php');  
 ?>
-<section>
+<section class="top-section">
     <? $a = new Area('Hero Image Area');$a->display($c);?>
 </section> <!-- .section-featured -->
 <div class="wrapper">

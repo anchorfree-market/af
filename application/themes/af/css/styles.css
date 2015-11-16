@@ -93,6 +93,7 @@ p {
 }
 .wrapper {padding: 50px 30px; overflow: hidden;}
 .home-choose-download .wrapper {overflow: visible;}
+.header, .navbar {height: 95px;}
 .wrapper--small {
     padding: 30px;
 }
@@ -262,7 +263,6 @@ p {
 }
 .navbar {
     font-weight: 600;
-    height: 95px;
 }
 .navbar-default {
     box-shadow: 0 0 3px rgba(0, 0, 0, .3);
@@ -279,7 +279,7 @@ p {
     width: 190px;
     margin-top: -5px;
 }
-.navbar {
+.header, .navbar {
     height: 57px;
 }
 .navbar-header {
@@ -2369,6 +2369,7 @@ a.popover-custom--connections {
     width: 100%;
     height: auto;
 }
+#vi {background: #1b317e;}
 .release>div {
     padding: 40px 0;
 }
@@ -2428,9 +2429,6 @@ a.popover-custom--connections {
 }
 .press-latest .ccm-block-page-list-title a {color: #fff;font-size: 3rem;font-weight: 400;line-height: 3.5rem;}
 .press-latest .ccm-block-page-list-title a:hover {text-decoration: none;}
-.top-section {
-    margin-top: 50px;
-}
 #about-mission {
     font-size: 1.6rem;
 }
@@ -2716,7 +2714,7 @@ a.popover-custom--connections {
 }
 /* 992 */
 @media only screen and (max-width:992px) {
-    .navbar {height: 60px;}
+    .header, .navbar {height: 60px;}
     .navbar-brand {margin-top: -8px; width: 200px;}
     .nav.navbar-nav {top: 14px;}
     .counter .counter-subtitle {
@@ -2831,9 +2829,6 @@ a.popover-custom--connections {
     }
     #security-on .popover-custom--connections {
         top: 38%}
-    .top-section {
-        margin-top: 51px;
-    }
     .about-us .container {
         padding: 40px 0;
     }
