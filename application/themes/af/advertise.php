@@ -135,13 +135,17 @@ $view->inc('elements/header.php');  ?>
                         <? $a = new Area('comScore Title');$a->display($c); ?>
                     </h2>
                 </div>
-                <div class="col-md-12">
+                <div class="col-sm-12 col-md-12">
                     <a href="#" class="link-comscore pull-right">
                         <img src="<?php echo $view->getThemePath()?>/images/logo_comscore@2x.png" alt="ComScore" class="full-width">
                     </a>
                     <h2>
                         <? $a = new Area('comScore Chart');$a->display($c); ?>
                     </h2>
+                    <!--<img class="comstock-graph" src="<?php echo $view->getThemePath()?>/images/comstock-graph.png" />-->
+                </div>
+                <div class="col-sm-12 col-md-10">
+                    <img class="comstock-graph" src="<?php echo $view->getThemePath()?>/images/comstock-graph.png" />
                 </div>
                 <div class="col-sm-12 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2">
                     <? $a = new Area('comScore');$a->display($c); ?>

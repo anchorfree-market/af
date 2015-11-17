@@ -17,6 +17,7 @@
 .ccm-block-page-list-title a {font-size: 22px;}
 /* advertise */
 .chart {display: none;}
+.comstock-graph {display: block; background: red; max-width: 100%; width: 100%;}
 /* careers */
 .careers-video {height: 600px;}
 .careers-top .wrapper {float: right;}

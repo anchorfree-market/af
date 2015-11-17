@@ -957,6 +957,7 @@ p {
 .chart .label-axis-y, .chart-legend .legend-label, .feature-type .feature-list-wrapper p, .popover-title {
     font-family: "Titillium Web", sans-serif;
 }
+.comstock-graph {display: none;}
 .counter.animate {
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
