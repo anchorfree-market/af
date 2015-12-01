@@ -2311,6 +2311,105 @@ a.popover-custom--connections {
 .section-features-list .feature-list-wrapper p {
     margin-top: 0;
 }
+/* thank-you page */
+.artic h3 {
+    color: #333;
+    font-size: 18px;
+    padding: 15px 0 0;
+}
+.view_table {
+    width: 100%;
+}
+.view_table thead th {
+    color: #666;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 120%;
+    padding: 10px 0 5px;
+}
+.view_table thead td {
+    font-size: 16px;
+    padding-left: 10px;
+    text-align: left;
+}
+.view_table thead h2 {
+    color: #0d70ca;
+    font-size: 22px;
+    margin: 0 !important;
+    padding: 0 0 3px !important;
+    text-shadow: none;
+    width: 100%;
+}
+.view_table tbody th {
+    border-top: 1px solid #eeeeee;
+    font-weight: normal;
+    line-height: 120%;
+    padding: 10px;
+    text-align: left;
+}
+.view_table tbody span {
+    color: #0d70ca;
+    display: block;
+    font-size: 1.7em;
+    font-weight: bold;
+    padding: 0 0 5px;
+}
+.view_table tbody td {
+    border-top: 1px solid #eeeeee;
+}
+.view_table .tr_gray {
+    background: #fcfcfc none repeat scroll 0 0;
+}
+.view_table .yes {
+    background: rgba(0, 0, 0, 0) url("../images/icon-cm.png") no-repeat scroll center center;
+}
+.view_table .btn {
+    background: rgba(0, 0, 0, 0) url("../images/btns_set.png") repeat scroll right top;
+    color: #eee;
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    height: 55px;
+    line-height: 45px;
+    padding: 0 30px 0 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.view_table .btn_buy_now {
+    background-position: right -110px;
+}
+.device_promo_box {
+    display: table;
+    padding: 40px 10px 20px;
+    width: 100%;
+}
+.device_promo {
+    color: #797979 !important;
+    display: block;
+    float: left;
+    font-size: 14px !important;
+    font-weight: normal !important;
+    height: 135px;
+    line-height: 150%;
+    padding: 40px 0 0 195px;
+    text-decoration: none;
+    width: 160px;
+}
+.device_promo_iphone {
+    background: rgba(0, 0, 0, 0) url("../images/promo_devices.png") repeat scroll 0 0;
+    margin: 0 30px 0 50px;
+}
+.device_promo_android {
+    background: rgba(0, 0, 0, 0) url("../images/promo_devices.png") repeat scroll right top;
+}
+.device_promo span {
+    background: rgba(0, 0, 0, 0) url("../images/promo-arrow.png") no-repeat scroll right 4px;
+    color: #84ac09;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
 @media only screen and (max-width:1200px) {
     .section-contact-us-carrier {
     text-align: center;
