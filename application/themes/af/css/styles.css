@@ -2312,10 +2312,42 @@ a.popover-custom--connections {
     margin-top: 0;
 }
 /* thank-you page */
+.artic .article-left {float: left; width: 600px;}
 .artic h3 {
     color: #333;
     font-size: 18px;
     padding: 15px 0 0;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+    font-weight: bold;
+}
+.aside {
+    background: rgba(0, 0, 0, 0) url("/imgs/aside_s.png") repeat scroll 0 0;
+    float: right;
+    margin: 20px 0 40px 20px;
+    position: relative;
+    width: 255px;
+}
+.aside .top {
+    background: rgba(0, 0, 0, 0) url("/imgs/aside_s.png") repeat scroll -255px top;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 255px;
+}
+.aside .bottom {
+    background: rgba(0, 0, 0, 0) url("/imgs/aside_s.png") repeat scroll right top;
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    position: absolute;
+    width: 255px;
+}
+.aside .inner {
+    font-size: 90%;
+    padding: 0 0 50px 20px;
+    position: relative;
 }
 .view_table {
     width: 100%;
@@ -2339,6 +2371,7 @@ a.popover-custom--connections {
     padding: 0 0 3px !important;
     text-shadow: none;
     width: 100%;
+    font-weight: bold;
 }
 .view_table tbody th {
     border-top: 1px solid #eeeeee;
@@ -2378,6 +2411,7 @@ a.popover-custom--connections {
 }
 .view_table .btn_buy_now {
     background-position: right -110px;
+    box-shadow: 0 0 0 0;
 }
 .device_promo_box {
     display: table;
@@ -2396,6 +2430,7 @@ a.popover-custom--connections {
     text-decoration: none;
     width: 160px;
 }
+.device_promo {box-sizing: content-box;}
 .device_promo_iphone {
     background: rgba(0, 0, 0, 0) url("../images/promo_devices.png") repeat scroll 0 0;
     margin: 0 30px 0 50px;
@@ -2408,6 +2443,20 @@ a.popover-custom--connections {
     color: #84ac09;
     font-weight: bold;
     padding-right: 10px;
+}
+#social li {
+    float: left;
+    list-style: outside none none;
+    margin-right: 10px;
+}
+#shareEmail {
+    border: 1px solid #ccc;
+    display: block;
+    line-height: 120%;
+    padding: 5px 0 7px;
+    text-align: center;
+    text-decoration: none;
+    width: 50px;
 }
 
 @media only screen and (max-width:1200px) {
