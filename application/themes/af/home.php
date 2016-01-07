@@ -5,6 +5,13 @@ $view->inc('elements/header.php');
     <? $a = new Area('Hero Image Area');$a->display($c);?>
 </section> <!-- .section-featured -->
 <div class="wrapper">
+    <div class="container">   
+        <div class="col-md-12 home-featured-on"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
+        <div id="greyscale" class="col-md-12 home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
+        <div class="clearfix"></div>
+    </div>
+</div>  
+<div class="wrapper">
     <div class="container">
             <h2 class="col-md-12 main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
             <p class="col-md-12 marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
@@ -37,13 +44,6 @@ $view->inc('elements/header.php');
 </div>    
 <div class="marginbot40"></div>
 <div class="separator saperator-gradient"></div>
-<div class="wrapper">
-    <div class="container">   
-        <div class="col-md-12 home-featured-on"><h2><? $a = new GlobalArea('Featured On');$a->display($c); ?></h2></div>
-        <div id="greyscale" class="col-md-12 home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
-        <div class="clearfix"></div>
-    </div>
-</div>  
 <div class="section section-join-team">
     <?php $view->inc('elements/joinaf-text-left-img-right.php'); ?>
 </div>
