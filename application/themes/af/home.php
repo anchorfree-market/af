@@ -10,7 +10,9 @@ $view->inc('elements/header.php');
         <div id="greyscale" class="col-md-12 home-featured-companies"><? $a = new GlobalArea('Featured Logos');$a->display($c); ?></div>
         <div class="clearfix"></div>
     </div>
-</div>  
+</div>
+<div class="separator saperator-gradient">
+</div>
 <div class="wrapper">
     <div class="container">
             <h2 class="col-md-12 main-title align-center-imp"><? $a = new GlobalArea('About Title');$a->display($c);?></h2>
