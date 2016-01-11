@@ -3325,31 +3325,31 @@ span.learn-more {float: none; font-weight: 100; display: none;}
 }
 .rightfadeblue {
 <<<<<<< Updated upstream
-    background: -moz-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(40, 58, 131, 1) 75%) right top;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(27, 123, 206, 0)), color-stop(50%, rgba(40, 58, 131, 1))) right top;
-    background: -webkit-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(40, 58, 131, 1) 75%) right top;
-    background: -o-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(40, 58, 131, 1) 75%) right top;
-    background: -ms-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(40, 58, 131, 1) 75%) right top;
-    background: linear-gradient(to right, rgba(27, 123, 206, 0) 0, rgba(40, 58, 131, 1) 75%) right top;
+    background: -moz-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(27, 123, 206, 0)), color-stop(50%, rgba(2, 79, 152, 1))) right top;
+    background: -webkit-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
+    background: -o-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
+    background: -ms-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
+    background: linear-gradient(to right, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001b7bce', endColorstr='#283a83', GradientType=1);
 }
 .leftfadeblue {
-    background: -moz-linear-gradient(left, rgba(40, 58, 131, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
-    background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(40, 58, 131, 1)), color-stop(100%, rgba(27, 123, 206, 0))) left top;
-    background: -webkit-linear-gradient(left, rgba(40, 58, 131, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
-    background: -o-linear-gradient(left, rgba(40, 58, 131, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
-    background: -ms-linear-gradient(left, rgba(40, 58, 131, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
-    background: linear-gradient(to right, rgba(40, 58, 131, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
+    background: -moz-linear-gradient(left, rgba(2, 79, 152, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
+    background: -webkit-gradient(linear, left top, right top, color-stop(25%, rgba(2, 79, 152, 1)), color-stop(100%, rgba(27, 123, 206, 0))) left top;
+    background: -webkit-linear-gradient(left, rgba(2, 79, 152, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
+    background: -o-linear-gradient(left, rgba(2, 79, 152, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
+    background: -ms-linear-gradient(left, rgba(2, 79, 152, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
+    background: linear-gradient(to right, rgba(2, 79, 152, 1) 25%, rgba(27, 123, 206, 0) 100%) left top;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#283a83', endColorstr='#001b7bce',GradientType=1);
 }
 .fullfadeblue {
     background: #283a83;
-    background: -moz-linear-gradient(left, rgba(40, 58, 131, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
-    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(40, 58, 131, 1)), color-stop(100%, rgba(27, 123, 206, 1))) left top;
-    background: -webkit-linear-gradient(left, rgba(40, 58, 131, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
-    background: -o-linear-gradient(left, rgba(40, 58, 131, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
-    background: -ms-linear-gradient(left, rgba(40, 58, 131, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
-    background: linear-gradient(to right, rgba(40, 58, 131, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
+    background: -moz-linear-gradient(left, rgba(2, 79, 152, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, rgba(2, 79, 152, 1)), color-stop(100%, rgba(27, 123, 206, 1))) left top;
+    background: -webkit-linear-gradient(left, rgba(2, 79, 152, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
+    background: -o-linear-gradient(left, rgba(2, 79, 152, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
+    background: -ms-linear-gradient(left, rgba(2, 79, 152, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
+    background: linear-gradient(to right, rgba(2, 79, 152, 1) 0, rgba(27, 123, 206, 1) 100%) left top;
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#283a83', endColorstr='#1b7bce',GradientType=1 );
 =======
     background: -moz-linear-gradient(left, rgba(27, 123, 206, 0) 0, rgba(2, 79, 152, 1) 75%) right top;
