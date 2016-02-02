@@ -19,6 +19,11 @@ $view->inc('elements/header.php');
             <p class="col-md-12 marginbot50 align-center-imp"><? $a = new GlobalArea('About Content');$a->display($c);?></p>
     </div> 
 </div>
+<div class="wrapper">
+    <div class="container">
+           <h2>Test</h2>
+    </div> 
+</div>
 <div class="separator saperator-gradient">
 </div>
 <section class="home-choose-download" style="background:white;">
