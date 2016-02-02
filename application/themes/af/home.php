@@ -21,7 +21,7 @@ $view->inc('elements/header.php');
 </div>
 <div class="wrapper">
     <div class="container">
-           <h2>Test</h2>
+            <p class="col-md-12 marginbot50 align-center-imp"><? $a = new Area('Home Benefits');$a->display($c);?></p>
     </div> 
 </div>
 <div class="separator saperator-gradient">
