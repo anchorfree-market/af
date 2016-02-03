@@ -450,27 +450,6 @@ p {
     transition: all .4s ease-in-out 0s;
     outline: 0;
 }
-.shield {
-    background-image: url(/application/files/5114/5452/4294/shield.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-@media (max-width: 768px) {
-	 .shield {
-        height: 350px;
-    }
-@media (min-width: 769px) and (max-width: 992px) {
-    .shield {
-        height: 375px;
-    }
-@media (min-width: 993px) and (max-width: 1200px) {
-    .shield {
-        height: 450px;
-	}
-@media (min-width: 1201px) {
-    .shield {
-        height: 500px;
-    }
 .btn, .target-list .target {
     -webkit-transition: all .4s ease-in-out 0s;
     -moz-transition: all .4s ease-in-out 0s;
